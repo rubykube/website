@@ -7,6 +7,10 @@
 
     <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/all.js"></script>
+    <link rel="stylesheet"  href="stylesheets/all.css" type="text/css" media="all" />
   </head>
   <body>
 
