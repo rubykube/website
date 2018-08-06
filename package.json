@@ -1,0 +1,10 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Rubykube Site",
+  "main": "index.js",
+  "repository": "https://github.com/rubykube/website.git",
+  "author": "Louis Bellet <lbellet@heliostech.fr>",
+  "license": "MIT",
+  "private": true
+}
