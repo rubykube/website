@@ -1,27 +1,322 @@
 ---
-title: Welcome to Middleman
+pageable: true
+per_page: 10
 ---
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" class="middleman-logo" aria-labelledby="middleman-logo__title" role="img">
-  <title id="middleman-logo__title">Middleman</title>
-  <path class="middleman-logo__top-left-bar" fill-opacity=".45" d="M0 40L200 0v30L0 60z"/>
-  <path class="middleman-logo__top-right-bar" fill="#fff" d="M200 0l200 40v20L200 30z"/>
-  <path class="middleman-logo__left-m" fill-opacity=".45" d="M0 78v184l45 5V152l45 83 47-83v129l53 7V52l-57 8-43 83-43-70z"/>
-  <path class="middleman-logo__right-m" fill="#fff" d="M400 78v184l-45 5V152l-45 83-47-83v129l-53 7V52l57 8 43 83 43-70z"/>
-  <path class="middleman-logo__bottom-left-bar" fill-opacity=".45" d="M0 300l200 40v-30L0 280z"/>
-  <path class="middleman-logo__bottom-right-bar" fill="#fff" d="M200 340l200-40v-20l-200 30z"/>
-</svg>
+<div id="page-top">
 
-<h1>
-  Rubykube is coming
-</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top red" id="sideNav">
+      <a class="navbar-brand js-scrollTo" href="#page-top">
+        <span class="d-block d-lg-none">RubyKube</span>
+        <span class="d-none d-lg-block">
+          <img class="logo-kube img-fluid mx-auto mb-3" alt="Logo" src="images/logo.png">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#components">Components</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scrollTo" href="#newsletter">Newsletter</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<div class="alert alert-danger" role="alert">
-  This is a danger alert—check it out!
-</div>
+    <div class="container-fluid p-0">
 
-<%= link_to(
-  "Read Documentation",
-  "https://middlemanapp.com/basics/templating_language/",
-  target: "_blank"
-) %>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Ruby<span class="text-primary">Kube</span></h1>
+          <div class="subheading mb-3">The complete platform for building an exchange</div>
+
+          <p>RubyKube team forked the old abandoned open-source Peatio project and gave it a second birth. From monolith application we created an awesome stack of several key components that ensure more stability, scalability and security. Around Peatio, as wallet and order book management system, we have built KYC, Business Logic and other components, including Kite - installation & administration tool that reduces deployment from scratch to 1-1.5 hours. Plus we cover Back-End with beautiful and fully customizable Front-End using React.</p>
+
+          <ul class="list-inline list-social-icons mt-4 mb-3">
+            <li class="list-inline-item">
+              <a href="#">
+                <a class="square bg-github">
+                  <i class="icon fa fa-github-circled"></i>
+                </a>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <a class="square bg-telegram">
+                  <i class="icon fa fa-telegram"></i>
+                </a>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <a class="square bg-linkedin">
+                  <i class="icon fa fa-linkedin"></i>
+                </a>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <a class="square bg-facebook">
+                  <i class="icon fa fa-facebook"></i>
+                </a>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary text-uppercase mr-3">Documentation</a>
+          <a href="https://discuss.rubykube.io/" class="btn btn-primary text-uppercase" target="_blank">Discussion</a>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="components">
+        <div class="my-auto">
+          <h2 class="mb-5">Components</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Peatio</h3>
+              <div class="subheading mb-3">Cryptocurrency Exchange Development & Cloud Deployment</div>
+              <p>Peatio is a free and Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components.</p>
+              <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Peatio Github</a>
+            </div>
+            <div class="resume-date text-md-right">
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Barong</h3>
+              <div class="subheading mb-3">oAuth server for peatio.tech stack</div>
+              <p>Barong is an OAuth server with KYC and 2FA for RubyKube stack. Barong manages roles and KYC level across all applications from the RKCP. It's easy to extend by using the Event API or Rest API.</p>
+              <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Barong Github</a>
+            </div>
+            <div class="resume-date text-md-right">
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Kite</h3>
+              <div class="subheading mb-3">Devops solution</div>
+              <p>Kite is a CLI for scaffolding and managing devops modules. The main purpose is templating of various tools for DevOps around Terraform, Bosh, Ansible. Currently Kite supports modular stacks (Kite modules) on both AWS and GCP.</p>
+              <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Kite Github</a>
+            </div>
+            <div class="resume-date text-md-right">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="features">
+        <div class="my-auto">
+          <h2 class="mb-5">Features</h2>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <div class="d-flex">
+                    <div>
+                      <i class="display-4 icon-lock mr-2"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 mt-2">High Security</h3>
+                      <div>2FA + multi-sig + DHWC wallets + balance control features</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <div class="d-flex">
+                    <div>
+                      <i class="display-4 icon-cog mr-2"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 mt-2">Custom Features</h3>
+                      <div>AppLogic + opportunity to add stories to Peatio and Barong sprints</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <div class="d-flex">
+                    <div>
+                      <i class="display-4 icon-desktop mr-2"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 mt-2">Powefull Front-End</h3>
+                      <div>React library, including great trading UI with TradingView</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <div class="d-flex">
+                    <div>
+                      <i class="display-4 icon-fire mr-2"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0"> mt-26 Coins Supported</h3>
+                      <div>BTC, LTC, BCH, DASH, ETH, XRP</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <div class="d-flex">
+                    <div>
+                      <i class="display-4 icon-key mr-2"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 mt-2">ERC20 Tokens Support</h3>
+                      <div>Supporting since 1.8</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <div class="d-flex">
+                    <div>
+                      <i class="display-4 icon-comment mr-2"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0 mt-2">Team Support</h3>
+                      <div>Deployment training included in subscription, opportunity to hire our DevOps for custom development</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="team">
+        <div class="my-auto">
+          <h2 class="mb-5">Team</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="newsletter">
+        <div class="my-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="mb-5">Newsletter</h2>
+              <p>Subscribe to our newsletter to get informed on any update</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="E-mail">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+  </div>
+
+
+<% if paginate && num_pages > 1 %>
+  <p>Page <%= page_number %> of <%= num_pages %></p>
+
+  <% if prev_page %>
+    <p><%= link_to 'Previous page', prev_page %></p>
+  <% end %>
+<% end %>
+
+<% page_articles.each_with_index do |article, i| %>
+  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+  <!-- use article.summary(250) if you have Nokogiri available to show just
+       the first 250 characters -->
+  <%= article.body %>
+<% end %>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>

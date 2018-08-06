@@ -3,3 +3,5 @@
 import 'bootstrap';
 
 import '../stylesheets/site.css.scss';
+
+import './scroller.js';
