@@ -50,3 +50,10 @@ end
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :external_pipeline,
+    name: :webpack,
+    command: build? ? 'npm run build' : 'npm run watch',
+    source: 'dist',
+    latency: 1
+
