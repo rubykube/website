@@ -2,6 +2,6 @@
 
 import 'bootstrap';
 
-import '../stylesheets/site.scss';
+import '../stylesheets/site.css.scss';
 
 import './scroller.js';
