@@ -1,6 +1,8 @@
 body {
   padding-top: 54px;
-
+  position: relative;
+  display: block;
+  overflow: scroll;
 }
 
 @media (min-width: 992px) {

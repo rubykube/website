@@ -19,6 +19,8 @@ activate :blog do |blog|
   blog.prefix = 'blog'
 end
 
+set :port, 8080
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
