@@ -1,0 +1,270 @@
+$theme-name: default-theme !default;
+
+// Main style (dark or light)
+// ----------------------------------------------------------------
+$dark-style-enabled: false !default;
+
+// Main font
+// -----------------------------------------------------------------
+$theme-text-font: 'Muli' !default;
+$theme-text-font-weights: '200,400,600,700' !default;
+$theme-headings-font: 'Quicksand' !default;
+
+// Global fonts
+// -----------------------------------------------------------------
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            500 !default;
+
+$headings-font-weight: $font-weight-bold;
+$font-size-base: 0.9rem !default;
+$headings-font-weight: 400 !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+// Border radius
+// -----------------------------------------------------------------
+$border-radius: 5px !default;
+$border-radius-lg: 5px !default;
+$border-radius-sm: 5px !default;
+
+// Theme colors
+// -----------------------------------------------------------------
+$primary: #509AF0 !default;
+$secondary: mix(#ddd, $primary, 80) !default;
+$success: darken(#68db48, 10) !default;
+$info: darken(#27cfdb, 10) !default;
+$warning: darken(#ff9966, 15) !default;
+$danger: #ee4455 !default;
+
+// Text colors
+// ----------------------------------------------------------------
+$color-light: #f1f1f1 !default;
+
+$color-text: #f1f1f1 !default;
+$color-text-light: #f5f5f5 !default;
+$color-text-muted: #C2CCD6;
+$color-text-inverse: #444 !default;
+$color-text-passive: #c5c5c5 !default;
+
+$color-subtitle: #aaa !default;
+$color-link: $primary !default;
+
+// UI colors
+// ----------------------------------------------------------------
+$color-inverse: #111 !default;
+$body-bg: mix(#f5f5f5, desaturate($primary, 50), 95) !default;
+$color-divider: mix(white, $body-bg, 20);
+$header-bg: mix(#222, $primary, 50) !default;
+
+
+// Cards colors
+// ----------------------------------------------------------------
+$card-bg-color: rgba(black, .2) !default;
+$card-header-color: rgba(black, .2) !default;
+
+
+// Border colors
+// ----------------------------------------------------------------
+$border-color: darken($body-bg, 1) !default;
+
+
+// Forms colors
+// ----------------------------------------------------------------
+$input-bg: white !default;
+$input-border: $border-color !default;
+$input-bg-focus: white !default;
+
+
+// =================================================================
+//  GRID
+// =================================================================
+
+$grid-gutter-width: 30px !default;
+
+// =================================================================
+//  COMMON ELEMENTS
+// =================================================================
+
+// Buttons
+// ----------------------------------------------------------------
+$btn-radius: 25px !default;
+
+$btn-primary-color: $primary !default;
+$btn-primary-color-text: $color-text-inverse !default;
+
+
+// Links
+// ----------------------------------------------------------------
+$link-color: lighten($primary, 10) !default;
+$link-transition: initial;
+$link-decoration: none;
+
+$link-hover-color: lighten($primary, 5) !default;
+$link-hover-decoration: underline !default;
+
+// Header
+// ----------------------------------------------------------------
+$header-height: 70px !default;
+$header-height-xs: 50px !default;
+
+// Sidebar
+// ----------------------------------------------------------------
+$sidebar-width: 230px !default;
+$sidebar-bg: mix(#111, $primary, 90%) !default;
+$sidebar-color-active: darken($sidebar-bg, 5) !default;
+$sidebar-color-primary: darken($sidebar-bg, 3) !default;
+$sidebar-color-secondary: darken($sidebar-color-primary, 6%) !default;
+
+$sidebar-color-text: fade-out($color-text-inverse, 0.5) !default;
+$sidebar-color-text-active: white;
+
+// Footer
+// ----------------------------------------------------------------
+$footer-height: 50px !default;
+
+
+// Dropdowns
+// ----------------------------------------------------------------
+$dropbown-color-border: fade-out($color-text-light, 0.9) !default;
+$dropdown-link-hover-color-bg: #f5f5f5 !default;
+
+// Content
+// ----------------------------------------------------------------
+$content-padding-x-xl: 40px !default;
+$content-padding-y-xl: 35px !default;
+
+$content-padding-x-lg: 35px !default;
+$content-padding-y-lg: 30px !default;
+
+$content-padding-x-md: 20px !default;
+$content-padding-y-md: 25px !default;
+
+$content-padding-x-sm: 20px !default;
+$content-padding-y-sm: 20px !default;
+
+$content-padding-x-xs: 10px !default;
+$content-padding-y-xs: 15px !default;
+
+
+// Card
+// ----------------------------------------------------------------
+$card-padding-x: 15px !default;
+$card-padding-x-xl: 20px !default;
+$card-padding-x-sm: 10px !default;
+$card-margin-bottom: 30px;
+
+// Item list
+// ----------------------------------------------------------------
+$item-list-color-border: #eee !default;
+
+// Charts
+// ----------------------------------------------------------------
+$chart-color-primary: $primary !default;
+$chart-color-secondary: lighten($chart-color-primary, 10%) !default;
+$chart-color-label: $color-text !default;
+$chart-color-background: $card-bg-color !default;
+
+
+// Dashboard
+// ----------------------------------------------------------------
+$dashboard-stat-icon-color: #BDBDBD !default;
+
+
+// Buttons + Forms
+// ----------------------------------------------------------------
+
+
+$input-placeholder-color: darken($border-color, 8) !default;
+$input-disabled-bg:       lighten($border-color, 2) !default;
+
+
+$input-btn-padding-y:         .70rem !default;
+$input-btn-padding-x:         .95rem !default;
+
+$input-btn-focus-width:       .2rem !default;
+$input-btn-focus-box-shadow:  none !default;
+
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+
+$input-btn-padding-y-lg:      .7rem !default;
+$input-btn-padding-x-lg:      1.2rem !default;
+
+$input-btn-padding-y-xl:      1rem !default;
+$input-btn-padding-x-xl:      1.5rem !default;
+
+
+// Buttons
+// ----------------------------------------------------------------
+
+$btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-x:               $input-btn-padding-x !default;
+
+$btn-padding-y-sm:            $input-btn-padding-y-sm !default;
+$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+
+$btn-padding-y-lg:            $input-btn-padding-y-lg !default;
+$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+
+$btn-padding-y-xl:            $input-btn-padding-y-xl !default;
+$btn-padding-x-xl:            $input-btn-padding-x-xl !default;
+
+
+// =================================================================
+// TABLES
+// =================================================================
+
+$table-border-color: $border-color;
+
+
+// =================================================================
+// LIGHT vs DARK STYLES
+// =================================================================
+
+$main-bg: white;
+$body-bg: white;
+$color-text: black;
+$border-color: white;
+$color-dark: mix(#222, $primary, 80) !default;
+
+
+@if $dark-style-enabled {
+  // DARK STYLES VARIABLES
+  $main-bg: $color-dark;
+
+  $body-bg: mix(#111, $primary, 80%);
+  // $body-bg: #191919;
+
+  $border-color: lighten($main-bg, 7);
+  $color-text: #eee;
+  $secondary: desaturate(lighten($border-color, 12), 10);
+
+  $input-bg: darken($color-dark, 3);
+  $input-border: $border-color;
+  $input-bg-focus: darken($color-dark, 4);
+
+  $input-group-addon-color: $color-text;
+  $input-group-addon-bg: darken($color-dark, 4);
+  $input-group-addon-border-color: $input-border;
+
+
+  $input-placeholder-color: lighten($border-color, 8);
+  $input-disabled-bg:       darken($border-color, 2);
+
+
+  // $secondary: mix(#555, $primary, 80);
+
+  } @else {
+
+  // LIGHT STYLES VARIABLES
+  $main-bg: white;
+  $body-bg: mix(#f5f5f5, desaturate($primary, 50), 95);
+  $border-color: darken($main-bg, 7);
+  $color-text: #444;
+}

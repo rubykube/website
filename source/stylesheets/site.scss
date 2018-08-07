@@ -1,7 +1,11 @@
 // Required
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+
+@import "variables";
+@import "rubykube";
 
 // Optional
 @import "~bootstrap/scss/alert";
@@ -11,4 +15,4 @@
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
 
-@import "theme.css.scss";
+@import "theme";
