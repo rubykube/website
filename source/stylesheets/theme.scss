@@ -2,7 +2,7 @@ body {
   padding-top: 54px;
   position: relative;
   display: block;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
@@ -179,4 +179,3 @@ section.resume-section .resume-item .resume-date {
     color: white;
   }
 }
-

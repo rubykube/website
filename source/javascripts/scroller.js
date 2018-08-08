@@ -1,56 +1,75 @@
 import $ from 'jquery'
 
-$('.js-scrollTo').on('click', function(e) {
-  e.preventDefault()
+let scrollTimeout
+let isScrolling = false
 
-  let page = $(this).attr('href');
-
-  $('html, body').animate( { scrollTop: $(page).offset().top }, 500 );
-  $('#sideNav').removeClass('red yellow green');
-  $('#sideNav').addClass('blue');
-
-  window.location.hash = page
-
-  // return false
-});
-
-$('body').scrollspy({ target: '.nav' })
-
-$('.js-scrollTo').on('activate.bs.scrollspy', function() {
-  console.log('kek')
-})
-
-function onLogoHover (e) {
-  console.log('hover')
-}
-
-$('#logo').on('hover', onLogoHover)
-
-var points = {};
+let sections = []
+let currentSection = 0
 
 $(document).ready(function() {
-  $('section').each(function(item) {
-    points[$(this).attr('id')] = $(this).offset().top
-  });
-});
+  $('.js-scrollTo').on('click', function(e) {
+    e.preventDefault()
 
-$(window).on('wheel', function(event){
-  event.preventDefault()
+    let page = $(this).attr('href')
+    $('html, body').animate({
+      scrollTop: page ? $(page).offset().top : 0
+    }, 500)
 
-  if (event.originalEvent.deltaY === 1) {
-    runSrollUp(event)
-  } else if (event.originalEvent.deltaY === -1) {
-    runScrollDown(event)
-  }
+    if (page) {
+      window.location.hash = page
+    }
+  })
+
+  $('section').each(function (i) {
+    sections.push({
+      id: $(this).attr('id'),
+      offset: $(this).offset().top
+    })
+
+    if ($(this).attr('id') === window.location.hash) {
+      currentSection = i
+      setNavColor()
+    }
+  })
+
+  $(window).on('wheel', function (event) {
+    event.preventDefault()
+
+    if (isScrolling) {
+      clearTimeout(scrollTimeout)
+    } else {
+      isScrolling = true
+
+      if (event.originalEvent.deltaY < 0) {
+        prevSection()
+      } else if (event.originalEvent.deltaY > 0) {
+        nextSection()
+      }
+
+      $('html, body').animate({ scrollTop: sections[currentSection].offset }, 500)
+      window.location.hash = `#${sections[currentSection].id}`
+
+      setNavColor()
+    }
+
+    scrollTimeout = setTimeout(function () { isScrolling = false }, 100)
+  })
 })
 
-function runSrollUp(event) {
-  console.log(event);
-  $('html, body').animate( { scrollTop: points.team }, 1000 );
-  console.log('up');
+function prevSection() {
+  if (currentSection > 0) {
+    currentSection -= 1
+  }
 }
 
-function runScrollDown() {
-  console.log(event);
-  console.log('down');
+function nextSection() {
+  if (currentSection < sections.length - 1) {
+    currentSection += 1
+  }
+}
+
+function setNavColor () {
+  let color = $(`#${sections[currentSection].id}`).attr('data-nav-color')
+  $('#sideNav').removeClass('red yellow green blue')
+  $('#sideNav').addClass(color)
 }
