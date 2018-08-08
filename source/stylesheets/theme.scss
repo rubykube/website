@@ -2,7 +2,7 @@ body {
   padding-top: 54px;
   position: relative;
   display: block;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
@@ -42,7 +42,6 @@ p {
   font-size: 1.35rem;
 }
 
-
 .list-social-icons a .fa-lg {
   font-size: 1.75rem;
 }
@@ -51,7 +50,7 @@ p {
   font-size: 3rem;
 }
 
-.logo-kube {
+.logo {
   width: 85%;
   transition: transform .2s;
   &:hover {
@@ -146,18 +145,14 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-
 .bg-github {
   background-color: #323232;
-}
-.bg-facebook {
-  background-color: #296ed3;
 }
 .bg-telegram {
   background-color: #2eaade
 }
-.bg-linkedin {
-  background-color: #2a62bd;
+.bg-slack {
+  background-color: #18ad74;
 }
 
 .square {
@@ -179,4 +174,3 @@ section.resume-section .resume-item .resume-date {
     color: white;
   }
 }
-

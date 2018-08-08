@@ -6,12 +6,18 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <link media="all" integrity rel="stylesheet" href="stylesheets/site.css" />
+    <title><%= current_page.data.title || "RubyKube Crypto-Platform" %></title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <meta name="theme-color" content="#4C90F6">
+
+    <%= javascript_include_tag "bundle.js" %>
   </head>
   <body>
     <%= partial 'header' %>
     <%= yield %>
-    <%= javascript_include_tag "bundle" %>
   </body>
 </html>
