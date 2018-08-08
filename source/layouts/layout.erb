@@ -7,11 +7,10 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <link media="all" integrity rel="stylesheet" href="stylesheets/site.css" />
   </head>
   <body>
     <%= partial 'header' %>
     <%= yield %>
-    <%= javascript_include_tag "bundle" %>
+    <script src="bundle.js"></script>
   </body>
 </html>
