@@ -26,4 +26,31 @@ function onLogoHover (e) {
 
 $('#logo').on('hover', onLogoHover)
 
-// window.onload = init
+var points = {};
+
+$(document).ready(function() {
+  $('section').each(function(item) {
+    points[$(this).attr('id')] = $(this).offset().top
+  });
+});
+
+$(window).on('wheel', function(event){
+  event.preventDefault()
+
+  if (event.originalEvent.deltaY === 1) {
+    runSrollUp(event)
+  } else if (event.originalEvent.deltaY === -1) {
+    runScrollDown(event)
+  }
+})
+
+function runSrollUp(event) {
+  console.log(event);
+  $('html, body').animate( { scrollTop: points.team }, 1000 );
+  console.log('up');
+}
+
+function runScrollDown() {
+  console.log(event);
+  console.log('down');
+}
