@@ -1,0 +1,15 @@
+title: |-
+  RubyKube Crypto-Platform
+sections:
+  about:
+    title: |-
+      The complete platform for building an exchange
+    body: |-
+      RubyKube team forked the old abandoned open-source Peatio project
+      and gave it a second birth. From monolith application we created
+      an awesome stack of several key components that ensure more stability,
+      scalability and security. Around Peatio, as wallet and order book
+      management system, we have built KYC, Business Logic and other components,
+      including Kite - installation & administration tool that reduces
+      deployment from scratch to 1-1.5 hours. Plus we cover Back-End with
+      beautiful and fully customizable Front-End using React.
