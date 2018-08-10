@@ -1,15 +1,83 @@
-title: |-
-  RubyKube Crypto-Platform
+title: RubyKube Crypto-Platform
+
 sections:
+
   about:
-    title: |-
+    subtitle: |-
       The complete platform for building an exchange
     body: |-
-      RubyKube team forked the old abandoned open-source Peatio project
-      and gave it a second birth. From monolith application we created
-      an awesome stack of several key components that ensure more stability,
-      scalability and security. Around Peatio, as wallet and order book
-      management system, we have built KYC, Business Logic and other components,
-      including Kite - installation & administration tool that reduces
-      deployment from scratch to 1-1.5 hours. Plus we cover Back-End with
-      beautiful and fully customizable Front-End using React.
+      RubyKube team forked the old abandoned open-source Peatio project and gave it a second birth. From monolith application we created an awesome stack of several key components that ensure more stability, scalability and security. Around Peatio, as wallet and order book management system, we have built KYC, Business Logic and other components, including Kite - installation & administration tool that reduces deployment from scratch to 1-1.5 hours. Plus we cover Back-End with beautiful and fully customizable Front-End using React.
+
+  components:
+    title: Components
+
+    peatio:
+      title: Peatio
+      subtitle: |-
+        Cryptocurrency Exchange Development & Cloud Deployment
+      summary: |-
+        Peatio is a free and Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components.
+
+    barong:
+      title: Barong
+      subtitle: |-
+        OAuth2 server for RubyKube stack
+      summary: |-
+        Barong is an OAuth2 server with KYC and 2FA for RubyKube stack. Barong manages roles and KYC level across all applications from the RKCP. It's easy to extend by using the Event API or Rest API.
+
+    kite:
+      title: Kite
+      subtitle: |-
+        DevOps solution
+      summary: |-
+        Kite is a CLI for scaffolding and managing devops modules. The main purpose is templating of various tools for DevOps around Terraform, Bosh, Ansible. Currently Kite supports modular stacks (Kite modules) on both AWS and GCP.
+
+  features:
+    title: Features
+
+    security:
+      title: High Security
+      summary: |-
+        2FA + multi-sig + DHWC wallets + balance control features
+
+    customization:
+      title: Custom Features
+      summary: |-
+        AppLogic + opportunity to add stories to Peatio and Barong sprints
+
+    frontend:
+      title: Powefull Front-End
+      summary: |-
+        React library, including great trading UI with TradingView
+
+    coins:
+      title: MT-26 Coins Supported
+      summary: |-
+        BTC, LTC, BCH, DASH, ETH, XRP
+
+    tokens:
+      title: ERC20 Tokens Support
+      summary: |-
+        Supporting since 1.8
+
+    support:
+      title: Team Support
+      summary: |-
+        Deployment training included in subscription, opportunity to hire our DevOps for custom development
+
+  team:
+    title: Team
+    subheading: |-
+      Programming Languages and Tools
+
+    workflow:
+      title: Workflow
+      list:
+        - |-
+          Mobile-First, Responsive Design
+        - |-
+          Cross Browser Testing and Debugging
+        - |-
+          Cross Functional Teams
+        - |-
+          Agile Development and Scrum

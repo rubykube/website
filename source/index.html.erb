@@ -9,7 +9,7 @@ per_page: 10
       <div class="my-auto">
         <h1 class="mb-0">Ruby<span class="text-primary">Kube</span></h1>
 
-        <div class="subheading mb-3"><%= data.i18n.en.sections.about.title %></div>
+        <div class="subheading mb-3"><%= data.i18n.en.sections.about.subtitle %></div>
         <p><%= data.i18n.en.sections.about.body %></p>
 
         <ul class="list-inline list-social-icons mt-4 mb-3">
@@ -37,13 +37,24 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="components" data-nav-color="green">
       <div class="my-auto">
-        <h2 class="mb-5">Components</h2>
+        <h2 class="mb-5">
+          <%= data.i18n.en.sections.components.title %>
+        </h2>
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Peatio</h3>
-            <div class="subheading mb-3">Cryptocurrency Exchange Development & Cloud Deployment</div>
-            <p>Peatio is a free and Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components.</p>
+            <h3 class="mb-0">
+              <%= data.i18n.en.sections.components.peatio.title %>
+            </h3>
+
+            <div class="subheading mb-3">
+              <%= data.i18n.en.sections.components.peatio.subtitle %>
+            </div>
+
+            <p>
+              <%= data.i18n.en.sections.components.peatio.summary %>
+            </p>
+
             <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Peatio Github</a>
           </div>
           <div class="resume-date text-md-right">
@@ -52,10 +63,19 @@ per_page: 10
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Barong</h3>
-            <div class="subheading mb-3">oAuth server for peatio.tech stack</div>
-            <p>Barong is an OAuth server with KYC and 2FA for RubyKube stack. Barong manages roles and KYC level across all applications from the RKCP. It's easy to extend by using the Event API or Rest API.</p>
-            <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Barong Github</a>
+            <h3 class="mb-0">
+              <%= data.i18n.en.sections.components.barong.title %>
+            </h3>
+
+            <div class="subheading mb-3">
+              <%= data.i18n.en.sections.components.barong.subtitle %>
+            </div>
+
+            <p>
+              <%= data.i18n.en.sections.components.barong.summary %>
+            </p>
+
+            <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Barong Github</a>
           </div>
           <div class="resume-date text-md-right">
           </div>
@@ -63,10 +83,19 @@ per_page: 10
 
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
           <div class="resume-content mr-auto">
-            <h3 class="mb-0">Kite</h3>
-            <div class="subheading mb-3">Devops solution</div>
-            <p>Kite is a CLI for scaffolding and managing devops modules. The main purpose is templating of various tools for DevOps around Terraform, Bosh, Ansible. Currently Kite supports modular stacks (Kite modules) on both AWS and GCP.</p>
-            <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Kite Github</a>
+            <h3 class="mb-0">
+              <%= data.i18n.en.sections.components.kite.title %>
+            </h3>
+
+            <div class="subheading mb-3">
+              <%= data.i18n.en.sections.components.kite.subtitle %>
+            </div>
+
+            <p>
+              <%= data.i18n.en.sections.components.kite.summary %>
+            </p>
+
+            <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Kite Github</a>
           </div>
           <div class="resume-date text-md-right">
           </div>
@@ -78,19 +107,21 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="features" data-nav-color="blue">
       <div class="my-auto">
-        <h2 class="mb-5">Features</h2>
+        <h2 class="mb-5"><%= data.i18n.en.sections.features.title %></h2>
 
         <div class="row">
           <div class="col-md-6">
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <div class="d-flex">
+                  <div><i class="display-4 icon-lock mr-2"></i></div>
                   <div>
-                    <i class="display-4 icon-lock mr-2"></i>
-                  </div>
-                  <div>
-                    <h3 class="mb-0 mt-2">High Security</h3>
-                    <div>2FA + multi-sig + DHWC wallets + balance control features</div>
+                    <h3 class="mb-0 mt-2">
+                      <%= data.i18n.en.sections.features.security.title %>
+                    </h3>
+                    <div>
+                      <%= data.i18n.en.sections.features.security.title %>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -103,8 +134,12 @@ per_page: 10
                     <i class="display-4 icon-cog mr-2"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0 mt-2">Custom Features</h3>
-                    <div>AppLogic + opportunity to add stories to Peatio and Barong sprints</div>
+                    <h3 class="mb-0 mt-2">
+                      <%= data.i18n.en.sections.features.customization.title %>
+                    </h3>
+                    <div>
+                      <%= data.i18n.en.sections.features.customization.summary %>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -117,13 +152,18 @@ per_page: 10
                     <i class="display-4 icon-desktop mr-2"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0 mt-2">Powefull Front-End</h3>
-                    <div>React library, including great trading UI with TradingView</div>
+                    <h3 class="mb-0 mt-2">
+                      <%= data.i18n.en.sections.features.frontend.title %>
+                    </h3>
+                    <div>
+                      <%= data.i18n.en.sections.features.frontend.summary %>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col-md-6">
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
@@ -132,8 +172,12 @@ per_page: 10
                     <i class="display-4 icon-fire mr-2"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0"> mt-26 Coins Supported</h3>
-                    <div>BTC, LTC, BCH, DASH, ETH, XRP</div>
+                    <h3 class="mb-0">
+                      <%= data.i18n.en.sections.features.coins.title %>
+                    </h3>
+                    <div>
+                      <%= data.i18n.en.sections.features.coins.summary %>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -146,8 +190,12 @@ per_page: 10
                     <i class="display-4 icon-key mr-2"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0 mt-2">ERC20 Tokens Support</h3>
-                    <div>Supporting since 1.8</div>
+                    <h3 class="mb-0 mt-2">
+                      <%= data.i18n.en.sections.features.tokens.title %>
+                    </h3>
+                    <div>
+                      <%= data.i18n.en.sections.features.tokens.summary %>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -160,8 +208,12 @@ per_page: 10
                     <i class="display-4 icon-comment mr-2"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0 mt-2">Team Support</h3>
-                    <div>Deployment training included in subscription, opportunity to hire our DevOps for custom development</div>
+                    <h3 class="mb-0 mt-2">
+                      <%= data.i18n.en.sections.features.support.title %>
+                    </h3>
+                    <div>
+                      <%= data.i18n.en.sections.features.support.summary %>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -174,9 +226,13 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="team" data-nav-color="yellow">
       <div class="my-auto">
-        <h2 class="mb-5">Team</h2>
+        <h2 class="mb-5">
+          <%= data.i18n.en.sections.team.title %>
+        </h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <div class="subheading mb-3">
+          <%= data.i18n.en.sections.team.subheading %>
+        </div>
         <ul class="list-inline list-icons">
           <li class="list-inline-item">
             <i class="devicons devicons-html5"></i>
@@ -213,20 +269,17 @@ per_page: 10
           </li>
         </ul>
 
-        <div class="subheading mb-3">Workflow</div>
+        <div class="subheading mb-3">
+          <%= data.i18n.en.sections.team.workflow.title %>
+        </div>
+
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
+          <% data.i18n.en.sections.team.workflow.list.each do |item| %>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              <%= item %>
+            </li>
+          <% end %>
         </ul>
       </div>
     </section>
