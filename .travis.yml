@@ -1,0 +1,30 @@
+language: ruby
+
+dist: trusty
+sudo: required
+
+before_install:
+  - gem install bundler
+  - . $HOME/.nvm/nvm.sh
+  - nvm install 9
+  - nvm use 9
+
+install:
+  - bundle install --retry 3
+  - travis_retry npm install
+  - git checkout -f package-lock.json
+
+script:
+  - bundle exec middleman build --verbose
+
+deploy:
+  - provider: gcs
+    access_key_id: $GCS_KEY_ID
+    secret_access_key: $GCS_ACCESS_KEY
+    bucket: $GCS_BUCKET_MASTER
+    acl: public-read
+    skip_cleanup: true
+    local-dir: build
+    on:
+      branch: master
+
