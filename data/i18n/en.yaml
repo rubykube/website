@@ -1,5 +1,8 @@
 title: RubyKube Free Open-Source Crypto Platform
 
+description: |-
+   Rubykube is the complete open-source modular platform for building a Crypto Currency Exchange. Around Peatio, as the core wallet and order book management system, we have built KYC, Business Logic and other components, including Kite - installation & administration tool that allows you to deploy entire platform from scratch in 1 hour and makes management and maintenance a breeze. Plus we covered Back-End with beautiful and fully customizable Front-End using React.
+
 sections:
 
   about:
