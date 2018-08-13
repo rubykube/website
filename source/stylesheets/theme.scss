@@ -28,8 +28,30 @@ h1 {
   line-height: 5.5rem;
 }
 
-h2 {
-  font-size: 3.5rem;
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  body{
+  display:block;
+  margin:0;
+  width:100%;
+  overflow:hidden;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  body {
+    display: block;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 p {
