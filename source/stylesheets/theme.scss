@@ -27,9 +27,26 @@ h1 {
   line-height: 5.5rem;
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
+.mb-5w{
+  width: 600px;
+}
+
+
 @media (max-width: 600px) {
   h1 {
     font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .mb-5w{
+    width: 300px;
   }
 
   body{
@@ -48,6 +65,10 @@ h1 {
     display: block;
     margin: 0;
     width: 100%;
+  }
+
+  .btn {
+    zoom: 88%;
   }
 }
 
