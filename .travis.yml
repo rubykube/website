@@ -39,3 +39,13 @@ deploy:
     on:
       branch: stage
 
+  - provider: gcs
+    access_key_id: $GCS_KEY_ID
+    secret_access_key: $GCS_ACCESS_KEY
+    bucket: $GCS_BUCKET_DEV
+    acl: public-read
+    skip_cleanup: true
+    local-dir: build
+    on:
+      branch: dev
+
