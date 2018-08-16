@@ -12,22 +12,37 @@ per_page: 10
         <div class="subheading mb-3"><%= data.i18n.en.sections.about.subtitle %></div>
         <p><%= data.i18n.en.sections.about.body %></p>
 
-        <ul class="list-inline list-social-icons mt-4 mb-3">
-          <li class="list-inline-item">
+        <ul class="list-inline list-social-icons mt-4 mb-3 class="tooltip">
+          <li class="list-inline-item tooltip">
+            <span class="tooltiptext"></span>
             <a class="square bg-github" href="https://github.com/rubykube" target="blank">
               <i class="icon icon-github-circled"></i>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item tooltip">
+            <span class="tooltiptext">Telegram</span>
             <a class="square bg-telegram" href="https://t.me/peatio" target="blank">
               <i class="icon icon-telegram"></i>
             </a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item tooltip">
+            <span class="tooltiptext">Slack</span>
             <a class="square bg-slack" href="https://rubykube.slack.com" target="blank">
               <i class="icon icon-slack"></i>
             </a>
           </li>
+          <li class="list-inline-item tooltip">
+            <span class="tooltiptext">Reddit</span>
+            <a class="square bg-reddit-squared" href="https://reddit.com/r/rubykube/" target="blank">
+              <i class="icon icon-reddit-squared"></i>
+            </a>
+          </li>
+          <li class="list-inline-item tooltip">
+            <span class="tooltiptext">Youtube</span>
+          <a class="square bg-youtube" href="https://www.youtube.com/channel/UCGrRNy-EpI67ivdAL5z4JIg/featured" target="blank">
+            <i class="icon icon-youtube"></i>
+          </a>
+        </li>
         </ul>
         <a href="#" class="btn btn-primary text-uppercase mr-3">Documentation</a>
         <a href="https://discuss.rubykube.io/" class="btn btn-primary text-uppercase" target="_blank">Discussion</a>
@@ -76,6 +91,22 @@ per_page: 10
             </p>
 
             <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Barong Github</a>
+          </div>
+          <div class="resume-date text-md-right">
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">
+              <%= data.i18n.en.sections.components.workbench.title %>
+            </h3>
+
+            <p>
+              <%= data.i18n.en.sections.components.workbench.summary %>
+            </p>
+
+            <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Workbench Github</a>
           </div>
           <div class="resume-date text-md-right">
           </div>
@@ -233,41 +264,17 @@ per_page: 10
         <div class="subheading mb-3">
           <%= data.i18n.en.sections.team.subheading %>
         </div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicons devicons-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-css3"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-javascript"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-jquery"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-npm"></i>
-          </li>
+
+        <ul class="fa-ul mb-0">
+          <% data.i18n.en.sections.team.list.each do |item| %>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              <%= item %>
+            </li>
+          <% end %>
         </ul>
+
+        <p>TBD</p>
 
         <div class="subheading mb-3">
           <%= data.i18n.en.sections.team.workflow.title %>
@@ -293,7 +300,7 @@ per_page: 10
             </h2>
             <p>Subscribe to our newsletter to get informed on any update</p>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="E-mail">
+              <input type="email" class="form-control" placeholder="E-mail">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
               </div>
