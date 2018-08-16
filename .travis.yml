@@ -44,6 +44,8 @@ deploy:
     secret_access_key: $GCS_ACCESS_KEY
     bucket: $GCS_BUCKET_DEV
     acl: public-read
+    detect_encoding: true
+    cache_control: "max-age=31536000 no-transform"
     skip_cleanup: true
     local-dir: build
     on:

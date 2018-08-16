@@ -1,10 +1,14 @@
 const webpack = require('webpack');
 const path = require('path');
 
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 module.exports = {
-  entry: './source/javascripts/site.js',
+  mode: 'production',
+  entry: './src/js/site.js',
   output: {
     filename: 'bundle.js',
+    chunkFilename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
@@ -12,7 +16,8 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery"
-    })
+    }),
+    new CleanWebpackPlugin(['dist'])
   ],
   module: {
     rules: [
@@ -45,5 +50,17 @@ module.exports = {
         ]
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all'
+          }
+      }
+    }
   }
 };

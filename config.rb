@@ -1,10 +1,3 @@
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
-activate :autoprefixer do |prefix|
-  prefix.browsers = 'last 2 versions'
-end
-
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -20,6 +13,7 @@ activate :blog do |blog|
 end
 
 set :port, 8080
+set :source, './src/middleman'
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -48,10 +42,13 @@ set :port, 8080
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_html
+  activate :gzip
+
+  # All the .js assets already have the hash from webpack, so we skip them
+  activate :asset_hash, ignore: ->(f){ f =~ /\.js/ && f != 'bundle.js' }
+end
 
 activate :external_pipeline,
     name: :webpack,

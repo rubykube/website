@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 let scrollTimeout
 let isScrolling = false
 
@@ -73,3 +71,4 @@ function setNavColor () {
   $('#sideNav').removeClass('red yellow green blue')
   $('#sideNav').addClass(color)
 }
+
