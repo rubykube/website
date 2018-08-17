@@ -22,6 +22,7 @@ h6 {
 
 }
 
+
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
@@ -31,12 +32,22 @@ h2 {
   font-size: 3.5rem;
 }
 
-.mb-5w{
-  width: 600px;
+.mb-6{
+  width:500px;
+}
+
+.fixed {
+  background: #2eaade;
+  position: fixed;
 }
 
 
-@media (max-width: 600px) {
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (max-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -45,14 +56,14 @@ h2 {
     font-size: 2.5rem;
   }
 
-  .mb-5w{
-    width: 300px;
-  }
-
   body{
   display:block;
   margin:0;
   width:100%;
+  }
+
+  .mb-6{
+    width:300px;
   }
 }
 
@@ -260,4 +271,16 @@ section.resume-section .resume-item .resume-date {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+
+}
+.scrollup{
+  width:40px;
+  height:40px;
+  opacity:0.3;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  display:none;
+  text-indent:-9999px;
+  background: url('http://webmastermix.ru/files/demo/creation-site/raznoe/knopka-vverh/icon_top.png') no-repeat;
 }
