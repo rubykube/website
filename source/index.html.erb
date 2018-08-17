@@ -45,13 +45,13 @@ per_page: 10
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="components" data-nav-color="green">
-      <div class="row">
+      <div class="my-auto">
+        <h2 class="mb-5">
+          <%= data.i18n.en.sections.components.title %>
+        </h2>
 
-        <div class="col-xs-8 components">
-          <div class="my-auto">
-            <h2 class="mb-5">
-              <%= data.i18n.en.sections.components.title %>
-            </h2>
+        <div class="row">
+          <div class="col-md-6">
 
               <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content mr-auto">
@@ -59,14 +59,15 @@ per_page: 10
                     <%= data.i18n.en.sections.components.peatio.title %>
                   </h3>
 
-                  <div class="subheading mb-3">
-                    <%= data.i18n.en.sections.components.peatio.subtitle %>
+                  <div class="col-components">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.peatio.subtitle %>
+                    </div>
+
+                    <p>
+                      <%= data.i18n.en.sections.components.peatio.summary %>
+                    </p>
                   </div>
-
-                  <p>
-                    <%= data.i18n.en.sections.components.peatio.summary %>
-                  </p>
-
                   <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Peatio Github</a>
                 </div>
               </div>
@@ -77,55 +78,61 @@ per_page: 10
                     <%= data.i18n.en.sections.components.barong.title %>
                   </h3>
 
-                  <div class="subheading mb-3">
-                    <%= data.i18n.en.sections.components.barong.subtitle %>
+                  <div class="col-components-1">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.barong.subtitle %>
+                    </div>
+
+                    <p>
+                      <%= data.i18n.en.sections.components.barong.summary %>
+                    </p>
                   </div>
-
-                  <p>
-                    <%= data.i18n.en.sections.components.barong.summary %>
-                  </p>
-
                   <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Barong Github</a>
-                  </div>
+                </div>
               </div>
 
-
+          </div>
+            
+          <div class="col-md-6">
               <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content mr-auto">
                   <h3 class="mb-0">
                     <%= data.i18n.en.sections.components.workbench.title %>
                   </h3>
 
-                  <p>
-                    <%= data.i18n.en.sections.components.workbench.summary %>
-                  </p>
-
-                    <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Workbench Github</a>
+                  <div class="col-components col-text">
+                    <p>
+                      <%= data.i18n.en.sections.components.workbench.summary %>
+                    </p>
+                  </div>
+                  <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Workbench Github</a>
                 </div>
               </div>
-
+              
               <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content mr-auto">
                   <h3 class="mb-0">
                     <%= data.i18n.en.sections.components.kite.title %>
                   </h3>
 
-                  <div class="subheading mb-3">
-                    <%= data.i18n.en.sections.components.kite.subtitle %>
+                  <div class="col-components-1">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.kite.subtitle %>
+                    </div>
+
+                    <p>
+                      <%= data.i18n.en.sections.components.kite.summary %>
+                    </p>
                   </div>
-
-                  <p>
-                    <%= data.i18n.en.sections.components.kite.summary %>
-                  </p>
-
                   <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Kite Github</a>
                 </div>
               </div>
+
           </div>
         </div>
-
       </div>
     </section>
+    
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="features" data-nav-color="blue">
       <div class="my-auto">
