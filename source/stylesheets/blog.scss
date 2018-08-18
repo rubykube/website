@@ -1,5 +1,7 @@
 $date-text: #555;
 $tags-text: #6ea5f7;
+$button-text: #6ea5f7;
+$button-text-hover: #3d87f5;
 $tags-pipe: #adb8b8;
 $body-text: #555;
 
@@ -43,14 +45,46 @@ $body-text: #555;
   margin: 16px 0px;
 }
 
+.post-button {
+  color: $button-text;
+  border-color: $button-text;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 42px;
+  line-height: 38px;
+  padding: 0 14px;
+  text-align: center;
+  text-decoration: none !important;
+  transition-duration: 0.4s;
+  transition-property: border-color;
+  vertical-align: middle;
+  white-space: nowrap;
+  a {
+    transition-duration: 0.4s;
+    transition-property: color;
+  }
+}
+
+.post-button:hover {
+  border-color: $button-text-hover;
+  a {
+    color: $button-text-hover;
+    text-decoration: none !important;
+  }
+}
+
 @media (min-width: 1280px){
   .blog-base {
-    padding: 40px 8% 0px 8%;
+    padding: 30px 8% 0px 8%;
   }
 }
 
 @media (min-width: 1600px){
   .blog-base {
-    padding: 40px 10% 0px 10%;
+    padding: 30px 10% 0px 10%;
   }
 }
