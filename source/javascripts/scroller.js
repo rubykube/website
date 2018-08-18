@@ -10,6 +10,27 @@ $(document).ready(function() {
     $('.js-scrollTo').on('click', function(e) {
       e.preventDefault()
 
+      if (location.pathname.substr(1) === "blog"){
+        let page = $(this).attr('href');
+        location.href = '../' + page;
+      } else {
+        let page = $(this).attr('href')
+        $('html, body').animate({
+          scrollTop: page ? $(page).offset().top : 0
+        }, 500)
+
+        if (page) {
+          window.location.hash = page
+        }
+      }
+    })
+
+  $('section').each(function (i) {
+    sections.push({
+      id: $(this).attr('id'),
+      offset: $(this).offset().top
+    })
+
       let page = $(this).attr('href')
       $('html, body').animate({
         scrollTop: page ? $(page).offset().top : 0
