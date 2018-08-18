@@ -181,42 +181,39 @@ section.resume-section .resume-item .resume-date {
   display:none;
 }
 
-@media (min-width: 1280px){
+@media only screen and (min-width : 1366px) {
+
   .col-components{
-    height: 220px;
-  }
-  .col-components-1{
-    height: 220px;
+    height: 200px;
   }
 
-  .col-text{
-    padding-top: 79px;
+  .col-components1{
+    height: 140px;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px){
+@media (min-width: 1100px) and (max-width: 1365px){
   .col-components{
-    height: 280px;
+    height: 240px;
   }
-  .col-components-1{
-    height: 220px;
+
+  .col-components1{
+    height: 190px;
   }
 }
+  
+@media (min-width : 992px) and (max-width: 1099px) {
 
-@media (min-width: 992px) and (max-width: 1024px){
   .col-components{
     height: 320px;
   }
-  .col-components-1{
-    height: 220px;
-  }
 
-  .col-text{
-    padding-top: 140px;
+  .col-components1{
+    height: 230px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px){
   body {
     padding-top: 0;
     padding-left: 17rem;
@@ -266,15 +263,7 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-@media (min-width: 767px) and (max-width: 991px) {
-
-
-  .col-components{
-    height: 270px;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px){
   section.resume-section {
     min-height: 100vh;
   }
@@ -282,48 +271,108 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
+  
+@media (min-width : 768px) and (max-width: 991px) {
+  .col-components{
+    height: 245px;
+  }
+
+  .col-components1{
+    height: 200px;
+  }
+}
 
 @media (max-width: 767px) {
   h1 {
     font-size: 4rem;
   }
-
+  
   h2 {
     font-size: 2.5rem;
   }
-
+  
   body{
-  display:block;
-  margin:0;
-  width:100%;
+    display:block;
+    margin:0;
+    width:100%;
   }
-
+  
   .mb-6{
     width:300px;
   }
-
+  
   .col-text{
     padding-top: 0px;
   }
+
+  .col-components{
+    height: 170px;
+  }
+
+  .col-components1{
+    height: 140px;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 550px) {
+
+  .col-components{
+    height: 220px;
+  }
+
+  .col-components1{
+    height: 170px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+
+  .col-components{
+    height: 240px;
+  }
+
+  .col-components1{
+    height: 190px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 339px) {
   h1 {
     font-size: 3rem;
   }
-
+  
   body {
     display: block;
     margin: 0;
     width: 100%;
   }
-  
+    
   .btn {
     zoom: 88%;
   }
-
+  
   .btn-components{
     margin-top:5px;
   }
+
+  .col-components{
+    height: 260px;
+  }
+
+  .col-components1{
+    height: 220px;
+  }
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .col-components{
+    height: 315px;
+  }
+
+  .col-components1{
+    height: 240px;
+  }
+}
+
+
 
