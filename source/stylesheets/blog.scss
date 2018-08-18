@@ -1,0 +1,56 @@
+$date-text: #555;
+$tags-text: #6ea5f7;
+$tags-pipe: #adb8b8;
+$body-text: #555;
+
+.blog-base {
+  padding: 20px 10px 10px 10px;
+}
+
+.post-base {
+  padding: 0px 10px 40px 10px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.post-tags {
+  color: $tags-text;
+  text-align: left;
+}
+
+.post-tags__each-pipe {
+  color: $tags-pipe
+}
+
+.post-date {
+  color: $date-text;
+  font-size: 14px;
+  margin: 10px 10px 5px 0px;
+  text-align: right;
+}
+
+.post-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.post-body {
+  color: $body-text !important;
+  font-size: 14px;
+  margin: 16px 0px;
+}
+
+@media (min-width: 1280px){
+  .blog-base {
+    padding: 40px 8% 0px 8%;
+  }
+}
+
+@media (min-width: 1600px){
+  .blog-base {
+    padding: 40px 10% 0px 10%;
+  }
+}
