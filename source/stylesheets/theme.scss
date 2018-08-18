@@ -450,28 +450,8 @@ ul, li {
   }
 
 }
-
-@media (min-width: 1191px) and (max-width: 1364px){
-  .col-components{
-    height: 350px;
-  }
-
-  .col-components1{
-    height: 250px;
-  }
-}
   
 @media (min-width : 992px) and (max-width: 1099px) {
-  .col-components{
-    height: 420px;
-  }
-
-  .col-components1{
-    height: 310px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1090px){
   .col-components{
     height: 550px;
   }
