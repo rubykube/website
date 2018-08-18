@@ -30,6 +30,8 @@ sections:
 
     workbench:
       title: Workbench
+      subtitle: |- 
+        Recommended development, test and integration environment
       summary: |-
         Workbench is the recommended development, test and integration environment for new developers. It is the easiest way to setup development environment and run Peatio locally.
 
