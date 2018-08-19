@@ -7,53 +7,73 @@ let sections = []
 let currentSection = 0
 
 $(document).ready(function() {
-  $('.js-scrollTo').on('click', function(e) {
-    e.preventDefault()
+  if($(window).width() > 992){
+    $('.js-scrollTo').on('click', function(e) {
+      e.preventDefault()
 
-    let page = $(this).attr('href')
-    $('html, body').animate({
-      scrollTop: page ? $(page).offset().top : 0
-    }, 500)
+      let page = $(this).attr('href')
+      $('html, body').animate({
+        scrollTop: page ? $(page).offset().top : 0
+      }, 500)
 
-    if (page) {
-      window.location.hash = page
-    }
-  })
-
-  $('section').each(function (i) {
-    sections.push({
-      id: $(this).attr('id'),
-      offset: $(this).offset().top
+      if (page) {
+        window.location.hash = page
+      }
     })
 
-    if ($(this).attr('id') === window.location.hash) {
-      currentSection = i
-      setNavColor()
-    }
-  })
+    $('section').each(function (i) {
+      sections.push({
+        id: $(this).attr('id'),
+        offset: $(this).offset().top
+      })
 
-  $(window).on('wheel', function (event) {
-    event.preventDefault()
+      if ($(this).attr('id') === window.location.hash) {
+        currentSection = i
+        setNavColor()
+      }
+    })
 
-    if (isScrolling) {
-      clearTimeout(scrollTimeout)
-    } else {
-      isScrolling = true
+    $(window).on('wheel', function (event) {
+      event.preventDefault()
 
-      if (event.originalEvent.deltaY < 0) {
-        prevSection()
-      } else if (event.originalEvent.deltaY > 0) {
-        nextSection()
+      if (isScrolling) {
+        clearTimeout(scrollTimeout)
+      } else {
+        isScrolling = true
+
+        if (event.originalEvent.deltaY < 0) {
+          prevSection()
+        } else if (event.originalEvent.deltaY > 0) {
+          nextSection()
+        }
+
+        $('html, body').animate({ scrollTop: sections[currentSection].offset }, 500)
+        window.location.hash = `#${sections[currentSection].id}`
+
+        setNavColor()
       }
 
-      $('html, body').animate({ scrollTop: sections[currentSection].offset }, 500)
-      window.location.hash = `#${sections[currentSection].id}`
+      scrollTimeout = setTimeout(function () { isScrolling = false }, 100)
+    })
+  } else if ($(window).width() <= 992) {
+    $(window).scroll(function(){
+      var currentclass
+      $('section').each(function(){
+         if($(this).offset().top<$(window).scrollTop()+20){
+            currentclass =$(this).attr('id')
+         }
+      })
 
-      setNavColor()
-    }
+      if($('#sideNav').offset().top < 80) {
+        $('#sideNav').addClass('red')
+      } else {
+        $('#sideNav').removeClass('red')
+      }
 
-    scrollTimeout = setTimeout(function () { isScrolling = false }, 100)
-  })
+      $('#sideNav').removeClass('about components features team followus')
+      $('#sideNav').addClass(currentclass)
+    })
+  }
 })
 
 function prevSection() {
