@@ -1,10 +1,13 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        if($('#about') ) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
+        $('#about').each(function(){
+            if($(this).offset().top<$(window).scrollTop()){
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+         })
+   
     });
 
     $('.scrollup').click(function(){
@@ -13,5 +16,3 @@ $(document).ready(function(){
     });
 });
 
-
-//&& $(window).width() > '932'
