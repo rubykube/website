@@ -81,6 +81,21 @@ p {
   &.yellow {
     background-color: #FBC200;
   }
+  &.features {
+    background-color: #3CB05C;
+  }
+  &.about {
+    background-color: #EE4D3E;
+  }
+  &.team {
+    background-color: #4C90F6;
+  }
+  &.components {
+    background-color: #FBC200;
+  }
+  &.followus {
+    background-color: #EE4D3E;
+  }
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -337,7 +352,7 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-@media (min-width: 375px) and (max-width: 339px) {
+@media (min-width: 375px) and (max-width: 399px) {
   h1 {
     font-size: 3rem;
   }
@@ -374,6 +389,3 @@ section.resume-section .resume-item .resume-date {
     height: 240px;
   }
 }
-
-
-
