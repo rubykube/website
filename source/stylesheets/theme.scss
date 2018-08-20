@@ -304,9 +304,11 @@ section.resume-section .resume-item .resume-date {
   .col-components{
     height: 245px;
   }
+}
 
-  .col-components1{
-    height: 200px;
+@media (min-width : 768px) and (max-width: 991px) {
+  .col-components{
+    height: 245px;
   }
 }
 
