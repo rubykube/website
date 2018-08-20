@@ -2,7 +2,6 @@ import $ from 'jquery'
 
 let scrollTimeout
 let isScrolling = false
-
 let sections = []
 let currentSection = 0
 
@@ -57,7 +56,7 @@ $(document).ready(function() {
     })
   } else if ($(window).width() <= 992) {
     $(window).scroll(function(){
-      var currentclass
+      let currentclass
       $('section').each(function(){
          if($(this).offset().top<$(window).scrollTop()+20){
             currentclass =$(this).attr('id')
@@ -93,3 +92,4 @@ function setNavColor () {
   $('#sideNav').removeClass('red yellow green blue')
   $('#sideNav').addClass(color)
 }
+

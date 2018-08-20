@@ -17,7 +17,7 @@
 
     <%= javascript_include_tag "bundle.js" %>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="80">
     <%= partial 'header' %>
     <%= yield %>
   </body>
