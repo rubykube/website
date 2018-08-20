@@ -30,6 +30,10 @@ $(document).ready(function () {
       offset: $(this).offset().top
     })
 
+    if (location.pathname.substr(1) === "blog"){
+      let page = $(this).attr('href');
+      window.location.href = '/' + page;
+    } else {
       let page = $(this).attr('href')
       $('html, body').animate({
         scrollTop: page ? $(page).offset().top : 0
@@ -38,7 +42,8 @@ $(document).ready(function () {
       if (page) {
         window.location.hash = page
       }
-    })
+    }
+  })
 
     $('section').each(function (i) {
       sections.push({
