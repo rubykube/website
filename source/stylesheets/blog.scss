@@ -1,7 +1,8 @@
 $date-text: #555;
 $tags-text: #6ea5f7;
 $button-text: #6ea5f7;
-$button-text-hover: #3d87f5;
+$button-text-hover: #fff;
+$bg-color: #6ea5f7;
 $tags-pipe: #adb8b8;
 $body-text: #555;
 
@@ -59,22 +60,17 @@ $body-text: #555;
   padding: 0 14px;
   text-align: center;
   text-decoration: none !important;
-  transition-duration: 0.4s;
-  transition-property: border-color;
+  transition-duration: 0.8s;
+  transition-property: background-color, color;
   vertical-align: middle;
   white-space: nowrap;
-  a {
-    transition-duration: 0.4s;
-    transition-property: color;
-  }
 }
 
 .post-button:hover {
-  border-color: $button-text-hover;
-  a {
-    color: $button-text-hover;
-    text-decoration: none !important;
-  }
+  //border-color: $button-text-hover;
+  background-color: $bg-color;
+  color: $button-text-hover;
+  text-decoration: none !important;
 }
 
 @media (min-width: 1280px){

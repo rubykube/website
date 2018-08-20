@@ -2,7 +2,8 @@
 
 title: FourthPost
 date: 2018-08-18 08:53 UTC
-thumbnail_image: blog/images/fifth.webp
+category: seo
+thumbnail_image: /images/blog/fifth.webp
 tags: [ Tag2 ]
 
 ---

@@ -1,0 +1,78 @@
+$date-text: #555;
+$title-size: 36px;
+$sm-title-size: 28px;
+$text-size: 16px;
+$sm-text-size: 14px;
+
+.full-post-base {
+  padding: 0px 20px 40px 20px;
+}
+
+.full-post-image {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.full-post-tags {
+  color: $tags-text;
+  font-size: $sm-text-size;
+  text-align: left;
+}
+
+.full-post-date {
+  color: $date-text;
+  font-size: $sm-text-size;
+  margin: 10px 0px 5px 0px;
+  text-align: right;
+}
+
+.full-post-title {
+  font-size: $sm-title-size;
+  font-weight: 400;
+}
+
+.full-post-body {
+  color: $body-text !important;
+  font-size: $sm-text-size;
+  line-height: 1.7;
+  margin: 16px 0px;
+}
+
+@media (min-width: 768px){
+  .full-post-title {
+    font-size: $title-size;
+  }
+  .full-post-tags, .full-post-date, .full-post-body {
+    font-size: $text-size;
+  }
+
+  .full-post-media {
+    margin: 0px 5%;
+  }
+
+  .full-post-body {
+    margin: 16px 5%;
+  }
+}
+
+@media (min-width: 1280px){
+  .full-post-base {
+    padding: 30px 8% 0px 8%;
+  }
+
+  .full-post-media {
+    margin: 0px 10%;
+  }
+
+  .full-post-body {
+    margin: 16px 10%;
+  }
+  
+}
+
+@media (min-width: 1600px){
+  .full-post-base {
+    padding: 20px 18% 0px 18%;
+  }
+}
