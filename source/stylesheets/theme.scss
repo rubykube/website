@@ -57,6 +57,7 @@ p {
 
 #logo {
   cursor: pointer;
+  margin-bottom:50px;
 }
 
 .logo {
@@ -101,6 +102,13 @@ p {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.nav-itemGit{
+  margin-top:0px;
+  color: #4d4e4f;
+  border-radius: 0px;
+  font-size: 14px;
 }
 
 section.resume-section {
@@ -275,6 +283,10 @@ section.resume-section .resume-item .resume-date {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+  }
+
+  .nav-itemGit{
+    margin-top:50px;
   }
 }
 
