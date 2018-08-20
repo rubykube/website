@@ -14,7 +14,7 @@ per_page: 10
 
         <ul class="list-inline list-social-icons mt-4 mb-3 class="tooltip">
           <li class="list-inline-item tooltip">
-            <span class="tooltiptext"></span>
+            <span class="tooltiptext">Github</span>
             <a class="square bg-github" href="https://github.com/rubykube" target="blank">
               <i class="icon icon-github-circled"></i>
             </a>
@@ -23,12 +23,6 @@ per_page: 10
             <span class="tooltiptext">Telegram</span>
             <a class="square bg-telegram" href="https://t.me/peatio" target="blank">
               <i class="icon icon-telegram"></i>
-            </a>
-          </li>
-          <li class="list-inline-item tooltip">
-            <span class="tooltiptext">Slack</span>
-            <a class="square bg-slack" href="https://rubykube.slack.com" target="blank">
-              <i class="icon icon-slack"></i>
             </a>
           </li>
           <li class="list-inline-item tooltip">
@@ -50,93 +44,95 @@ per_page: 10
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="components" data-nav-color="green">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="components" data-nav-color="yellow">
       <div class="my-auto">
         <h2 class="mb-5">
           <%= data.i18n.en.sections.components.title %>
         </h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">
-              <%= data.i18n.en.sections.components.peatio.title %>
-            </h3>
+        <div class="row">
+          <div class="col-md-6">
 
-            <div class="subheading mb-3">
-              <%= data.i18n.en.sections.components.peatio.subtitle %>
-            </div>
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">
+                    <%= data.i18n.en.sections.components.peatio.title %>
+                  </h3>
 
-            <p>
-              <%= data.i18n.en.sections.components.peatio.summary %>
-            </p>
+                  <div class="col-components">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.peatio.subtitle %>
+                    </div>
 
-            <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Peatio Github</a>
+                    <p>
+                      <%= data.i18n.en.sections.components.peatio.summary %>
+                    </p>
+                  </div>
+                    <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Peatio Github</a>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">
+                    <%= data.i18n.en.sections.components.barong.title %>
+                  </h3>
+
+                  <div class="col-components1">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.barong.subtitle %>
+                    </div>
+
+                    <p>
+                      <%= data.i18n.en.sections.components.barong.summary %>
+                    </p>
+                  </div>
+                    <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Barong Github</a>
+                </div>
+              </div>
+
           </div>
-          <div class="resume-date text-md-right">
+          <div class="col-md-6">
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">
+                    <%= data.i18n.en.sections.components.workbench.title %>
+                  </h3>
+
+                  <div class="col-components col-text">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.workbench.subtitle %>
+                    </div>
+                    <p>
+                      <%= data.i18n.en.sections.components.workbench.summary %>
+                    </p>
+                  </div>
+                    <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Workbench Github</a>
+                </div>
+              </div>
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h3 class="mb-0">
+                    <%= data.i18n.en.sections.components.kite.title %>
+                  </h3>
+                  <div class="col-components1">
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.kite.subtitle %>
+                    </div>
+                    <p>
+                      <%= data.i18n.en.sections.components.kite.summary %>
+                    </p>
+                  </div>
+                    <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Kite Github</a>
+                </div>
+              </div>
+
           </div>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">
-              <%= data.i18n.en.sections.components.barong.title %>
-            </h3>
-
-            <div class="subheading mb-3">
-              <%= data.i18n.en.sections.components.barong.subtitle %>
-            </div>
-
-            <p>
-              <%= data.i18n.en.sections.components.barong.summary %>
-            </p>
-
-            <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Barong Github</a>
-          </div>
-          <div class="resume-date text-md-right">
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">
-              <%= data.i18n.en.sections.components.workbench.title %>
-            </h3>
-
-            <p>
-              <%= data.i18n.en.sections.components.workbench.summary %>
-            </p>
-
-            <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Workbench Github</a>
-          </div>
-          <div class="resume-date text-md-right">
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">
-              <%= data.i18n.en.sections.components.kite.title %>
-            </h3>
-
-            <div class="subheading mb-3">
-              <%= data.i18n.en.sections.components.kite.subtitle %>
-            </div>
-
-            <p>
-              <%= data.i18n.en.sections.components.kite.summary %>
-            </p>
-
-            <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Kite Github</a>
-          </div>
-          <div class="resume-date text-md-right">
-          </div>
-        </div>
-
       </div>
-
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="features" data-nav-color="blue">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="features" data-nav-color="green">
       <div class="my-auto">
         <h2 class="mb-5"><%= data.i18n.en.sections.features.title %></h2>
 
@@ -255,7 +251,7 @@ per_page: 10
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="team" data-nav-color="yellow">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="team" data-nav-color="blue">
       <div class="my-auto">
         <h2 class="mb-5">
           <%= data.i18n.en.sections.team.title %>
@@ -274,8 +270,6 @@ per_page: 10
           <% end %>
         </ul>
 
-        <p>TBD</p>
-
         <div class="subheading mb-3">
           <%= data.i18n.en.sections.team.workflow.title %>
         </div>
@@ -289,13 +283,14 @@ per_page: 10
           <% end %>
         </ul>
       </div>
+
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="followus" data-nav-color="green">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="followus" data-nav-color="red">
       <div class="my-auto">
         <div class="row">
           <div class="col-md-4">
-            <h2 class="mb-5">
+            <h2 class="mb-5 mb-6">
               <%= data.i18n.en.sections.contact.title %>
             </h2>
             <p>Subscribe to our newsletter to get informed on any update</p>
@@ -311,3 +306,6 @@ per_page: 10
     </section>
   </div>
 </div>
+
+<img src="images/scrollup.png";
+<a href="#" class="scrollup"></a>

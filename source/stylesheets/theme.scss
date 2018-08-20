@@ -4,13 +4,6 @@ body {
   display: block;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -19,7 +12,6 @@ h5,
 h6 {
   font-weight: 700;
   text-transform: uppercase;
-
 }
 
 h1 {
@@ -31,45 +23,18 @@ h2 {
   font-size: 3.5rem;
 }
 
-.mb-5w{
-  width: 600px;
+.mb-6{
+  width:500px;
 }
 
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  .mb-5w{
-    width: 300px;
-  }
-
-  body{
-  display:block;
-  margin:0;
-  width:100%;
-  }
+.fixed {
+  background: #2eaade;
+  position: fixed;
 }
 
-@media (max-width: 375px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  body {
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
-
-  .btn {
-    zoom: 88%;
-  }
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 p {
@@ -92,6 +57,7 @@ p {
 
 #logo {
   cursor: pointer;
+  margin-bottom:50px;
 }
 
 .logo {
@@ -116,6 +82,21 @@ p {
   &.yellow {
     background-color: #FBC200;
   }
+  &.features {
+    background-color: #3CB05C;
+  }
+  &.about {
+    background-color: #EE4D3E;
+  }
+  &.team {
+    background-color: #4C90F6;
+  }
+  &.components {
+    background-color: #FBC200;
+  }
+  &.followus {
+    background-color: #EE4D3E;
+  }
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -123,44 +104,11 @@ p {
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
+.nav-itemGit{
+  margin-top:0px;
+  color: #4d4e4f;
+  border-radius: 0px;
+  font-size: 14px;
 }
 
 section.resume-section {
@@ -171,22 +119,6 @@ section.resume-section {
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
 }
 
 .bg-github {
@@ -260,4 +192,214 @@ section.resume-section .resume-item .resume-date {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+
+}
+.scrollup{
+  width:40px;
+  height:40px;
+  opacity:0.3;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  text-indent:-9999px;
+  border: 500px;
+}
+
+@media only screen and (min-width : 1366px) {
+
+  .col-components{
+    height: 200px;
+  }
+
+  .col-components1{
+    height: 140px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1365px){
+  .col-components{
+    height: 240px;
+  }
+
+  .col-components1{
+    height: 190px;
+  }
+}
+
+@media (min-width : 992px) and (max-width: 1099px) {
+
+  .col-components{
+    height: 320px;
+  }
+
+  .col-components1{
+    height: 230px;
+  }
+}
+
+@media (min-width: 992px){
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+
+  .nav-itemGit{
+    margin-top:50px;
+  }
+}
+
+@media (min-width: 768px){
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width : 768px) and (max-width: 991px) {
+  .col-components{
+    height: 245px;
+  }
+}
+
+@media (min-width : 768px) and (max-width: 991px) {
+  .col-components{
+    height: 245px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  body{
+    display:block;
+    margin:0;
+    width:100%;
+  }
+
+  .mb-6{
+    width:300px;
+  }
+
+  .col-text{
+    padding-top: 0px;
+  }
+
+  .col-components{
+    height: 170px;
+  }
+
+  .col-components1{
+    height: 140px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 550px) {
+
+  .col-components{
+    height: 220px;
+  }
+
+  .col-components1{
+    height: 170px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+
+  .col-components{
+    height: 240px;
+  }
+
+  .col-components1{
+    height: 190px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 399px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  body {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .btn {
+    zoom: 88%;
+  }
+
+  .btn-components{
+    margin-top:5px;
+  }
+
+  .col-components{
+    height: 260px;
+  }
+
+  .col-components1{
+    height: 220px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .col-components{
+    height: 315px;
+  }
+
+  .col-components1{
+    height: 240px;
+  }
 }
