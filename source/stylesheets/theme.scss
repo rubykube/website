@@ -37,10 +37,6 @@ h2 {
   margin-right: 0px;
 }
 
-.col-text{
-  padding-top: 110px;
-}
-
 .p-text {
   color: #999;
 }
@@ -209,8 +205,52 @@ section.resume-section .resume-item .resume-date {
   border: 500px;
 }
 
-@media only screen and (min-width : 1366px) {
+// Blog section
 
+.main-post-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.main-post-category {
+  color: #2eaade;
+  text-align: left;
+}
+
+.main-post-date {
+  color: $date-text;
+  font-size: 14px;
+  float: right;
+}
+
+.btn-blog-block {
+  text-align: center;
+}
+
+.btn-main-blog {
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 25px;
+}
+
+.main-blog-post {
+  margin-bottom: 20px;
+}
+
+.main-blog-post__last {
+  display: none;
+}
+
+// Media queries
+
+@media (min-width: 1366px){
+  .main-blog-post__last {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1280px){
   .col-components{
     height: 200px;
   }

@@ -2,7 +2,7 @@
 
 title: ThirdPost
 date: 2018-08-18 08:52 UTC
-category: seo
+category: Category2
 thumbnail_image: /images/blog/third.webp
 tags: [ Rubykube, Tag3 ]
 
