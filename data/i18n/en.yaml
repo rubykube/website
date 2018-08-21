@@ -75,6 +75,9 @@ sections:
       summary: |-
         Deployment training is included in our subscription plan, as well as opportunity to hire our DevOps team for custom development for your enterprise project
 
+  gallery:
+    title: Gallery
+
   blog:
     title: LATEST BLOG POSTS
 
