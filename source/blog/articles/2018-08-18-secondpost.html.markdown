@@ -2,7 +2,7 @@
 
 title: SecondPost
 date: 2018-08-18 08:52 UTC
-category: seo
+category: Category1
 thumbnail_image: /images/blog/second.webp
 tags: [ Rubykube, Tag2 ]
 
