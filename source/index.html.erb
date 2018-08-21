@@ -294,8 +294,7 @@ per_page: 10
                 <div class="post-body"><%= article.summary(125, '...') %></div>
               </div>
             <% end %>
-            <% else %>
-              <% if i == 3 %>
+            <% if (i == 3) %>
                 <div class="main-blog-post__last">
                   <header>
                     <h2 class="post-title"><%= link_to article.title, article %></h2>
@@ -308,10 +307,11 @@ per_page: 10
                   </header>
                   <div class="post-body"><%= article.summary(125, '...') %></div>
                 </div>
-              <% end %>
             <% end %>
+          <% end %>
         </article>
       </div>
+      
 
       <div class="row">
         <div class="col-sm-12 btn-blog-block">
