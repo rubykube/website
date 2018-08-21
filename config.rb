@@ -16,12 +16,13 @@ page '/*.txt', layout: false
 # Blog Settings
 
 activate :blog do |blog|
-  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
-  #blog.sources = "articles/{category}/{year}-{month}-{day}-{title}.html"
+  #blog.sources = "articles/{year}-{month}-{day}-{title}.html"
+  blog.sources = "articles/{category}/{year}-{month}-{day}-{title}.html"
   blog.permalink = "{category}/{title}.html"
-  blog.taglink = "category/{tag}.html"
+  blog.taglink = "{tag}.html"
   blog.prefix = 'blog'
   blog.layout = "article_layout"
+  blog.tag_template = "blog/tag.html"
 end
 
 set :port, 8080
