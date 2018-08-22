@@ -1,15 +1,18 @@
 import $ from 'jquery'
 
-$(document).ready(function () {
-  let section = $('.section-scroll');
-  let pathScroll = 'up'; 
-  let currentSection = 0;
-  
-  if($(window).width() > 992){
+let scrollTimeout
+let isScrolling = false
+let sections = []
+let currentSection = 0
+
+$(document).ready(function() {
     $('.js-scrollTo').on('click', function(e) {
       e.preventDefault()
 
-      if (location.pathname.substr(1) === "blog"){
+      if (location.pathname.match(/blog\//) == "blog/"){
+        let page = $(this).attr('href');
+        location.href = '../../' + page;
+      } else if (location.pathname.match(/blog/) == "blog"){
         let page = $(this).attr('href');
         location.href = '../' + page;
       } else {
@@ -24,65 +27,85 @@ $(document).ready(function () {
       }
     })
 
-  $('section').each(function (i) {
-    sections.push({
-      id: $(this).attr('id'),
-      offset: $(this).offset().top
-    })
-
-    if (location.pathname.substr(1) === "blog"){
-      let page = $(this).attr('href');
-      window.location.href = '/' + page;
-    } else {
-      let page = $(this).attr('href')
-      $('html, body').animate({
-        scrollTop: page ? $(page).offset().top : 0
-      }, 500)
-
-      if (page) {
-        window.location.hash = page
-      }
-    }
-  })
-
     $('section').each(function (i) {
       sections.push({
         id: $(this).attr('id'),
         offset: $(this).offset().top
       })
 
-      if ($(this).attr('id') === window.location.hash) {
-        currentSection = i
-        setNavColor()
+      if (location.pathname.substr(1) === "blog"){
+        let page = $(this).attr('href');
+        window.location.href = '/' + page;
+      } else {
+        let page = $(this).attr('href')
+        $('html, body').animate({
+          scrollTop: page ? $(page).offset().top : 0
+        }, 500)
+
+        if (page) {
+          window.location.hash = page
+        }
       }
     })
 
-    $(window).on('wheel', function (event) {
-      event.preventDefault()
+    if(location.pathname.match(/blog/) != "blog"){
+      $('section').each(function (i) {
+        sections.push({
+          id: $(this).attr('id'),
+          offset: $(this).offset().top
+        })
 
-      if (isScrolling) {
-        clearTimeout(scrollTimeout)
+        if ($(this).attr('id') === window.location.hash) {
+          currentSection = i
+          setNavColor()
+        }
+      })
+
+      $(window).on('wheel', function (event) {
+        event.preventDefault()
+
+        if (isScrolling) {
+          clearTimeout(scrollTimeout)
+        } else {
+          isScrolling = true
+
+          if (event.originalEvent.deltaY < 0) {
+            prevSection()
+          } else if (event.originalEvent.deltaY > 0) {
+            nextSection()
+          }
+
+          $('html, body').animate({ scrollTop: sections[currentSection].offset }, 500)
+        }
+
+        scrollTimeout = setTimeout(function () { isScrolling = false }, 100)
+      })
+    }
+
+    $(window).scroll(function(){
+      let currentclass
+      $('section').each(function(){
+         if($(this).offset().top<$(window).scrollTop()+20){
+            currentclass =$(this).attr('id')
+         }
+      })
+
+      if($('#sideNav').offset().top < 80) {
+        $('#sideNav').addClass('red')
       } else {
-        isScrolling = true
+        $('#sideNav').removeClass('red')
+      }
 
-        if (event.originalEvent.deltaY < 0) {
-          prevSection()
-        } else if (event.originalEvent.deltaY > 0) {
-          nextSection()
-        }
+      $('#sideNav').removeClass('about components features gallery technology releases tutorials blog team followus')
+      $('#sideNav').addClass(currentclass)
+    })
+})
 
-        currentSection = -1;
-        section.each(function(i){
-            if (currentSection<0 && ($(this).offset().top >= $(window).scrollTop())) {
-              currentSection = i;
-            }
-        });
-        if (pathScroll == 'up' && currentSection > 0) {
-          currentSection--;
-        }
-        if (pathScroll == 'down' && currentSection < section.length) {
-          currentSection++;
-        }
+function prevSection() {
+  if (currentSection > 0) {
+    currentSection -= 1
+  }
+}
 
         $('html,body').stop().animate({
             scrollTop: section.eq(currentSection).offset().top
