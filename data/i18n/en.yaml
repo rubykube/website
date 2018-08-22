@@ -44,6 +44,8 @@ sections:
 
   features:
     title: Features
+    subtitle: |-
+      Coins supported
 
     security:
       title: High Security

@@ -17,9 +17,7 @@ $(document).ready(function() {
         location.href = '../' + page;
       } else {
         let page = $(this).attr('href')
-        $('html, body').animate({
-          scrollTop: page ? $(page).offset().top : 0
-        }, 500)
+        $('html, body').animate({ scrollTop: page ? $(page).offset().top : 0}, 300)
 
         if (page) {
           window.location.hash = page
