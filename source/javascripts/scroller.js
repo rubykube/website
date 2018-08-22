@@ -114,4 +114,10 @@ function prevSection() {
         $('html,body').scrollTop(section.eq(currentSection).offset().top);
     });
   }
-});
+}
+
+function setNavColor () {
+  let color = $(`#${sections[currentSection].id}`).attr('data-nav-color')
+  $('#sideNav').removeClass('red yellow green blue')
+  $('#sideNav').addClass(color)
+}
