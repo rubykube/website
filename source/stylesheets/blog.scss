@@ -8,15 +8,42 @@ $body-text: #555;
 
 // Breadcrumbs
 
-  .breadcrumbs {
-    padding: 30px 10px 10px 10px;
+.breadcrumbs {
+  padding: 30px 10px 10px 10px;
+}
+
+.animated-crumb {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.custom-breadcrumb{
+  list-style:none;
+  overflow: hidden;
+  -webkit-padding-start: 10px;
+  -webkit-margin-after: 0px;
+}
+
+.dynamic-href a{
+    display: inline-block;
+    text-decoration: none;
   }
 
-  .custom-breadcrumb{
-    list-style:none;
-    overflow: hidden;
-    -webkit-padding-start: 10px;
-    -webkit-margin-after: 0px;
+  .dynamic-href a:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #6ea5f7;
+    transition: 300ms;
+  }
+  
+.dynamic-href a:hover:after {
+    width: 100%;
   }
 
   @media (max-width: 767px) {
