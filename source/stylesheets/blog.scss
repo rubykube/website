@@ -6,6 +6,136 @@ $bg-color: #6ea5f7;
 $tags-pipe: #adb8b8;
 $body-text: #555;
 
+// Breadcrumbs
+
+  .breadcrumbs {
+    padding: 30px 10px 10px 10px;
+  }
+
+  .custom-breadcrumb{
+    list-style:none;
+    overflow: hidden;
+    -webkit-padding-start: 10px;
+    -webkit-margin-after: 0px;
+  }
+
+  @media (max-width: 767px) {
+    .custom-breadcrumb li {
+      display: inline;
+
+    a {
+        font-size: 18px;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+    a:after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: #6ea5f7;
+        transition: 300ms;
+      }
+      
+    a:hover:after {
+        width: 100%;
+      }
+    }
+
+    .separator {
+      color: #6ea5f7;
+      font-size: 20px;
+      margin: 0px 2px;
+    }
+  }
+
+  @media (min-width: 768px){
+
+    .custom-breadcrumb > .separator {
+    display: none;
+  }
+
+  .custom-breadcrumb li {
+    text-decoration: none; 
+    position: relative; 
+    display: block;
+    float: left;
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none; 
+    }
+  }
+
+  .custom-breadcrumb > .first-crumb {
+    padding: 10px 0 10px 20px;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .custom-breadcrumb > .deep-crumb {
+    padding: 10px 0 10px 50px;
+  }
+
+  .custom-breadcrumb > li:hover {
+    a {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  .custom-breadcrumb li:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+  }
+
+  .red-crumb{
+    background-color: #EE4D3E;
+    color: white;
+  }
+
+  .red-crumb:after{
+    border-left:30px solid #EE4D3E;
+  }
+
+  .yellow-crumb{
+    background-color: #FBC200;
+    color: white;
+  }
+  .yellow-crumb:after{
+    border-left:30px solid #FBC200;
+  }
+
+  .green-crumb{
+    background-color: #3CB05C;
+    color: white;
+  }
+  .green-crumb:after{
+    border-left:30px solid #3CB05C;
+  }
+
+  .blue-crumb{
+    background-color: #4C90F6;
+    color: white;
+  }
+  .blue-crumb:after{
+    border-left:30px solid #4C90F6;
+  }
+
+}
+
+// Blog 
+
 .blog-base {
   padding: 20px 10px 10px 10px;
 }
@@ -74,12 +204,20 @@ $body-text: #555;
 }
 
 @media (min-width: 1280px){
+  .breadcrumbs {
+    padding: 30px 8% 0px 8%;
+  }
+
   .blog-base {
     padding: 30px 8% 0px 8%;
   }
 }
 
 @media (min-width: 1600px){
+  .breadcrumbs {
+    padding: 30px 10% 0px 10%;
+  }
+
   .blog-base {
     padding: 30px 10% 0px 10%;
   }

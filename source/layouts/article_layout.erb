@@ -20,6 +20,20 @@
   <body>
     <% wrap_layout :layout do %>
     <%= partial 'header' %>
+
+    <div class="row">
+      <div class="col-sm-12 breadcrumbs">
+        <ul class="custom-breadcrumb">
+            <li class="first-crumb red-crumb"><a href="/"><i class="fas fa-home"></i></a></li>
+            <li class="deep-crumb separator">/</li>
+            <li class="deep-crumb yellow-crumb"><a href="/blog">Blog</a></li>
+            <li class="deep-crumb separator">/</li>
+            <li class="deep-crumb green-crumb"><%= link_to current_article.data.tags[0], tag_path(current_article.data.tags[0]) %></li>
+            <li class="deep-crumb separator">/</li>
+            <li class="deep-crumb blue-crumb"><a href=""><%= current_article.data.title %></a></li>
+        </ul>
+      </div>
+    </div>
     
     <article class="col-sm-12 col-md-12 full-post-base">
       <header>
