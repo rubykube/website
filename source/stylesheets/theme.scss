@@ -27,6 +27,10 @@ h2 {
   width:500px;
 }
 
+.mb-0 {
+  text-transform: none;
+}
+
 .fixed {
   background: #2eaade;
   position: fixed;
@@ -37,12 +41,8 @@ h2 {
   margin-right: 0px;
 }
 
-.p-text {
-  color: #999;
-}
-
 .subheading {
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 500;
   font-size: 1.35rem;
 }
@@ -220,7 +220,51 @@ section.resume-section .resume-item .resume-date {
   border: 500px;
 }
 
-// Blog section
+.btn-git {
+  color:#383a3d;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item {
+	display: flex; 
+  padding: 0.5em;
+  width: 100%;
+}
+
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 90%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 40%;
+  }
+}
+.list-content {
+  display: flex;
+  flex-direction: row;
+
+  padding: 1em;
+	width: 100%;
+}
+
+.text {
+	display: flex;
+  flex-direction: column;
+}
+
+.list-content p {
+  flex: 1 0 auto;
+}
 
 .main-post-title {
   font-size: 28px;
@@ -284,31 +328,52 @@ section.resume-section .resume-item .resume-date {
 
 @media (min-width: 1280px){
   .col-components{
-    height: 200px;
+    height: 250px;
   }
 
   .col-components1{
-    height: 140px;
+    height: 200px;
   }
 }
 
-@media (min-width: 1100px) and (max-width: 1365px){
+@media (min-width: 1365px) and (max-width: 1499px) {
   .col-components{
-    height: 240px;
+    height: 300px;
   }
 
   .col-components1{
-    height: 190px;
+    height: 220px;
+  }
+
+}
+
+@media (min-width: 1191px) and (max-width: 1364px){
+  .col-components{
+    height: 350px;
+  }
+
+  .col-components1{
+    height: 250px;
   }
 }
   
 @media (min-width : 992px) and (max-width: 1099px) {
   .col-components{
-    height: 320px;
+    height: 420px;
   }
 
   .col-components1{
-    height: 230px;
+    height: 310px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1090px){
+  .col-components{
+    height: 550px;
+  }
+
+  .col-components1{
+    height: 360px;
   }
 }
 
@@ -375,15 +440,22 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-@media (min-width : 768px) and (max-width: 991px) {
+@media (min-width : 851px) and (max-width: 991px) {
   .col-components{
-    height: 245px;
+    height: 380px;
+  }
+  .col-components1 {
+    height: 260px;
   }
 }
 
-@media (min-width : 768px) and (max-width: 991px) {
+
+@media (min-width : 768px) and (max-width: 850px) {
   .col-components{
-    height: 245px;
+    height: 470px;
+  }
+  .col-components1 {
+    height: 270px;
   }
 }
 
@@ -411,13 +483,18 @@ section.resume-section .resume-item .resume-date {
   }
 
   .col-components{
-    height: 170px;
+    height: 230px;
   }
 
   .col-components1{
-    height: 140px;
+    height: 200px;
   }
 }
+
+img {
+  padding-right: 15px;
+}
+
 
 @media (min-width: 481px) and (max-width: 550px) {
 
@@ -441,6 +518,7 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+
 @media (min-width: 375px) and (max-width: 399px) {
   h1 {
     font-size: 3rem;
@@ -460,6 +538,7 @@ section.resume-section .resume-item .resume-date {
     margin-top:5px;
   }
 
+  
   .col-components{
     height: 260px;
   }
@@ -467,7 +546,10 @@ section.resume-section .resume-item .resume-date {
   .col-components1{
     height: 220px;
   }
+  
 }
+
+
 
 @media (min-width: 320px) and (max-width: 374px) {
   .col-components{
@@ -478,3 +560,4 @@ section.resume-section .resume-item .resume-date {
     height: 240px;
   }
 }
+

@@ -12,14 +12,14 @@ sections:
       RubyKube team has forked the old abandoned open-source Peatio project and gave it a second birth. From monolith application we have created an awesome stack of several key components that ensure the modern level of stability, scalability and security. Around Peatio, as the core wallet and order book management system, we have built KYC, Business Logic and other components, including Kite - installation & administration tool that allows you to deploy entire platform from scratch in 1 hour and makes management and maintenance a breeze. Plus we covered Back-End with beautiful and fully customizable Front-End using React.
 
   components:
-    title: Components
+    title: Projects
 
     peatio:
       title: Peatio
       subtitle: |-
-        Cryptocurrency Exchange Development & Cloud Deployment
+        Open source cryptocurrency exchange platform
       summary: |-
-        Peatio is a free Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components.
+        Peatio is a free Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components. 
 
     barong:
       title: Barong
