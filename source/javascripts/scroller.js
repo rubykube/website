@@ -116,4 +116,3 @@ function setNavColor () {
   $('#sideNav').removeClass('red yellow green blue')
   $('#sideNav').addClass(color)
 }
-
