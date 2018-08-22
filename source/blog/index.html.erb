@@ -20,6 +20,16 @@ per_page: 10
     </div>
   </div>
 
+<div class="row">
+	<div class="col-sm-12 breadcrumbs">
+    <ul class="custom-breadcrumb">
+        <li class="first-crumb red-crumb"><a href="/"><i class="fas fa-home"></i></a></li>
+        <li class="deep-crumb separator">/</li>
+        <li class="deep-crumb yellow-crumb"><a href="/blog">Blog</a></li>
+		</ul>
+	</div>
+</div>
+
 <div class="row blog-base">
 <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
 <article class="col-sm-12 col-md-6 post-base">
