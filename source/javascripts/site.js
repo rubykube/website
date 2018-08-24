@@ -13,3 +13,5 @@ import './slideimg.js';
 import './jump.js'
 
 import './navcolor.js'
+
+import './btanimaton.js'
