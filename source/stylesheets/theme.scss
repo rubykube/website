@@ -8,10 +8,6 @@ body {
   position: relative;
   display: block;
   background: white;
-  color: #212529;
-  font-family: 'Rubik', sans-serif;
-
-  //letter-spacing: 0.5px;
 }
 
 h1,
@@ -34,10 +30,6 @@ h2 {
 
 .mb-6{
   width:500px;
-}
-
-.mb-0 {
-  text-transform: none;
 }
 
 .fixed {
@@ -238,6 +230,18 @@ section.resume-section .resume-item .resume-date {
   border: 500px;
 }
 
+.btn-yellow {
+  background: #FBC200;
+  color: #fff;
+  border-color: #FBC200;
+}
+
+.btn-yellow:hover{
+  background: rgb(255, 230, 0);
+  color: #fff;
+  border-color: rgb(255, 230, 0);
+}
+
 .btn-git {
   color:#383a3d;
 }
@@ -267,6 +271,7 @@ ul, li {
     width: 40%;
   }
 }
+
 .list-content {
   display: flex;
   flex-direction: row;
@@ -340,7 +345,6 @@ ul, li {
 }
 */
 
-
 //Follow us
 .line {
   border-left: 1px solid rgb(7, 7, 7);
@@ -349,19 +353,16 @@ ul, li {
   margin-top: 20px;
   margin-left: 10px;
 }
-
-.follow-block {
+ .follow-block {
   text-align: center;
 }
-
-.follow-info {
+ .follow-info {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 20px;
 }
-
-#follow-btn {
+ #follow-btn {
   display: flex; 
   justify-content: center;
   margin-bottom: 10px;

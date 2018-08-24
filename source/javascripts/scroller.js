@@ -6,6 +6,7 @@ let sections = []
 let currentSection = 0
 
 $(document).ready(function() {
+  if(location.pathname.match(/blog/) != "blog"){
     $('section').each(function (i) {
       sections.push({
         id: $(this).attr('id'),
@@ -41,6 +42,7 @@ $(document).ready(function() {
 
         scrollTimeout = setTimeout(function () { isScrolling = false }, 100)
       })
+  }
 })
 
 function prevSection() {
