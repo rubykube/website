@@ -97,6 +97,9 @@ h2 {
   &.releases {
     background-color: rgb(190, 179, 139);
   }
+  &.releases {
+    background-color: #FBC200;
+  }
   &.tutorials {
     background-color: #3CB05C;
   }
@@ -606,10 +609,6 @@ ul, li {
     border-style: inset;
     border-width: 2px;
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> edit Projects & FollowUs
 }
 
 @media (min-width: 481px) and (max-width: 550px) {
