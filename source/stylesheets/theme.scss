@@ -12,7 +12,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 
   //letter-spacing: 0.5px;
-
 }
 
 h1,
@@ -113,12 +112,6 @@ h2 {
   &.components {
     background-color: #F3C44B;
   }
-  &.about {
-    background-color: #EE4D3E;
-  }
-  &.components {
-    background-color: #FBC200;
-  }
   &.features {
     background-color: #3CB05C;
   }
@@ -126,13 +119,13 @@ h2 {
     background-color: #4C90F6;
   }
   &.technology {
-    background-color: #EE4D3E;
+    background-color: #D94E47;
   }
   &.releases {
     background-color: rgb(190, 179, 139);
   }
   &.releases {
-    background-color: #FBC200;
+    background-color: #F3C44B;
   }
   &.tutorials {
     background-color: #3CB05C;
@@ -141,14 +134,12 @@ h2 {
     background-color: #4C90F6;
   }
   &.team {
-    background-color: #EE4D3E;
+    background-color: #D94E47;
   }
   &.followus {
-    background-color: #FBC200;
+    background-color: #F3C44B;
   }
 }
-
-
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -264,9 +255,9 @@ section.resume-section .resume-item .resume-date {
 }
 
 .btn-yellow:hover{
-  background: rgb(255, 230, 0);
+  background: rgb(228, 205, 4);
   color: #fff;
-  border-color: rgb(255, 230, 0);
+  border-color: rgb(228, 205, 4);
 }
 
 .btn-blue {
@@ -377,8 +368,16 @@ ul, li {
 }
 
 .imgFeature{
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); 
+  filter: #212529 saturate(0%) brightness(70%) contrast(1000%);
+}
+
+.img-faIcon{
+  margin-right: 10px;
+}
+
+.mlp{
+  margin-left: 5px;
 }
 
 // Gallery
