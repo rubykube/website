@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+
+    <title><%= current_article.title %></title>
+    <meta name="description" content="<%= data.i18n.en.description %>">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <meta name="theme-color" content="#4C90F6">
+
+    <%= javascript_include_tag "bundle.js" %>
+  </head>
+  <body>
+    <% wrap_layout :layout do %>
+    <%= partial 'header' %>
+
+    <div class="row">
+      <div class="col-sm-12 breadcrumbs">
+        <ul class="custom-breadcrumb">
+            <li class="first-crumb red-crumb"><a href="/"><i class="fas fa-home"></i></a></li>
+            <li class="deep-crumb separator">/</li>
+            <li class="deep-crumb yellow-crumb"><a href="/blog">Blog</a></li>
+            <li class="deep-crumb separator">/</li>
+            <li class="deep-crumb green-crumb"><%= link_to current_article.data.tags[0], tag_path(current_article.data.tags[0]) %></li>
+            <li class="deep-crumb separator animated-crumb">/</li>
+            <li class="deep-crumb blue-crumb animated-crumb"><a href=""><%= current_article.data.title %></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <article class="col-sm-12 col-md-12 full-post-base">
+      <header>
+        <img class="full-post-image" src="<%= current_article.data.thumbnail_image %>">
+        <div class="full-post-media">
+          <div class="full-post-date">
+            <%= current_article.date.strftime('%b %e, %Y') %>
+          </div>
+          <h2 class="full-post-title dynamic-href"><%= link_to current_article.title, current_article %></h2>
+          <span class="full-post-tags">
+            <% current_article.tags.each_with_index do |tag, index| %>
+              <% if index < current_article.tags.size - 1 %>
+              <span class="post-tags__each dynamic-href"><%= link_to tag, tag_path(tag) %> </span><span class="post-tags__each-pipe">|</span>
+              <% else %>
+              <span class="post-tags__each dynamic-href"><%= link_to tag, tag_path(tag) %> </span>
+              <% end %>
+            <% end %>
+          </span>
+        </div>
+      </header>
+
+      <div class="full-post-body"><%= current_article.body %></div>
+
+      <footer>
+      </footer>
+    </article>
+  </body>
+
+  <% end %>
+</html>

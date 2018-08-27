@@ -1,95 +1,38 @@
 import $ from 'jquery'
 
-let scrollTimeout
-let isScrolling = false
-let sections = []
-let currentSection = 0
-
-$(document).ready(function() {
+$(document).ready(function () {
+  let section = $('.section-scroll');
+  let pathScroll = 'up'; 
+  let currentSection = 0;
+  
   if($(window).width() > 992){
-    $('.js-scrollTo').on('click', function(e) {
-      e.preventDefault()
-
-      let page = $(this).attr('href')
-      $('html, body').animate({
-        scrollTop: page ? $(page).offset().top : 0
-      }, 500)
-
-      if (page) {
-        window.location.hash = page
-      }
-    })
-
-    $('section').each(function (i) {
-      sections.push({
-        id: $(this).attr('id'),
-        offset: $(this).offset().top
-      })
-
-      if ($(this).attr('id') === window.location.hash) {
-        currentSection = i
-        setNavColor()
-      }
-    })
-
-    $(window).on('wheel', function (event) {
-      event.preventDefault()
-
-      if (isScrolling) {
-        clearTimeout(scrollTimeout)
-      } else {
-        isScrolling = true
-
-        if (event.originalEvent.deltaY < 0) {
-          prevSection()
-        } else if (event.originalEvent.deltaY > 0) {
-          nextSection()
+    $(document.body).on('DOMMouseScroll mousewheel', function (e) {
+        if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
+          pathScroll = 'down';
+        } else {
+          pathScroll = 'up';
         }
 
-        $('html, body').animate({ scrollTop: sections[currentSection].offset }, 500)
-        window.location.hash = `#${sections[currentSection].id}`
+        currentSection = -1;
+        section.each(function(i){
+            if (currentSection<0 && ($(this).offset().top >= $(window).scrollTop())) {
+              currentSection = i;
+            }
+        });
+        if (pathScroll == 'up' && currentSection > 0) {
+          currentSection--;
+        }
+        if (pathScroll == 'down' && currentSection < section.length) {
+          currentSection++;
+        }
 
-        setNavColor()
-      }
-
-      scrollTimeout = setTimeout(function () { isScrolling = false }, 100)
-    })
-  } else if ($(window).width() <= 992) {
-    $(window).scroll(function(){
-      let currentclass
-      $('section').each(function(){
-         if($(this).offset().top<$(window).scrollTop()+20){
-            currentclass =$(this).attr('id')
-         }
-      })
-
-      if($('#sideNav').offset().top < 80) {
-        $('#sideNav').addClass('red')
-      } else {
-        $('#sideNav').removeClass('red')
-      }
-
-      $('#sideNav').removeClass('about components features team followus')
-      $('#sideNav').addClass(currentclass)
-    })
+        $('html,body').stop().animate({
+            scrollTop: section.eq(currentSection).offset().top
+        }, 600);
+        return false;
+    });
+    $(window).resize(function () {
+        $('html,body').scrollTop(section.eq(currentSection).offset().top);
+    });
   }
-})
-
-function prevSection() {
-  if (currentSection > 0) {
-    currentSection -= 1
-  }
-}
-
-function nextSection() {
-  if (currentSection < sections.length - 1) {
-    currentSection += 1
-  }
-}
-
-function setNavColor () {
-  let color = $(`#${sections[currentSection].id}`).attr('data-nav-color')
-  $('#sideNav').removeClass('red yellow green blue')
-  $('#sideNav').addClass(color)
-}
-
+});

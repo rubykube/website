@@ -1,0 +1,251 @@
+$date-text: #555;
+$tags-text: #6ea5f7;
+$button-text: #6ea5f7;
+$button-text-hover: #fff;
+$bg-color: #6ea5f7;
+$tags-pipe: #adb8b8;
+$body-text: #555;
+
+// Breadcrumbs
+
+.breadcrumbs {
+  padding: 30px 10px 10px 10px;
+}
+
+.animated-crumb {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.custom-breadcrumb{
+  list-style:none;
+  overflow: hidden;
+  -webkit-padding-start: 10px;
+  -webkit-margin-after: 0px;
+}
+
+.dynamic-href a{
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .dynamic-href a:after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #6ea5f7;
+    transition: 300ms;
+  }
+  
+.dynamic-href a:hover:after {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .custom-breadcrumb li {
+      display: inline;
+
+    a {
+        font-size: 18px;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+    a:after {
+        content: '';
+        width: 0px;
+        height: 2px;
+        display: block;
+        background: #6ea5f7;
+        transition: 300ms;
+      }
+      
+    a:hover:after {
+        width: 100%;
+      }
+    }
+
+    .separator {
+      color: #6ea5f7;
+      font-size: 20px;
+      margin: 0px 2px;
+    }
+  }
+
+  @media (min-width: 768px){
+
+    .custom-breadcrumb > .separator {
+    display: none;
+  }
+
+  .custom-breadcrumb li {
+    text-decoration: none; 
+    position: relative; 
+    display: block;
+    float: left;
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none; 
+    }
+  }
+
+  .custom-breadcrumb > .first-crumb {
+    padding: 10px 0 10px 20px;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .custom-breadcrumb > .deep-crumb {
+    padding: 10px 0 10px 50px;
+  }
+
+  .custom-breadcrumb > li:hover {
+    a {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  .custom-breadcrumb li:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+  }
+
+  .red-crumb{
+    background-color: #EE4D3E;
+    color: white;
+  }
+
+  .red-crumb:after{
+    border-left:30px solid #EE4D3E;
+  }
+
+  .yellow-crumb{
+    background-color: #FBC200;
+    color: white;
+  }
+  .yellow-crumb:after{
+    border-left:30px solid #FBC200;
+  }
+
+  .green-crumb{
+    background-color: #3CB05C;
+    color: white;
+  }
+  .green-crumb:after{
+    border-left:30px solid #3CB05C;
+  }
+
+  .blue-crumb{
+    background-color: #4C90F6;
+    color: white;
+  }
+  .blue-crumb:after{
+    border-left:30px solid #4C90F6;
+  }
+
+}
+
+// Blog 
+
+.blog-base {
+  padding: 20px 10px 10px 10px;
+}
+
+.post-base {
+  padding: 0px 10px 40px 10px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.post-tags {
+  color: $tags-text;
+  text-align: left;
+}
+
+.post-tags__each-pipe {
+  color: $tags-pipe
+}
+
+.post-date {
+  color: $date-text;
+  font-size: 14px;
+  margin: 10px 10px 5px 0px;
+  text-align: right;
+}
+
+.post-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.post-body {
+  color: $body-text !important;
+  font-size: 14px;
+  margin: 16px 0px;
+}
+
+.post-button {
+  color: $button-text;
+  border-color: $button-text;
+  border-style: solid;
+  border-radius: 2px;
+  border-width: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 42px;
+  line-height: 38px;
+  padding: 0 14px;
+  text-align: center;
+  text-decoration: none !important;
+  transition-duration: 0.8s;
+  transition-property: background-color, color;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.post-button:hover {
+  //border-color: $button-text-hover;
+  background-color: $bg-color;
+  color: $button-text-hover;
+  text-decoration: none !important;
+}
+
+@media (min-width: 1280px){
+  .breadcrumbs {
+    padding: 30px 8% 0px 8%;
+  }
+
+  .blog-base {
+    padding: 30px 8% 0px 8%;
+  }
+}
+
+@media (min-width: 1600px){
+  .breadcrumbs {
+    padding: 30px 10% 0px 10%;
+  }
+
+  .blog-base {
+    padding: 30px 10% 0px 10%;
+  }
+}

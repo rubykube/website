@@ -5,12 +5,12 @@ per_page: 10
 
 <div id="page-top">
   <div class="container-fluid p-0">
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about" data-nav-color="red">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column section-scroll" id="about" data-nav-color="red">
       <div class="my-auto">
         <h1 class="mb-0">Ruby<span class="text-primary">Kube</span></h1>
 
-        <div class="subheading mb-3"><%= data.i18n.en.sections.about.subtitle %></div>
-        <p><%= data.i18n.en.sections.about.body %></p>
+        <div class="subheading mb-3"><%= data.i18n.en.sections.about.subtitle %></div><br>
+        <p class="p-text"><%= data.i18n.en.sections.about.body %></p>
 
         <ul class="list-inline list-social-icons mt-4 mb-3 class="tooltip">
           <li class="list-inline-item tooltip">
@@ -39,114 +39,152 @@ per_page: 10
         </li>
         </ul>
         <a href="#" class="btn btn-primary text-uppercase mr-3">Documentation</a>
-        <a href="https://discuss.rubykube.io/" class="btn btn-primary text-uppercase" target="_blank">Discussion</a>
+        <a href="https://discuss.rubykube.io/" class="btn btn-primary text-uppercase" target="_blank">Discussion</a>      </div>
+    </section>  
 
-      </div>
-    </section>
-
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="components" data-nav-color="yellow">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="components" data-nav-color="yellow">
       <div class="my-auto">
-        <h2 class="mb-5">
-          <%= data.i18n.en.sections.components.title %>
-        </h2>
-
-        <div class="row">
-          <div class="col-md-6">
-
-              <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                  <h3 class="mb-0">
-                    <%= data.i18n.en.sections.components.peatio.title %>
-                  </h3>
-
-                  <div class="col-components">
-                    <div class="subheading mb-3">
-                      <%= data.i18n.en.sections.components.peatio.subtitle %>
+          <h2 class="mb-5" id="projects">
+            <%= data.i18n.en.sections.components.title %>
+          </h2>
+          <ul class="list">
+            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="list-content resume-content mr-auto">
+                  <div class="d-flex title-logo">
+                    <div class="imgProject">
+                      <a href="https://github.com/rubykube/peatio" target="_blank">
+                        <img src="/images/test-img/blackpeatio.png" alt="peatio" width="100px">
+                      </a>
                     </div>
-
+                    <div>
+                      <h3 class="mb-0" id="sub">
+                        <%= data.i18n.en.sections.components.peatio.title %>
+                      </h3>
+                      <div class="subheading mb-3">
+                        <%= data.i18n.en.sections.components.peatio.subtitle %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
                     <p>
                       <%= data.i18n.en.sections.components.peatio.summary %>
-                    </p>
+                    </p>                    
                   </div>
-                    <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary"><i class="icon-github"></i> Peatio Github</a>
-                </div>
+                  <div class="d-flex">
+                    <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary btn-yellow">
+                      <i class="icon icon-github-circled"></i>Peatio Github
+                    </a>
+                  </div>                              
               </div>
-
-              <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                  <h3 class="mb-0">
-                    <%= data.i18n.en.sections.components.barong.title %>
-                  </h3>
-
-                  <div class="col-components1">
-                    <div class="subheading mb-3">
-                      <%= data.i18n.en.sections.components.barong.subtitle %>
+            </li>
+            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="list-content resume-content mr-auto">
+                  <div class="d-flex title-logo">
+                    <div class="imgProject">
+                      <a href="https://github.com/rubykube/barong" target="_blank">
+                        <img src="/images/test-img/blackbarong.png" alt="barong" width="100px">
+                      </a>
                     </div>
-
+                    <div>
+                      <h3 class="mb-0" id="sub">
+                        <%= data.i18n.en.sections.components.barong.title %>
+                      </h3>
+                      <div class="subheading mb-3">
+                        <%= data.i18n.en.sections.components.barong.subtitle %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
                     <p>
                       <%= data.i18n.en.sections.components.barong.summary %>
                     </p>
                   </div>
-                    <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Barong Github</a>
-                </div>
+                  <div class="d-flex">
+                    <a href="https://github.com/rubykube/barong" target="_blank" class="btn btn-primary btn-yellow">
+                    <i class="icon icon-github-circled"></i>Barong Github
+                    </a>
+                  </div>              
               </div>
-
-          </div>
-          <div class="col-md-6">
-              <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                  <h3 class="mb-0">
-                    <%= data.i18n.en.sections.components.workbench.title %>
-                  </h3>
-
-                  <div class="col-components col-text">
+            </li>
+            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="list-content resume-content mr-auto">
+                <div class="d-flex title-logo">
+                  <div class="imgProject">
+                    <a href="https://github.com/rubykube/workbench" target="_blank">
+                      <img src="/images/test-img/blackworkbench.png" alt="workbench" width="100px">
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="mb-0" id="sub">
+                      <%= data.i18n.en.sections.components.workbench.title %>
+                    </h3>
                     <div class="subheading mb-3">
                       <%= data.i18n.en.sections.components.workbench.subtitle %>
                     </div>
-                    <p>
-                      <%= data.i18n.en.sections.components.workbench.summary %>
-                    </p>
                   </div>
-                    <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Workbench Github</a>
                 </div>
+                <div class="text">
+                  <p>
+                    <%= data.i18n.en.sections.components.workbench.summary %>
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <a href="https://github.com/rubykube/workbench" target="_blank" class="btn btn-primary btn-yellow">
+                  <i class="icon icon-github-circled"></i>Workbench Github
+                  </a>
+                </div> 
               </div>
-              <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
-                  <h3 class="mb-0">
-                    <%= data.i18n.en.sections.components.kite.title %>
-                  </h3>
-                  <div class="col-components1">
+            </li>
+            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="list-content resume-content mr-auto">
+                <div class="d-flex title-logo">
+                  <div class="imgProject">
+                    <a href="https://github.com/rubykube/kite" target="_blank">
+                      <img src="images/test-img/blackkite.png" alt="kite" width="100px">
+                    </a>
+                  </div>
+                  <div>
+                    <h3 class="mb-0" id="sub">
+                      <%= data.i18n.en.sections.components.kite.title %>
+                    </h3>
                     <div class="subheading mb-3">
                       <%= data.i18n.en.sections.components.kite.subtitle %>
                     </div>
-                    <p>
-                      <%= data.i18n.en.sections.components.kite.summary %>
-                    </p>
                   </div>
-                    <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary"><i class="icon-github"></i>Kite Github</a>
                 </div>
+                <div class="text">
+                  <p>
+                    <%= data.i18n.en.sections.components.kite.summary %>
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <a href="https://github.com/rubykube/kite" target="_blank" class="btn btn-primary btn-yellow">
+                  <i class="icon icon-github-circled"></i>Kite Github
+                  </a>
+                </div> 
               </div>
-
-          </div>
-        </div>
+            </li>
+        </ul>          
       </div>
-    </section>
+    </section>      
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="features" data-nav-color="green">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="features" data-nav-color="green">
       <div class="my-auto">
-        <h2 class="mb-5"><%= data.i18n.en.sections.features.title %></h2>
+        <h2 class="mb-5" id="feature"><%= data.i18n.en.sections.features.title %></h2>
 
         <div class="row">
           <div class="col-md-6">
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <div class="d-flex">
-                  <div><i class="display-4 icon-lock mr-2"></i></div>
-                  <div>
-                    <h3 class="mb-0 mt-2">
+                  <div class="img-faIcon">
+                    <i class="fas fa-lock fa-3x fa-fw"></i>
+                  </div>
+                <div>
+                    <h3 class="mb-0 mt-2 ml-1">
                       <%= data.i18n.en.sections.features.security.title %>
                     </h3>
-                    <div>
+                    <div class="mlp">
                       <%= data.i18n.en.sections.features.security.summary %>
                     </div>
                   </div>
@@ -157,33 +195,15 @@ per_page: 10
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <div class="d-flex">
-                  <div>
-                    <i class="display-4 icon-cog mr-2"></i>
+                  <div class="img-faIcon">
+                    <i class="fas fa-users-cog fa-3x fa-fw"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0 mt-2">
+                    <h3 class="mb-0 mt-2 ml-1">
                       <%= data.i18n.en.sections.features.customization.title %>
                     </h3>
-                    <div>
+                    <div class="mlp">
                       <%= data.i18n.en.sections.features.customization.summary %>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-              <div class="resume-content mr-auto">
-                <div class="d-flex">
-                  <div>
-                    <i class="display-4 icon-desktop mr-2"></i>
-                  </div>
-                  <div>
-                    <h3 class="mb-0 mt-2">
-                      <%= data.i18n.en.sections.features.frontend.title %>
-                    </h3>
-                    <div>
-                      <%= data.i18n.en.sections.features.frontend.summary %>
                     </div>
                   </div>
                 </div>
@@ -195,15 +215,15 @@ per_page: 10
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <div class="d-flex">
-                  <div>
-                    <i class="display-4 icon-fire mr-2"></i>
+                  <div class="img-faIcon">
+                    <i class="fab fa-html5 fa-3x fa-fw"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0">
-                      <%= data.i18n.en.sections.features.coins.title %>
+                    <h3 class="mb-0 mt-2 ml-1">
+                      <%= data.i18n.en.sections.features.frontend.title %>
                     </h3>
-                    <div>
-                      <%= data.i18n.en.sections.features.coins.summary %>
+                    <div class="mlp">
+                      <%= data.i18n.en.sections.features.frontend.summary %>
                     </div>
                   </div>
                 </div>
@@ -213,32 +233,14 @@ per_page: 10
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <div class="d-flex">
-                  <div>
-                    <i class="display-4 icon-key mr-2"></i>
+                  <div class="img-faIcon">
+                    <i class="fas fa-comments fa-3x fa-fw"></i>
                   </div>
                   <div>
-                    <h3 class="mb-0 mt-2">
-                      <%= data.i18n.en.sections.features.tokens.title %>
-                    </h3>
-                    <div>
-                      <%= data.i18n.en.sections.features.tokens.summary %>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="resume-item d-flex flex-column flex-md-row mb-5">
-              <div class="resume-content mr-auto">
-                <div class="d-flex">
-                  <div>
-                    <i class="display-4 icon-comment mr-2"></i>
-                  </div>
-                  <div>
-                    <h3 class="mb-0 mt-2">
+                    <h3 class="mb-0 mt-2 mlh">
                       <%= data.i18n.en.sections.features.support.title %>
                     </h3>
-                    <div>
+                    <div class="mlp">
                       <%= data.i18n.en.sections.features.support.summary %>
                     </div>
                   </div>
@@ -248,64 +250,217 @@ per_page: 10
           </div>
         </div>
 
+        <div class="container-fluid  text-center ">
+            <h3 class="mb-4 mt-3">
+              <%= data.i18n.en.sections.features.subtitle %>
+            </h3>
+
+            <div id="carouselSlide" class="carousel slide" data-ride="carousel" data-interval="9000">
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                
+                    <div class="carousel-item col-md-3  active imgFeature">
+                      <div class="panel panel-default">
+                          <div class="panel-thumbnail">
+                              <img class="img-fluid mx-auto d-block" src="images/test-img/btc.png">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3 imgFeature">
+                      <div class="panel panel-default">
+                          <div class="panel-thumbnail">
+                            <img class="img-fluid mx-auto d-block" src="images/test-img/ltc.png">
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3 imgFeature">
+                      <div class="panel panel-default">
+                          <div class="panel-thumbnail">
+                            <img class="img-fluid mx-auto d-block" src="images/test-img/eth.png">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                          <div class="panel-thumbnail">
+                            <img class="img-fluid mx-auto d-block" src="images/test-img/xpr.png">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3 imgFeature">
+                      <div class="panel panel-default">
+                          <div class="panel-thumbnail">
+                              <img class="img-fluid mx-auto d-block" src="images/test-img/dash.png">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3 imgFeature">
+                      <div class="panel panel-default">
+                          <div class="panel-thumbnail">
+                              <img class="img-fluid mx-auto d-block" src="images/test-img/bnb.png">
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
       </div>
     </section>
+<!--
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="blog" data-nav-color="red">
+      <div class="my-auto">
+        <h2 class="mb-5" id="blog">
+          <%= data.i18n.en.sections.blog.title %>
+        </h2>
+        <div class="row">
+          <article class="col-sm-12 col-md-6">
+            <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
+              <% if i == 0 %>
+                  <header>
+                    <img class="post-image" src="<%= article.data.thumbnail_image %>">
+                    <h2 class="main-post-title">
+                      <%= link_to article.title, article %>
+                    </h2>
+                    <span class="main-post-category">
+                      <%= article.data.category %>
+                    </span>
+                    <span class="main-post-date">
+                      <%= article.date.strftime('%b %e, %Y') %>
+                    </span>
+                  </header>
+                <div class="post-body"><%= article.summary(300, '...') %></div>
+              <% end %>
+            <% end %>
+          </article>
+          <article class="col-sm-12 col-md-6">
+            <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
+              <% if (i > 0) && (i < 3) %>
+                <div class="main-blog-post">
+                  <header>
+                    <h2 class="post-title">
+                      <%= link_to article.title, article %></h2>
+                    <span class="main-post-category">
+                      <%= article.data.category %> |
+                    </span>
+                    <span class="post-date">
+                      <%= article.date.strftime('%b %e, %Y') %>
+                    </span>
+                  </header>
+                  <div class="post-body"><%= article.summary(125, '...') %></div>
+                </div>
+              <% end %>
+              <% if (i == 3) %>
+                  <div class="main-blog-post__last">
+                    <header>
+                      <h2 class="post-title"><%= link_to article.title, article %></h2>
+                      <span class="main-post-category">
+                        <%= article.data.category %> |
+                      </span>
+                      <span class="post-date">
+                        <%= article.date.strftime('%b %e, %Y') %>
+                      </span>
+                    </header>
+                    <div class="post-body"><%= article.summary(125, '...') %></div>
+                  </div>
+              <% end %>
+            <% end %>
+          </article>
+        </div>
+        
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="team" data-nav-color="blue">
+        <div class="row">
+          <div class="col-sm-12 btn-blog-block">
+            <a href="/blog" target="_blank" class="btn btn-primary btn-main-blog btn-blue">MORE POSTS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+-->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="team" data-nav-color="yellow">
       <div class="my-auto">
         <h2 class="mb-5">
           <%= data.i18n.en.sections.team.title %>
         </h2>
 
-        <div class="subheading mb-3">
-          <%= data.i18n.en.sections.team.subheading %>
+        <div class="row">
+
+          <div class="col-6">
+            <div class="subheading mb-3">
+              <%= data.i18n.en.sections.team.subheading %>
+            </div>
+
+            <ul class="fa-ul mb-0">
+              <% data.i18n.en.sections.team.list.each do |item| %>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  <%= item %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          
+          <div class="col-6">
+            <div class="subheading mb-3">
+              <%= data.i18n.en.sections.team.workflow.title %>
+            </div>
+
+            <ul class="fa-ul mb-0">
+              <% data.i18n.en.sections.team.workflow.list.each do |item| %>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  <%= item %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+
         </div>
 
-        <ul class="fa-ul mb-0">
-          <% data.i18n.en.sections.team.list.each do |item| %>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <%= item %>
-            </li>
-          <% end %>
-        </ul>
-
-        <div class="subheading mb-3">
-          <%= data.i18n.en.sections.team.workflow.title %>
-        </div>
-
-        <ul class="fa-ul mb-0">
-          <% data.i18n.en.sections.team.workflow.list.each do |item| %>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <%= item %>
-            </li>
-          <% end %>
-        </ul>
       </div>
-
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="followus" data-nav-color="red">
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="followus" data-nav-color="red">
       <div class="my-auto">
+          <h2 class="mb-5" id="follow">
+            <%= data.i18n.en.sections.contact.title %>
+          </h2>
+
         <div class="row">
-          <div class="col-md-4">
-            <h2 class="mb-5 mb-6">
-              <%= data.i18n.en.sections.contact.title %>
-            </h2>
-            <p>Subscribe to our newsletter to get informed on any update</p>
-            <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="E-mail">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+          <div class="col-sm-12 col-md-4">
+            <div class="follow-info">
+              <p>We want to make it super-easy for Peatio users and contributors to talk to us and connect with each other, to share ideas, solve problems and help make Peatio awesome. Here are the main channels we're running currently, we'd love to hear from you on one of them</p>
+            </div>
+          </div>          
+          <div class="col-sm-12 col-md-1">
+            <div class="line"></div>
+          </div>
+          <div class="col-sm-12 col-md-5">         
+            <div class="follow-block">
+              <p> You can find guides, recipes, questions, and answers from Snowplow users including the Rubykube team.</p>
+              <div id="follow-btn">
+                <a href="http://discuss.rubykube.io" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:12px;width:140px;background:#EE4D3E;box-shadow:1px 1px 5px #F48F86;color:#212529;border-radius:34px;" title="discuss">discuss.rubykube.io</a>
+              </div>
+            </div>
+
+            <div class="follow-block">
+              <p>Chat with us and other community members on Telegram.</p>
+              <div id="follow-btn">
+                <a href="https://telegram.im/@Peatio" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:12px;width:118px;background:#ffd966;box-shadow:1px 1px 5px #ffd966;color:#212529;border-radius:34px;" title="peatio"><i></i> t.me/peatio</a>
               </div>
             </div>
           </div>
         </div>
+    
       </div>
     </section>
-  </div>
-</div>
 
 <img src="images/scrollup.png";
 <a href="#" class="scrollup"></a>
