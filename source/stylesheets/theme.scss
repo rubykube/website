@@ -21,6 +21,7 @@ h6 {
 
 h1 {
   font-size: 6rem;
+  line-height: 5.5rem;
   text-transform: uppercase;
 }
 
@@ -243,6 +244,18 @@ section.resume-section .resume-item .resume-date {
   background: rgb(255, 230, 0);
   color: #fff;
   border-color: rgb(255, 230, 0);
+}
+
+.btn-blue {
+  background: #4C90F6;
+  color: #fff;
+  border-color: #4C90F6;
+}
+
+.btn-blue:hover{
+  background: rgb(27, 111, 236);
+  color: #fff;
+  border-color: rgb(27, 111, 236);
 }
 
 .btn-git {
