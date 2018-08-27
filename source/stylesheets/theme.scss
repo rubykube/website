@@ -33,6 +33,14 @@ h2 {
   width:500px;
 }
 
+.mb-0 {
+  margin-left: -6px;
+}
+
+#feature {
+  margin-left: 15px !important;
+}
+
 .fixed {
   background: #2eaade;
   position: fixed;
@@ -246,18 +254,6 @@ section.resume-section .resume-item .resume-date {
   border-color: rgb(255, 230, 0);
 }
 
-.btn-blue {
-  background: #4C90F6;
-  color: #fff;
-  border-color: #4C90F6;
-}
-
-.btn-blue:hover{
-  background: rgb(27, 111, 236);
-  color: #fff;
-  border-color: rgb(27, 111, 236);
-}
-
 .btn-git {
   color:#383a3d;
 }
@@ -343,6 +339,7 @@ ul, li {
 .imgFeature{
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  margin-right: 15px;
 }
 
 // Gallery

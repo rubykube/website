@@ -9,7 +9,7 @@ per_page: 10
       <div class="my-auto">
         <h1 class="mb-0">Ruby<span class="text-primary">Kube</span></h1>
 
-        <div class="subheading mb-3"><%= data.i18n.en.sections.about.subtitle %></div>
+        <div class="subheading mb-3"><%= data.i18n.en.sections.about.subtitle %></div><br>
         <p class="p-text"><%= data.i18n.en.sections.about.body %></p>
 
         <ul class="list-inline list-social-icons mt-4 mb-3 class="tooltip">
@@ -49,12 +49,43 @@ per_page: 10
       <div class="my-auto">
           <h2 class="mb-5">
             <%= data.i18n.en.sections.components.title %>
-          </h2>
+          </h2> 
           
-        <div class="row">
+        <ul class="list">
+          <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="list-content resume-content mr-auto">
+              <div>
+                    <a href="https://github.com/rubykube/peatio" target="_blank">
+                      <img src="/images/test-img/blackpeatio.png" alt="peatio" width="100px">
+                    </a>
+              </div>
+              <div>
+                    <h3 class="mb-0">
+                      <%= data.i18n.en.sections.components.peatio.title %>
+                    </h3>
+                    <div class="subheading mb-3">
+                      <%= data.i18n.en.sections.components.peatio.subtitle %>
+                    </div>
+              </div>
 
-          <div class="col-md-6">
-          
+              
+                <p>
+                  <%= data.i18n.en.sections.components.peatio.summary %>
+                </p>
+                <div class="btns">     
+             
+                  <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-outline-warning btn-git">Peatio Github</a>
+                 
+                  <a class="github-button" href="https://github.com/rubykube/peatio" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star rubykube/peatio on GitHub">Star</a>
+                </div>
+              </div>                 
+
+
+            </div>
+          </li>
+        </ul>  
+        <div class="row">
+          <div class="col-md-6">          
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <div class="d-flex align-items-center">
@@ -284,6 +315,7 @@ per_page: 10
         </div>
 
         <div class="container-fluid  text-center ">
+            <br>
             <h3 class="mb-2 mt-2">
               <%= data.i18n.en.sections.features.subtitle %>
             </h3>
