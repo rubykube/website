@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
 body {
@@ -9,6 +9,10 @@ body {
   display: block;
   background: white;
   color: #212529;
+  font-family: 'Montserrat', sans-serif;
+
+  //letter-spacing: 0.5px;
+
 }
 
 h1,
@@ -22,7 +26,6 @@ h6 {
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem;
   text-transform: uppercase;
 }
 
@@ -282,53 +285,55 @@ section.resume-section .resume-item .resume-date {
   color:#383a3d;
 }
 
-.container1 {
-  float:left;
-  width:100%;
-}
-
-#flex-column {
-  float:left;
-  width:50%;
-}
-
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .list-item {
-	display: flex; 
-  padding: 0.5em;
+  display: flex;
+  padding: 1em;
   width: 100%;
+}
+
+#sub {
+  margin-left: 0px !important;
 }
 
 @media all and (min-width: 40em) {
   .list-item {
-    width: 90%;
+    width: 100%;
   }
 }
 @media all and (min-width: 60em) {
   .list-item {
-    width: 40%;
+    width: 50%;
   }
 }
 
 .list-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+}
 
-  padding: 1em;
-	width: 100%;
+.imgProject {
+  margin-right: 20px;
 }
 
 .text {
 	display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
 }
 
-.list-content p {
+.title-logo {
   flex: 1 0 auto;
 }
 
