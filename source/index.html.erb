@@ -341,10 +341,10 @@ per_page: 10
                   <header>
                     <img class="post-image" src="<%= article.data.thumbnail_image %>">
                     <h2 class="main-post-title">
-                      <%= link_to article.title, article %>
+                      <span id="title-post"><%= link_to article.title, article %></span>
                     </h2>
                     <span class="main-post-category">
-                      <%= article.data.category %>
+                      <%= article.data.category %> |
                     </span>
                     <span class="main-post-date">
                       <%= article.date.strftime('%b %e, %Y') %>
@@ -360,7 +360,8 @@ per_page: 10
                 <div class="main-blog-post">
                   <header>
                     <h2 class="post-title">
-                      <%= link_to article.title, article %></h2>
+                      <span id="title-post"><%= link_to article.title, article %></span>
+                    </h2>
                     <span class="main-post-category">
                       <%= article.data.category %> |
                     </span>
@@ -368,7 +369,7 @@ per_page: 10
                       <%= article.date.strftime('%b %e, %Y') %>
                     </span>
                   </header>
-                  <div class="post-body"><%= article.summary(125, '...') %></div>
+                  <div class="post-body"><%= article.summary(140, '...') %></div>
                 </div>
               <% end %>
               <% if (i == 3) %>
@@ -382,7 +383,7 @@ per_page: 10
                         <%= article.date.strftime('%b %e, %Y') %>
                       </span>
                     </header>
-                    <div class="post-body"><%= article.summary(125, '...') %></div>
+                    <div class="post-body"><%= article.summary(140, '...') %></div>
                   </div>
               <% end %>
             <% end %>
