@@ -47,35 +47,43 @@ sections:
     subtitle: |-
       Coins supported
 
-    security:
-      title: High Security
-      summary: |-
-        2FA + multi-sig + DHWC wallets + balance control features
-
-    customization:
-      title: Custom Features
-      summary: |-
-        AppLogic + opportunity to add stories to Peatio and Barong sprints
-
-    frontend:
-      title: Powerful Front-End
-      summary: |-
-        React library, including great trading UI with TradingView
-
-    coins:
-      title: MT-26 Coins Supported
-      summary: |-
-        Supporting BTC, LTC, BCH, DASH, ETH, XRP and other
-
-    tokens:
-      title: ERC20 Tokens Support
-      summary: |-
-        Supporting TRX, BNB, OMG, VEN, ZRX, MKR and other
-
-    support:
-      title: Team Support
-      summary: |-
-        Deployment training is included in our subscription plan, as well as opportunity to hire our DevOps team for custom development for your enterprise project
+    list:
+      left: 
+        - |-
+          Designed as high performance crypto-currency exchange
+        - |-
+          Built-in high performance matching-engine
+        - |-
+          Built-in multiple wallet support (e.g. deposit, hot, warm and cold)
+        - |-
+          Build-in Management API - server-to-server API with high privileges
+        - |-
+          Build-in RabbitMQ Event API
+        - |-
+          Websocket API and high frequency trading support
+        - |-
+          Supports multiple digital currencies (BTC, LTC, BCH, DASH, ETH, XRP,  TRX, BNB, OMG, VEN, ZRX, MKR)
+        - |-
+          Supports ERC20 Tokens
+        - |-
+          API endpoint for FIAT deposits or payment gateways.
+      right:
+        - |-
+          Powerful admin dashboard and backend management tools
+        - |-
+          Highly configurable, extendable and scalable
+        - |-
+          Industry standard security out-of-box
+        - |-
+          Maintained by peatio.tech
+        - |-
+          KYC Verification provided by Barong
+        - |-
+          2FA + multi-sig + DHWC wallets + balance control security features
+        - |-
+          AppLogic + opportunity to add stories to Peatio and Barong sprints
+        - |-
+          Front-end React library, including great trading UI with TradingView
 
   gallery:
     title: Gallery
