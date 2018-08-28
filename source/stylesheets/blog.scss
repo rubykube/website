@@ -188,13 +188,18 @@ $body-text: #212529;
 .post-date {
   color: $date-text;
   font-size: 14px;
-  margin: 10px 10px 5px 0px;
   text-align: right;
+  margin-top: 8px;
 }
 
 .post-title {
   font-size: 28px;
   font-weight: 400;
+  margin-left: -15px;
+}
+
+.post-title a {
+  color: #212529;
 }
 
 .post-body {
@@ -230,22 +235,51 @@ $body-text: #212529;
   text-decoration: none !important;
 }
 
-@media (min-width: 1280px){
+@media (max-width: 1279px) {
   .breadcrumbs {
-    padding: 30px 8% 0px 8%;
+    padding: 30px 5% 0px 5%;
   }
 
   .blog-base {
-    padding: 30px 8% 0px 8%;
+    padding: 30px 5% 0px 5%;
+  }
+}
+
+@media (min-width: 1280px){
+  .breadcrumbs {
+    padding: 30px 5% 0px 5%;
+  }
+
+  .blog-base {
+    padding: 30px 5% 0px 5%;
   }
 }
 
 @media (min-width: 1600px){
   .breadcrumbs {
-    padding: 30px 10% 0px 10%;
+    padding: 30px 5% 0px 5%;
   }
 
   .blog-base {
-    padding: 30px 10% 0px 10%;
+    padding: 30px 5% 0px 5%;
   }
 }
+
+.btn-blog-block {
+  text-align: center;
+}
+
+.btn-blog {
+  font-size: 16px;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 10px 25px;
+}
+
+.btn-bl {
+  background: #4C90F6;
+  color: #fff;
+  border-color: #4C90F6;
+}
+
+
