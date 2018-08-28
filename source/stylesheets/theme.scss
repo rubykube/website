@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-
 
 body {
   padding-top: 54px;
@@ -10,8 +7,6 @@ body {
   background: white;
   color: #212529;
   font-family: 'Rubik', sans-serif;
-
-  //letter-spacing: 0.5px;
 }
 
 h1,
@@ -340,10 +335,13 @@ ul, li {
   color: #212529;
 }
 
+.post-title #title-post a {
+  margin-left: 15px;
+}
+
 .main-post-title {
   font-size: 28px;
   font-weight: 400;
-  margin-top: 0px;
 }
 
 .main-post-category {
@@ -394,7 +392,6 @@ ul, li {
 
 .d-block {
   color: #fff;
-  padding-left: 0.5em !important;
 }
 
 
@@ -441,7 +438,7 @@ ul, li {
 
 @media (min-width: 1366px){
   .main-blog-post__last {
-    display: inline-block;
+    display: none;
   }
 }
 
@@ -649,7 +646,7 @@ ul, li {
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 
   h2 {
@@ -673,16 +670,6 @@ ul, li {
 
   .col-components1{
     height: 200px;
-  }
-
-  .line { 
-    display: block;
-    margin-top: 20em;
-    margin-bottom: 20em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 2px;
   }
 }
 
@@ -711,7 +698,11 @@ ul, li {
 
 @media (min-width: 375px) and (max-width: 399px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
   }
 
   body {
@@ -739,8 +730,6 @@ ul, li {
   
 }
 
-
-
 @media (min-width: 320px) and (max-width: 374px) {
   .col-components{
     height: 315px;
@@ -749,5 +738,13 @@ ul, li {
   .col-components1{
     height: 240px;
   }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+
 }
 
