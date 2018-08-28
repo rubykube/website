@@ -143,8 +143,7 @@ h2 {
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
 }
 
 .nav-itemGit{
@@ -337,21 +336,28 @@ ul, li {
   flex: 1 0 auto;
 }
 
+#title-post a {
+  color: #212529;
+}
+
 .main-post-title {
   font-size: 28px;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .main-post-category {
-  color: #2eaade;
+  color: #4C90F6;
   text-align: left;
 }
 
 .main-post-date {
-  color: $date-text;
+  color: #4C90F6;
   font-size: 14px;
-  float: right;
+}
+
+.post-image {
+  margin-bottom: 10px;
 }
 
 .btn-blog-block {
@@ -360,12 +366,12 @@ ul, li {
 
 .btn-main-blog {
   font-size: 16px;
-  margin: 10px;
+  margin: 25px;
   padding: 10px 25px;
 }
 
 .main-blog-post {
-  margin-bottom: 20px;
+  margin-bottom: 3em;
 }
 
 .main-blog-post__last {
