@@ -86,6 +86,31 @@ h2 {
     transform: scale(1.2);
   }
 }
+.title1 {
+  display: block;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 16.6%;
+  padding: 10px;
+}
+
+.imgLogos {
+  margin: 4em 0 0 7em;
+}
+
+.p-text {
+  display: flex;
+  margin: 0 0 1em 7em;
+}
+
+.follow-btn-about {
+  display: flex; 
+  justify-content: center;
+  margin-top: 3em;
+}
 
 #sideNav {
   transition: background-color 0.5s ease;

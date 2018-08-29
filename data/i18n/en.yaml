@@ -7,9 +7,16 @@ sections:
 
   about:
     subtitle: |-
-      The complete open-source modular platform for building an exchange
-    body: |-
-      RubyKube team has forked the old abandoned open-source Peatio project and gave it a second birth. From monolith application we have created an awesome stack of several key components that ensure the modern level of stability, scalability and security. Around Peatio, as the core wallet and order book management system, we have built KYC, Business Logic and other components, including Kite - installation & administration tool that allows you to deploy entire platform from scratch in 1 hour and makes management and maintenance a breeze. Plus we covered Back-End with beautiful and fully customizable Front-End using React.
+      Join our passionate comunity in creation of modern application stack
+    body1: |-
+      We found on GitHub an old abandoned open-source project called Peatio, which was the core of crypto exchange platform, and decided to give it a second birth.
+    body2: |-
+      In just a few months, with our own hands and help from the community from monolith abandonware we have created an awesome application stack of several key components that ensure the modern level of stability, scalability and security of an exchange platform and named that baby RubyKube.
+    body3: |-
+      The whole thing is open-source, which means you get what you see. We got people helping us coding it from all around the world.
+    body4: |-
+      Whether you are interested to run a RubyKube-based exchange, or a coder looking to get your feet wet with modern application stack - we welcome everyone!
+
 
   components:
     title: Projects
