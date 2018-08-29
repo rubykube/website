@@ -59,10 +59,10 @@ per_page: 10
                   <%= data.i18n.en.sections.about.body.part4 %>
                 </p> 
               </div>
-
-              <a href="#developer" class="btn btn-primary mr-3">Join us!</a>
-              <a href="#enterprise" class="btn btn-primary">Enterprise solutions</a>
-
+              <div class="follow-btn-about">
+                <a href="#developer" class="btn btn-primary mr-3">Join us!</a>
+                <a href="#enterprise" class="btn btn-primary mr-3">Enterprise solutions</a>
+              </div>
             </div>
 
             <div class="col-md-6">
@@ -75,11 +75,14 @@ per_page: 10
               <hr style="width:40%; background-color:#ccc !important; height:0.1px;"/>
             </div>
           </div>
-          <h2 class="text-center mb-1">Are you a devevloper?</h2>
-          <div class="subheading text-center mb-4" >
-            <h4><%= data.i18n.en.sections.about.subtitle %></h4>
+          <div class="row justify-content-center home-page-title">
+            <h1 class="mt-5">Are you a developer?</h1>
+            <h2 class="mt-2">
+            <%= data.i18n.en.sections.about.subtitle %>
+            </h2>
           </div>
-          <div class="row imgLogos">
+
+          <div class="row imgLogos home-page-body">
             <div class="column">
               <img src="/images/ruby-mini-logo.png" alt="ruby" width="80%" height="80%">
             </div>
@@ -113,15 +116,44 @@ per_page: 10
             <%= data.i18n.en.sections.about.body4 %>
           </p>
 
-          <div class="follow-btn-about">
-            <a href="https://github.com/rubykube/peatio" target="_blank" class="btn btn-primary text-uppercase mr-3">
-              <i class="icon icon-github-circled"></i>Peatio Github
+          <div class="follow-btn-about mt-4">
+            <a href="https://github.com/rubykube" target="_blank" class="btn btn-primary mr-3">
+              <i class="icon icon-github-circled"></i>RubyKube Github
             </a>
 
-            <a href="https://github.com/rubykube/peatio/tree/master/docs" class="btn btn-primary text-uppercase mr-3" target="_blank">Documentation</a>
-            <a href="https://discuss.rubykube.io/" class="btn btn-primary text-uppercase mr-3" target="_blank">Discussion</a>
+            <a href="https://github.com/rubykube/peatio/tree/master/docs" class="btn btn-primary mr-3" target="_blank">Documentation</a>
+            <a href="https://discuss.rubykube.io/" class="btn btn-primary mr-3" target="_blank">Discussion</a>
           </div>
         </div>
+
+        <div class="row"> 
+          <div class="col-md-12 col-lg-12">
+            <hr style="width:40%; background-color:#ccc !important; height:0.1px;"/>
+          </div>
+        </div>
+        <div class="row justify-content-center home-page-title">
+            <h1 class="mt-5">Looking for an enterprise solution?</h1>
+            <h2 class="mt-2">
+            <%= data.i18n.en.sections.about.subtitle3 %>
+            </h2>
+        </div>
+        <div class="row home-page-body">
+          <div class="col-md-6">
+              <img src="/images/chart.png" width="100%">
+          </div>
+          <div class="col-md-6">
+              <div>
+                <p>
+                  <%= data.i18n.en.sections.about.section %>
+                </p>    
+              </div>
+              <div class="follow-btn-about">
+                <a href="#developer" class="btn btn-primary mr-3">Get a quotation</a>
+                <a href="#enterprise" class="btn btn-primary mr-3">Meet the team</a>
+              </div>
+            </div>            
+        </div>
+
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column section-scroll" id="components" data-nav-color="yellow">

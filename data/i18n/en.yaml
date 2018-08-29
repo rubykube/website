@@ -29,6 +29,11 @@ sections:
     body4: |-
       Whether you are interested to run a RubyKube-based exchange, or a coder looking to get your feet wet with modern application stack - we welcome everyone!
 
+    subtitle3: |-
+      Deployment training and custom development available
+    section: |-
+      We can train your personnel on how to deploy and maintain and maintain the platform, as well as offer an opportunity to hire our DevOps team for custom development of your enterprise project.
+    
   components:
     title: Projects
 
