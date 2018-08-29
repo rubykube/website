@@ -15,24 +15,36 @@ body {
  .titleR{
   font-size: 32px;
 }
- .icons-home a{
+
+.ml-auto{
+  margin-bottom: 0px;
+}
+
+.icons-home a{
   margin-right: 35px;
-  color: #212529;
-  font-size: 20px;
   text-decoration: underline;
 }
- a.github{
+
+a.github{
   color: #323232;
 }
- a.telegram {
+
+a.telegram {
   color: #2eaade;
 }
- a.reddit {
+
+a.reddit {
   color: #ff4500;
 }
+
 a.youtube {
   color: #ff0000
 }
+
+.i-head {
+  padding-right: 10px;
+}
+
  .home-page-title{
   color: #212529;
 }
