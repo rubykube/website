@@ -9,6 +9,45 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.home-page {
+  border-bottom: 1px solid #ccc;
+}
+
+.titleR{
+  font-size: 32px;
+}
+
+
+.icons-home a{
+  margin-right: 35px;
+  color: #212529;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+a.github{
+  color: #323232;
+}
+
+a.telegram {
+  color: #2eaade;
+}
+
+a.reddit {
+  color: #ff4500;
+}
+a.youtube {
+  color: #ff0000
+}
+
+.home-page-title{
+  color: #212529;
+}
+
+.home-page-body {
+  margin-top: 100px;
+}
+
 h1,
 h2,
 h3,
@@ -16,15 +55,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-}
-
-h1 {
-  font-size: 6rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3.5rem;
 }
 
 .mb-6{
@@ -181,24 +211,6 @@ section.resume-section {
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
-}
-
-.bg-github {
-  background-color: #323232;
-}
-.bg-telegram {
-  background-color: #2eaade
-}
-.bg-slack {
-  background-color: #18ad74;
-}
-
-.bg-reddit-squared {
-  background-color: #ff4500;
-}
-
-.bg-youtube {
-  background-color: #ff0000;
 }
 
 .square {
@@ -419,24 +431,6 @@ ul, li {
   color: #fff;
 }
 
-
-
-// Gallery
-/*
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-*/
-
 //Follow us
 .line {
   border-left: 1px solid rgb(7, 7, 7);
@@ -584,7 +578,46 @@ ul, li {
   }
   
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .car//*new home
+
+  /*head*/
+  .home-page {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .titleR{
+    font-size: 32px;
+  }
+  
+  
+  .icons-home a{
+    margin-right: 35px;
+    color: #212529;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  a.github{
+    color: #323232;
+  }
+  
+  a.telegram {
+    color: #2eaade;
+  }
+  
+  a.reddit {
+    color: #ff4500;
+  }
+  a.youtube {
+    color: #ff0000
+  }
+  
+  
+  /*body-home*/
+  
+  .home-page-title{
+    color: #212529;
+  }ousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
       transition: none;
@@ -772,4 +805,5 @@ ul, li {
   }
 
 }
+
 
