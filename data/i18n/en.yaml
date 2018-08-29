@@ -114,8 +114,8 @@ sections:
   blog:
     title: Latest blog posts
 
-  team:
-    title: Team
+  technology:
+    title: Technology
     subheading: |-
       Programming Languages and Tools
     list:
@@ -143,6 +143,9 @@ sections:
           Cross Functional Teams
         - |-
           Agile Development and Scrum
+    
+  team:
+    title: Team
 
   contact:
     title: Follow us
