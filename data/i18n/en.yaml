@@ -6,6 +6,18 @@ description: |-
 sections:
 
   about:
+    subtitle1: |-
+        Open-source modular platform for building an exchange
+    body:
+      part1: |-
+        RubyKube is an open-source project with over 300 contributors from all over the world besides the core team of over 60 developers who originally forked the old abandoned Peatio project on GitHub.
+      part2: |-
+        Around Peatio, as the core wallet and order book management system, we have built account management and KYC using open-source Barong OAuth2 system, as well as Business Logic and other components.
+      part3: |-
+        The Kite installation & administration tool allows you to deploy entire platform from scratch in 1 hour and makes management and maintenance a breeze.
+      part4: |-
+        And we have covered back-end with beautiful and fully customizable front-end using React.
+
     subtitle: |-
       Join our passionate comunity in creation of modern application stack
     body1: |-
@@ -16,7 +28,6 @@ sections:
       The whole thing is open-source, which means you get what you see. We got people helping us coding it from all around the world.
     body4: |-
       Whether you are interested to run a RubyKube-based exchange, or a coder looking to get your feet wet with modern application stack - we welcome everyone!
-
 
   components:
     title: Projects
