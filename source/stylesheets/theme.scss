@@ -1,7 +1,4 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-
 
 body {
   padding-top: 54px;
@@ -10,8 +7,137 @@ body {
   background: white;
   color: #212529;
   font-family: 'Rubik', sans-serif;
+}
 
-  //letter-spacing: 0.5px;
+.home-page {
+  border-bottom: 1px solid #ccc;
+}
+ .titleR{
+  font-size: 32px;
+}
+
+.icons-home{
+  justify-content: center;
+}
+
+.content-home-page{
+  text-align: center;
+}
+
+.title-home{
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.imglogo{
+  width: 36px;
+  height: 36px;
+}
+
+.ml-auto{
+  margin-bottom: 0px;
+}
+
+.icons-home a{
+  margin-right: 20px;
+}
+
+a.github{
+  color: #323232;
+}
+
+a.telegram {
+  color: #2eaade;
+}
+
+a.reddit {
+  color: #ff4500;
+}
+
+a.youtube {
+  color: #ff0000
+}
+
+.i-head {
+  margin-top: 10px;
+  padding-right: 10px;
+  font-size: 32px;
+}
+
+a .tooltip{
+  display: none;
+}
+
+ .home-page-title{
+  color: #212529;
+}
+ .home-page-body {
+  margin-top: 70px;
+}
+
+.title1 {
+  display: block;
+  text-align: center;
+}
+
+.text-ruby {
+
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.logoandtext {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 2em 0 0 0;
+}
+
+@media all and (max-width: 60em) {
+  .box {
+    width: 100%;
+  }
+}
+@media all and (min-width: 60em) {
+  .box{
+    width: 50%;
+  }
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+  float: left;
+  width: 16.6%;
+  padding: 10px;
+}
+
+.p-text {
+  margin-top: 15px;
+}
+
+.follow-btn-about {
+  display: flex; 
+  justify-content: center;
+}
+
+.imgLogos {
+  display: flex;
+  align-content: flex-end;
+  align-items: flex-end;
 }
 
 h1,
@@ -21,15 +147,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-}
-
-h1 {
-  font-size: 6rem;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 3.5rem;
 }
 
 .mb-6{
@@ -119,7 +236,7 @@ h2 {
     background-color: #4C90F6;
   }
   &.technology {
-    background-color: #D94E47;
+    background-color: #4C90F6;
   }
   &.releases {
     background-color: rgb(190, 179, 139);
@@ -143,8 +260,7 @@ h2 {
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
 }
 
 .nav-itemGit{
@@ -162,24 +278,6 @@ section.resume-section {
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
-}
-
-.bg-github {
-  background-color: #323232;
-}
-.bg-telegram {
-  background-color: #2eaade
-}
-.bg-slack {
-  background-color: #18ad74;
-}
-
-.bg-reddit-squared {
-  background-color: #ff4500;
-}
-
-.bg-youtube {
-  background-color: #ff0000;
 }
 
 .square {
@@ -202,41 +300,6 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-
-}
 .scrollup{
   width:40px;
   height:40px;
@@ -297,6 +360,14 @@ ul, li {
   margin-left: 0px !important;
 }
 
+#about-item {
+  padding-left: 1em !important;
+}
+
+#team-item {
+  padding-left: 10px !important;
+}
+
 @media all and (min-width: 40em) {
   .list-item {
     width: 100%;
@@ -316,6 +387,7 @@ ul, li {
 
 .imgProject {
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .text {
@@ -328,21 +400,31 @@ ul, li {
   flex: 1 0 auto;
 }
 
+#title-post a {
+  color: #212529;
+}
+
+.post-title #title-post a {
+  margin-left: 15px;
+}
+
 .main-post-title {
   font-size: 28px;
   font-weight: 400;
-  margin-top: 10px;
 }
 
 .main-post-category {
-  color: #2eaade;
+  color: #4C90F6;
   text-align: left;
 }
 
 .main-post-date {
-  color: $date-text;
+  color: #4C90F6;
   font-size: 14px;
-  float: right;
+}
+
+.post-image {
+  margin-bottom: 10px;
 }
 
 .btn-blog-block {
@@ -351,12 +433,12 @@ ul, li {
 
 .btn-main-blog {
   font-size: 16px;
-  margin: 10px;
+  margin: 25px;
   padding: 10px 25px;
 }
 
 .main-blog-post {
-  margin-bottom: 20px;
+  margin-bottom: 3em;
 }
 
 .main-blog-post__last {
@@ -376,29 +458,10 @@ ul, li {
   margin-right: 10px;
 }
 
-.mlp{
-  margin-left: 5px;
-}
 
-.mlh{
-  margin-left: 0px;
+.d-block {
+  color: #fff;
 }
-
-// Gallery
-/*
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-*/
 
 //Follow us
 .line {
@@ -426,7 +489,7 @@ ul, li {
 
 @media (min-width: 1366px){
   .main-blog-post__last {
-    display: inline-block;
+    display: none;
   }
 }
 
@@ -438,6 +501,21 @@ ul, li {
   .col-components1{
     height: 200px;
   }
+
+  .icons-home{
+    justify-content: right;
+  }
+  
+  a .tooltip{
+    display: inline;
+    margin-right: 35px;
+    text-decoration: underline;
+  }
+
+  .title-home{
+    margin-right: 0px;
+  }
+
 }
 
 @media (min-width: 1365px) and (max-width: 1499px) {
@@ -611,6 +689,10 @@ ul, li {
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
+
+  .iconmargin{
+    margin-left: auto;
+  }
 }
 
 @media (min-width : 851px) and (max-width: 991px) {
@@ -634,7 +716,7 @@ ul, li {
 
 @media (max-width: 767px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 
   h2 {
@@ -660,14 +742,22 @@ ul, li {
     height: 200px;
   }
 
-  .line { 
-    display: block;
-    margin-top: 20em;
-    margin-bottom: 20em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 2px;
+  
+  .i-head {
+    margin-top: 10px;
+    font-size: 50px;
+  }
+
+  .title-home{
+    margin-right: 40px;
+  }
+
+  .conten-size-home-main{
+    font-size: 28px;
+  }
+
+  .conten-size-home-subtitle{
+    font-size: 1.5rem;
   }
 }
 
@@ -691,12 +781,17 @@ ul, li {
   .col-components1{
     height: 190px;
   }
+
 }
 
 
 @media (min-width: 375px) and (max-width: 399px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
   }
 
   body {
@@ -721,10 +816,13 @@ ul, li {
   .col-components1{
     height: 220px;
   }
+
+  .i-head {
+    margin-top: 10px;
+    font-size: 28px;
+  }
   
 }
-
-
 
 @media (min-width: 320px) and (max-width: 374px) {
   .col-components{
@@ -734,5 +832,21 @@ ul, li {
   .col-components1{
     height: 240px;
   }
-}
 
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  .i-head {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+
+  .titleR{
+    font-size: 28px;
+  }
+
+}

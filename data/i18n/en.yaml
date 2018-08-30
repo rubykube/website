@@ -6,11 +6,42 @@ description: |-
 sections:
 
   about:
-    subtitle: |-
-      Open-source modular platform for building an exchange
-    body: |-
-      RubyKube team has forked the old abandoned open-source Peatio project and gave it a second birth. From monolith application we have created an awesome stack of several key components that ensure the modern level of stability, scalability and security. Around Peatio, as the core wallet and order book management system, we have built KYC, Business Logic and other components, including Kite - installation & administration tool that allows you to deploy entire platform from scratch in 1 hour and makes management and maintenance a breeze. Plus we covered Back-End with beautiful and fully customizable Front-End using React.
+    subtitle1: |-
+        Open-source modular platform for building an exchange
+    body:
+      part1: |-
+        RubyKube is an open-source project with over 300 contributors from all over the world besides the core team of over 60 developers who originally forked the old abandoned Peatio project on GitHub.
+      part2: |-
+        Around Peatio, as the core wallet and order book management system, we have built account management and KYC using open-source Barong OAuth2 system, as well as Business Logic and other components.
+      part3: |-
+        The Kite installation & administration tool allows you to deploy entire platform from scratch in 1 hour and makes management and maintenance a breeze.
+      part4: |-
+        And we have covered back-end with beautiful and fully customizable front-end using React.
 
+
+    subtitle: |-
+      Join our passionate community in creation of modern application stack
+    body1: |-
+      We found on GitHub an old abandoned open-source project called Peatio, which was the core of crypto exchange platform, and decided to give it a second birth.
+    body2: |-
+      In just a few months, with our own hands and help from the community from monolith abandonware we have created an awesome application stack of several key components that ensure the modern level of stability, scalability and security of an exchange platform and named that baby RubyKube.
+    body3: |-
+      The whole thing is open-source, which means you get what you see. We got people helping us coding it from all around the world.
+    body4: |-
+      Whether you are interested to run a RubyKube-based exchange, or a coder looking to get your feet wet with modern application stack - we welcome everyone!
+
+    subtitle3: |-
+      Deployment training and custom development available
+    body5: |-
+      We can train your personnel on how to deploy and maintain the complete RubyKube-based exchange platform, as well as offer you an opportunity to hire our DevOps team for custom development of your enterprise project.
+      The deployment is available on either RubyKube cloud or the cloud of your own.
+    body6: |-
+      Our plans include dedicated RubyKube installation and configuration for your specific needs, as well as continuous software maintenance, security upgrades, server monitoring and support.
+    body7: |-
+      We also provide software development services for frontend and new blockchain integration.
+    body8: |-  
+      If you are interested, drop a message to our DevOps and we will find a solution that suits your business needs.
+    
   components:
     title: Projects
 
@@ -47,35 +78,43 @@ sections:
     subtitle: |-
       Coins supported
 
-    security:
-      title: High Security
-      summary: |-
-        2FA + multi-sig + DHWC wallets + balance control features
-
-    customization:
-      title: Custom Features
-      summary: |-
-        AppLogic + opportunity to add stories to Peatio and Barong sprints
-
-    frontend:
-      title: Powerful Front-End
-      summary: |-
-        React library, including great trading UI with TradingView
-
-    coins:
-      title: MT-26 Coins Supported
-      summary: |-
-        Supporting BTC, LTC, BCH, DASH, ETH, XRP and other
-
-    tokens:
-      title: ERC20 Tokens Support
-      summary: |-
-        Supporting TRX, BNB, OMG, VEN, ZRX, MKR and other
-
-    support:
-      title: Team Support
-      summary: |-
-        Deployment training is included in our subscription plan, as well as opportunity to hire our DevOps team for custom development for your enterprise project
+    list:
+      left: 
+        - |-
+          Designed as high performance crypto-currency exchange
+        - |-
+          Built-in high performance matching-engine
+        - |-
+          Built-in multiple wallet support (e.g. deposit, hot, warm and cold)
+        - |-
+          Build-in Management API - server-to-server API with high privileges
+        - |-
+          Build-in RabbitMQ Event API
+        - |-
+          Websocket API and high frequency trading support
+        - |-
+          Supports multiple digital currencies (BTC, LTC, BCH, DASH, ETH, XRP,  TRX, BNB, OMG, VEN, ZRX, MKR)
+        - |-
+          Supports ERC20 Tokens
+        - |-
+          API endpoint for FIAT deposits or payment gateways.
+      right:
+        - |-
+          Powerful admin dashboard and backend management tools
+        - |-
+          Highly configurable, extendable and scalable
+        - |-
+          Industry standard security out-of-box
+        - |-
+          Maintained by peatio.tech
+        - |-
+          KYC Verification provided by Barong
+        - |-
+          2FA + multi-sig + DHWC wallets + balance control security features
+        - |-
+          AppLogic + opportunity to add stories to Peatio and Barong sprints
+        - |-
+          Front-end React library, including great trading UI with TradingView
 
   gallery:
     title: Gallery
@@ -83,8 +122,8 @@ sections:
   blog:
     title: Latest blog posts
 
-  team:
-    title: Team
+  technology:
+    title: Technology
     subheading: |-
       Programming Languages and Tools
     list:
@@ -112,6 +151,9 @@ sections:
           Cross Functional Teams
         - |-
           Agile Development and Scrum
+    
+  team:
+    title: Team
 
   contact:
     title: Follow us
