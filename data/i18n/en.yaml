@@ -32,7 +32,11 @@ sections:
     subtitle3: |-
       Deployment training and custom development available
     section: |-
-      We can train your personnel on how to deploy and maintain and maintain the platform, as well as offer an opportunity to hire our DevOps team for custom development of your enterprise project.
+      We can train your personnel on how to deploy and maintain the complete RubyKube-based exchange platform, as well as offer you an opportunity to hire our DevOps team for custom development of your enterprise project.
+      The deployment is available on either RubyKube cloud or the cloud of your own.
+      Our plans include dedicated RubyKube installation and configuration for your specific needs, as well as continuous software maintenance, security upgrades, server monitoring and support.
+      We also provide software development services for frontend and new blockchain integration.
+      If you are interested, drop a message to our DevOps and we will find a solution that suits your business needs.
     
   components:
     title: Projects
