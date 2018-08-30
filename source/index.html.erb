@@ -44,29 +44,25 @@ per_page: 10
             <%= data.i18n.en.sections.about.subtitle1 %>
             </h2>
           </div>
-
-          <div class="row home-page-body">
-            <div class="col-md-6">
-              <div class="text">
-                <p>
-                  <%= data.i18n.en.sections.about.body.part1 %>
-                </p>    
-                <p>
-                  <%= data.i18n.en.sections.about.body.part2 %>
-                </p>    
-                <p>
-                  <%= data.i18n.en.sections.about.body.part3 %>
-                </p>    
-                <p>
-                  <%= data.i18n.en.sections.about.body.part4 %>
-                </p> 
-              </div>
+          <div class="clearfix">
+            <div class="box">
+              <p>
+                <%= data.i18n.en.sections.about.body.part1 %>
+              </p>    
+              <p>
+                <%= data.i18n.en.sections.about.body.part2 %>
+              </p>    
+              <p>
+                <%= data.i18n.en.sections.about.body.part3 %>
+              </p>    
+              <p>
+                <%= data.i18n.en.sections.about.body.part4 %>
+              </p>
             </div>
-
-            <div class="col-md-6 text-center">
-              <img src="images/logo.svg" width="70%">
-            </div>
+          <div class="box">
+            <img class="logoandtext" src="images/logo.svg" width="300px">
           </div>
+        </div>
 
               <div class="follow-btn-about">
                 <a href="#developer" class="btn btn-primary mr-3 js-scrollTo">Join us!</a>
@@ -153,12 +149,11 @@ per_page: 10
               <%= data.i18n.en.sections.about.subtitle3 %>
               </h2>
           </div>
-          <div class="row mt-5">
-            <div class="col-md-6 text-center">
-                <img src="/images/chart.png" width="100%">
+          <div class="clearfix">
+            <div class="box">
+              <img class="logoandtext" src="/images/chart.png" width="100%">
             </div>
-            <div class="col-md-6">
-                <div>
+            <div class="box">
                   <p>
                     <%= data.i18n.en.sections.about.body5 %>
                   </p>    
@@ -170,11 +165,11 @@ per_page: 10
                   </p>
                   <p>
                     <%= data.i18n.en.sections.about.body8 %>
-                  </p>
-                </div>
-              </div>            
-          </div>
+                  </p>  
+            </div>
 
+        </div>
+          
           <div class="follow-btn-about">
             <a href="mailto:hello@peatio.tech" class="btn btn-primary mr-3">Get a quotation</a>
             <a href="#team" class="btn btn-primary mr-3 js-scrollTo">Meet the team</a>
