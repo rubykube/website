@@ -4,7 +4,7 @@ import 'bootstrap';
 
 import '../stylesheets/site.scss';
 
-//import './scroller.js';
+import '../../node_modules/md5.js'
 
 import './scrollup.js';
 
@@ -15,3 +15,5 @@ import './jump.js'
 import './navcolor.js'
 
 import './btanimaton.js'
+
+import './gravatar.js'
