@@ -209,6 +209,10 @@ h6 {
   }
 }
 
+.img-team{
+  margin-top: 24px;
+}
+
 #sideNav {
   transition: background-color 0.5s ease;
   &.green {
@@ -486,7 +490,6 @@ ul, li {
 }
 
 // Media queries
-
 @media (min-width: 1366px){
   .main-blog-post__last {
     display: none;
