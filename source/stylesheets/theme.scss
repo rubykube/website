@@ -42,19 +42,19 @@ body {
   margin-right: 20px;
 }
 
-a.github{
+.github{
   color: #323232;
 }
 
-a.telegram {
+.telegram {
   color: #2eaade;
 }
 
-a.reddit {
+.reddit {
   color: #ff4500;
 }
 
-a.youtube {
+.youtube {
   color: #ff0000
 }
 
@@ -207,6 +207,11 @@ h6 {
   &:hover {
     transform: scale(1.2);
   }
+}
+
+.centeredContent {
+  align-items: center;
+  display: flex;
 }
 
 #sideNav {
@@ -850,3 +855,4 @@ ul, li {
   }
 
 }
+
