@@ -39,6 +39,35 @@ $sm-text-size: 14px;
   margin: 16px 0px;
 }
 
+.notes {
+  border-left: 0.5px solid #b0c9ee;
+}
+
+.notes li {
+  display: list-item;
+  color: #555;
+  list-style-type: decimal
+}
+
+.notes a {
+  color: #555;
+  text-decoration-line: underline;
+  text-decoration-style: solid #555;
+}
+
+.quotes {
+  background: #e2ebfa;
+  border-left: 10px solid #b0c9ee;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quotes p {
+  display: inline;
+}
+
+
 @media (min-width: 768px){
   .full-post-title {
     font-size: $title-size;
