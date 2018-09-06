@@ -316,7 +316,7 @@ per_page: 10
           <h2 class="mb-5" id="feature"><%= data.i18n.en.sections.features.title %></h2>
         </div>
 
-        <div class="row">
+        <div class="row ml-1">
 
           <div class="col-md-6">
 
@@ -335,7 +335,7 @@ per_page: 10
             <ul class="fa-ul mb-0">
               <% data.i18n.en.sections.features.list.right.each do |item| %>
                 <li>
-                  <i class="fas fa-circle"></i>
+                  <i class="fa-li fa fa-circle"></i>
                   <%= item %>
                 </li>
               <% end %>
@@ -568,7 +568,7 @@ per_page: 10
               <%= data.i18n.en.sections.technology.workflow.title %>
             </div>
 
-            <ul class="fa-ul mb-0" id="team-item">
+            <ul class="fa-ul mb-3" id="team-item">
               <% data.i18n.en.sections.technology.workflow.list.each do |item| %>
                 <li>
                   <i class="fa-li fa fa-check"></i>
@@ -596,37 +596,91 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="followus" data-nav-color="yellow">
       <div class="my-auto">
-        <div class="row justify-content-center">
-          <h2 class="mb-5" id="follow">
+        <div>
+          <h2 class="mb-5 text-center" id="follow">
             <%= data.i18n.en.sections.contact.title %>
           </h2>
+          <p class="mb-5">
+            We want to make it super-easy for Peatio users and contributors to talk to us and connect with each other, to share ideas, solve problems and help make Peatio awesome.
+          </p>
+          <h4 class="mb-5 text-center">
+            Communications
+          </h4>
+          <p class="mb-5">
+            Here are the communication channels we're running currently - we'd love to hear from you on any one of them!
+          </p>
         </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-4">
-            <div class="follow-info">
-              <p>We want to make it super-easy for Peatio users and contributors to talk to us and connect with each other, to share ideas, solve problems and help make Peatio awesome. Here are the main channels we're running currently, we'd love to hear from you on one of them</p>
-            </div>
-          </div>          
-          <div class="col-sm-12 col-md-1">
-            <div class="line"></div>
-          </div>
-          <div class="col-sm-12 col-md-5">         
-            <div class="follow-block">
-              <p> You can find guides, recipes, questions, and answers from Snowplow users including the Rubykube team.</p>
-              <div id="follow-btn">
-                <a href="http://discuss.rubykube.io" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:12px;width:140px;background:#EE4D3E;box-shadow:1px 1px 5px #F48F86;color:#212529;border-radius:34px;" title="discuss">discuss.rubykube.io</a>
-              </div>
-            </div>
 
-            <div class="follow-block">
-              <p>Chat with us and other community members on Telegram.</p>
-              <div id="follow-btn">
-                <a href="https://telegram.im/@Peatio" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="font-size:12px;width:118px;background:#ffd966;box-shadow:1px 1px 5px #ffd966;color:#212529;border-radius:34px;" title="peatio"><i></i> t.me/peatio</a>
-              </div>
-            </div>
+        <div class="row mb-2">
+          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+            <i class="fab fa-github fa-6x align-self-center"></i>
+          </div>
+          <div class="col-sm-12 col-md-7 d-flex">
+             <p class="align-self-center p-text">
+              Ready to dive into the code and get your feet wet? Welcome to our GitHub!
+             </p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex px-0">
+              <a href="https://github.com/rubykube" target="_blank" class="btn btn-dark btn-block align-self-center">GitHub branch</a>
           </div>
         </div>
-    
+
+        <div class="row mb-2">
+          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+            <i class="fab fa-telegram fa-6x telegram align-self-center"></i>
+          </div>          
+          <div class="col-sm-12 col-md-7 d-flex">
+             <p class="align-self-center p-text">
+              Chat with us and other community members on Telegram.
+             </p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex px-0">
+              <a href="https://telegram.im/@Peatio" target="_blank" class="btn btn-primary btn-blue btn-block align-self-center">Telegram channel</a>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+            <img src="images/logo.svg" class="align-self-center" alt="Rubykube" width=95>
+          </div>
+          <div class="col-sm-12 col-md-7 d-flex">
+              <p class="align-self-center p-text">
+              You can find guides, recipes, questions, and answers from Snowplow users including the Rubykube team.
+              </p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex px-0">
+              <a href="http://discuss.rubykube.io" target="_blank" class="btn btn-secondary btn-block align-self-center">Snowplow board</a>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+            <i class="fab fa-reddit reddit fa-6x align-self-center"></i>
+          </div>
+          <div class="col-sm-12 col-md-7 d-flex">
+              <p class="align-self-center p-text">
+              We also got a subreddit to update you on all the project news and discuss hot topics.
+              </p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex px-0">
+              <a href="http://reddit.com/r/rubykube/" target="_blank" class="btn btn-primary btn-block align-self-center">Reddit forum</a>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+            <i class="fab fa-youtube youtube fa-6x align-self-center"></i>
+          </div>
+          <div class="col-sm-12 col-md-7 d-flex">
+              <p class="align-self-center p-text">
+              Our YouTube channel is updated with project webinars, demos and other visual narrative content, make sure to check it out!
+              </p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex px-0">
+              <a href="http://www.youtube.com/channel/UCGrRNy-EpI67ivdAL5z4JIg/featured" target="_blank" class="btn btn-primary btn-block align-self-center">YouTube channel</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
