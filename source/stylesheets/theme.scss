@@ -130,7 +130,7 @@ a .tooltip{
 }
 
 .follow-btn-about {
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 
@@ -260,7 +260,7 @@ h6 {
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .nav-itemGit{
@@ -309,6 +309,9 @@ section.resume-section .resume-item .resume-date {
   right:20px;
   text-indent:-9999px;
   border: 500px;
+  img {
+    display: block;
+  }
 }
 
 .btn-yellow {
@@ -450,7 +453,7 @@ ul, li {
 }
 
 .imgFeature{
-  -webkit-filter: grayscale(100%); 
+  -webkit-filter: grayscale(100%);
   filter: #212529 saturate(0%) brightness(70%) contrast(1000%);
 }
 
@@ -475,18 +478,17 @@ ul, li {
   text-align: center;
 }
 
-.follow-info {  
+.follow-info {
   margin-top: 20px;
 }
 
 #follow-btn {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
 // Media queries
-
 @media (min-width: 1366px){
   .main-blog-post__last {
     display: none;
@@ -505,7 +507,7 @@ ul, li {
   .icons-home{
     justify-content: right;
   }
-  
+
   a .tooltip{
     display: inline;
     margin-right: 35px;
@@ -538,7 +540,7 @@ ul, li {
     height: 250px;
   }
 }
-  
+
 @media (min-width : 992px) and (max-width: 1099px) {
   .col-components{
     height: 420px;
@@ -623,20 +625,20 @@ ul, li {
   .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
       display: block;
   }
-  
+
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
       transition: none;
   }
-  
+
   .carousel-inner .carousel-item-next,
   .carousel-inner .carousel-item-prev {
     position: relative;
     transform: translate3d(0, 0, 0);
   }
-  
+
   .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
       position: absolute;
       top: 0;
@@ -645,7 +647,7 @@ ul, li {
       display: block;
       visibility: visible;
   }
-  
+
   /* left or forward direction */
   .active.carousel-item-left + .carousel-item-next.carousel-item-left,
   .carousel-item-next.carousel-item-left + .carousel-item,
@@ -656,7 +658,7 @@ ul, li {
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
   }
-  
+
   /* farthest right hidden item must be abso position for animations */
   .carousel-inner .carousel-item-prev.carousel-item-right {
       position: absolute;
@@ -666,7 +668,7 @@ ul, li {
       display: block;
       visibility: visible;
   }
-  
+
   /* right or prev direction */
   .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
   .carousel-item-prev.carousel-item-right + .carousel-item,
@@ -742,7 +744,7 @@ ul, li {
     height: 200px;
   }
 
-  
+
   .i-head {
     margin-top: 10px;
     font-size: 50px;
@@ -808,7 +810,7 @@ ul, li {
     margin-top:5px;
   }
 
-  
+
   .col-components{
     height: 260px;
   }
@@ -821,7 +823,7 @@ ul, li {
     margin-top: 10px;
     font-size: 28px;
   }
-  
+
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
