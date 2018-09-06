@@ -1,0 +1,235 @@
+{
+  "teams":
+      [
+          {
+          "email": "lbellet@heliostech.fr",
+          "name": "Louis",
+          "social": "https://github.com/mod"
+          },
+          {
+          "email": "cmeulien@heliostech.fr",
+          "name": "Camille",
+          "social": "https://github.com/calj"
+          },
+          {
+          "email": "vshatravenko@heliostech.fr",
+          "name": "Valentine",
+          "social": "https://github.com/vshatravenko"
+          },
+          {
+          "email": "dkoval@heliostech.fr",
+          "name": "Dima",
+          "social": "https://github.com/dmk"
+          },
+          {
+          "email": "bpotemskyi@heliostech.fr",
+          "name": "Bogdan",
+          "social": "https://github.com/bpotemskyi"
+          },
+          {
+          "email": "dhawkins@heliostech.fr",
+          "name": "Daniel",
+          "social": "#"
+          },
+          {
+          "email": "dtun@heliostech.fr",
+          "name": "Denys",
+          "social": "#"
+          },
+          {
+          "email": "ashanaakh@heliostech.fr",
+          "name": "Ali",
+          "social": "https://github.com/shal"
+          },
+          {
+          "email": "ysavchuk@heliostech.fr",
+          "name": "Yaroslav",
+          "social": "https://github.com/ysv"
+          },
+          {
+          "email": "ychumak@heliostech.fr",
+          "name": "Yehor",
+          "social": "https://github.com/ec"
+          },
+          {
+          "email": "otkachenko@heliostech.fr",
+          "name": "Oleksandr",
+          "social": "#"
+          },
+          {
+          "email": "s.seletskiy@gmail.com",
+          "name": "Stanislav",
+          "social": "https://github.com/seletskiy"
+          },
+          {
+          "email": "e.kovetskiy@gmail.com",
+          "name": "Egor",
+          "social": "https://github.com/kovetskiy"
+          },
+          {
+          "email": "ytkachuk@heliostech.fr",
+          "name": "Yurii",
+          "social": "https://github.com/YuriiTkachuk"
+          },
+          {
+          "email": "mkalenska@heliostech.fr",
+          "name": "Maryna",
+          "social": "https://github.com/maryna25"
+          },
+          {
+          "email": "ssafronov@heliostech.fr",
+          "name": "Sergey",
+          "social": "https://github.com/SergeySaf"
+          },
+          {
+          "email": "nchumak@heliostech.fr",
+          "name": "Nadia",
+          "social": "https://github.com/chumaknadya"
+          },            
+          {
+          "email": "imarakhovskiy@heliostech.fr",
+          "name": "Ivan",
+          "social": "https://github.com/imarakhovskiy"
+          },
+          {
+          "email": "sstarostenko@heliostech.fr",
+          "name": "Stanislav",
+          "social": "#"
+          },
+          {
+          "email": "mnaichuk@heliostech.fr",
+          "name": "Maksim",
+          "social": "https://github.com/Naichuk"
+          },
+          {
+          "email": "amenderova@heliostech.fr",
+          "name": "Anastasia",
+          "social": "#"
+          },
+          {
+          "email": "gnalbandian@heliostech.fr",
+          "name": "Gayané",
+          "social": "#"
+          },
+          {
+          "email": "ttomashevska@heliostech.fr",
+          "name": "Tatiana",
+          "social": "#"
+          },
+          {
+          "email": "msorochenko@heliostech.fr",
+          "name": "Myroslav",
+          "social": "#"
+          },
+          {
+          "email": "vkaminskiy@heliostech.fr",
+          "name": "Vasiliy",
+          "social": "https://github.com/Radwimp"
+          },
+          {
+          "email": "mkuvshynnikov@heliostech.fr",
+          "name": "Nick",
+          "social": "#"
+          },
+          {
+          "email": "gfedorenko@heliostech.fr",
+          "name": "Galya",
+          "social": "https://github.com/gfedorenko"
+          },
+          {
+          "email": "spavlishak@heliostech.fr",
+          "name": "Sophia",
+          "social": "https://github.com/spavlishak"
+          },
+          {
+          "email": "emasiuk@heliostech.fr",
+          "name": "Yehor",
+          "social": "https://github.com/ymasiuk"
+          },
+          {
+          "email": "pkucherenko@heliostech.fr",
+          "name": "Pavlo",
+          "social": "#"
+          },
+          {
+          "email": "odidukh@heliostech.fr",
+          "name": "Oles",
+          "social": "https://github.com/odidukh"
+          },
+          {
+          "email": "akushniruk@heliostech.fr",
+          "name": "Andrew",
+          "social": "https://github.com/akushniruk"
+          },
+          {
+          "email": "tbykova@heliostech.fr",
+          "name": "Tasya",
+          "social": "#"
+          },
+          {
+          "email": "mkovka@heliostech.fr",
+          "name": "Mykhail",
+          "social": "#"
+          },
+          {
+          "email": "oyershov@heliostech.fr",
+          "name": "Alex",
+          "social": "https://github.com/oyershov"
+          },
+          {
+          "email": "akhlopiachyi@heliostech.fr",
+          "name": "Alex",
+          "social": "https://github.com/akhlopiachyi"
+          },
+          {
+          "email": "ybondur@heliostech.fr",
+          "name": "Yaroslav",
+          "social": "https://github.com/Ohill"
+          },
+          {
+          "email": "msmetana@heliostech.fr",
+          "name": "Maksim",
+          "social": "https://github.com/msmetana"
+          },
+          {
+          "email": "josadcha@heliostech.fr",
+          "name": "Julia",
+          "social": "https://github.com/josadcha"
+          }, 
+          {
+          "email": "amakovenko@heliostech.fr",
+          "name": "Andrey",
+          "social": "#"
+          },
+          {
+          "email": "dyesin@heliostech.fr",
+          "name": "Dmitro",
+          "social": "https://github.com/DmytroYesin"
+          },
+          {
+          "email": "mboginska@heliostech.fr",
+          "name": "Maria",
+          "social": "#"
+          },
+          {
+          "email": "smaslov@heliostech.fr",
+          "name": "Stanislav",
+          "social": "https://github.com/smaslovv"
+          },
+          {
+          "email": "vpetrusenko@heliostech.fr",
+          "name": "Valera",
+          "social": "https://github.com/vpetrusenko"
+          },
+          {
+          "email": "okolesnyk@heliostech.fr",
+          "name": "Alex",
+          "social": "https://github.com/pinelli"
+          },
+          {
+          "email": "alinetskyi@heliostech.fr",
+          "name": "Artem",
+          "social": "https://github.com/alinetskyi"
+          }
+      ]       
+}

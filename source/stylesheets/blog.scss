@@ -41,7 +41,7 @@ $body-text: #212529;
     background: #6ea5f7;
     transition: 300ms;
   }
-  
+
 .dynamic-href a:hover:after {
     width: 100%;
   }
@@ -64,7 +64,7 @@ $body-text: #212529;
         background: #6ea5f7;
         transition: 300ms;
       }
-      
+
     a:hover:after {
         width: 100%;
       }
@@ -84,8 +84,8 @@ $body-text: #212529;
   }
 
   .custom-breadcrumb li {
-    text-decoration: none; 
-    position: relative; 
+    text-decoration: none;
+    position: relative;
     display: block;
     float: left;
 
@@ -93,7 +93,7 @@ $body-text: #212529;
       color: rgba(255, 255, 255, 0.5);
       font-size: 16px;
       font-weight: 600;
-      text-decoration: none; 
+      text-decoration: none;
     }
   }
 
@@ -161,7 +161,7 @@ $body-text: #212529;
 
 }
 
-// Blog 
+// Blog
 
 .blog-base {
   padding: 20px 10px 10px 10px;
@@ -182,7 +182,7 @@ $body-text: #212529;
 }
 
 .post-tags__each-pipe {
-  color: $tags-pipe
+  color: $tags-pipe;
 }
 
 .post-date {
