@@ -12,6 +12,7 @@ $sm-text-size: 14px;
   margin-top: 20px;
   width: 100%;
   max-width: 100%;
+  margin: 16px 0px;
 }
 
 .full-post-tags {
@@ -46,7 +47,7 @@ $sm-text-size: 14px;
 .notes li {
   display: list-item;
   color: #555;
-  list-style-type: decimal
+  list-style-type: decimal;
 }
 
 .notes a {
@@ -76,11 +77,8 @@ $sm-text-size: 14px;
     font-size: $text-size;
   }
 
-  .full-post-media {
-    margin: 0px 5%;
-  }
 
-  .full-post-body {
+  .full-post-body .full-post-image {
     margin: 16px 5%;
   }
 }
@@ -90,11 +88,7 @@ $sm-text-size: 14px;
     padding: 30px 8% 0px 8%;
   }
 
-  .full-post-media {
-    margin: 0px 10%;
-  }
-
-  .full-post-body {
+  .full-post-body .full-post-image {
     margin: 16px 10%;
   }
   
