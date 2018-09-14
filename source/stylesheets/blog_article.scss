@@ -40,20 +40,29 @@ $sm-text-size: 14px;
   margin: 16px 0px;
 }
 
-.notes {
+.notes-bl {
   border-left: 0.5px solid #b0c9ee;
 }
 
 .notes li {
   display: list-item;
   color: #555;
-  list-style-type: decimal;
 }
 
 .notes a {
   color: #555;
   text-decoration-line: underline;
   text-decoration-style: solid #555;
+}
+
+ol.notes-type2 li {
+  list-style-type: upper-roman;
+  ol li {
+    list-style-type: upper-alpha;
+    ol li {
+      list-style-type: decimal;
+    }
+  }
 }
 
 .quotes {
