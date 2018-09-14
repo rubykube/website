@@ -9,7 +9,7 @@ tags: [ Rubykube, Cryptocurrency ]
 ---
 
 
-<p> Cryptocurrency exchanges are websites where you can buy, sell or exchange cryptocurrencies for other digital currency or traditional currency like US dollars or Euro. <sup class="note"><a href="#notes">1</a></sup> Cryptocurrencies are here to stay, and they will define the future of the financial services and securities industry.  ryptocurrency exchanges enable customers to trade cryptocurrencies or digital
+<p>Cryptocurrency exchanges are websites where you can buy, sell or exchange cryptocurrencies for other digital currency or traditional currency like US dollars or Euro. <sup class="note"><a href="#notes">1</a></sup> Cryptocurrencies are here to stay, and they will define the future of the financial services and securities industry.  ryptocurrency exchanges enable customers to trade cryptocurrencies or digital
 currencies for other assets, such as conventional fiat money, or different digital currencies. <sup class="note"><a href="#notes">2</a></sup><br><br>
 
 The number of cryptocurrencies and exchange platforms are increasing each year. Currently, there are 190 exchanges, compared to 70 exchanges three years ago, on 15 March 2015. Demand to buy and sell is also growing as the number of cryptocurrencies and trading platforms increase. According to blockchain.info, on March 22, 2016, the amount of cryptocurrency traded on major blockchain
@@ -58,7 +58,7 @@ The Kite installation &amp; administration tool allows you to deploy entire plat
 <form id="notes">
     <fieldset>  
         <legend>References</legend>
-            <ol class="notes">
+            <ol class="type-none notes notes-bl">
                 <li>Blockgeeks, “Best Cryptocurrency Exchanges: The Ultimate Guide” from <a href="https://blockgeeks.com/guides/best-          cryptocurrency-exchanges/">https://blockgeeks.com/guides/best-          cryptocurrency-exchanges/</a></li>
                 <li>Wikipedia, “Cryptocurrency exchange” from <a href="https://en.wikipedia.org/wiki/Cryptocurrency_exchange">https://en.wikipedia.org/wiki/Cryptocurrency_exchange</a> accessed on
                 August 30, 2018</li>
