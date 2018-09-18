@@ -24,7 +24,7 @@ per_page: 10
   <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
   <article class="col-sm-12 col-md-6 post-base">
     <header>
-      <img class="post-image" src="<%= article.data.thumbnail_image %>">
+      <img class="post-image" draggable="false" src="<%= article.data.thumbnail_image %>">
       <div class="row">
         <div class="col-sm-6 col-md-8">
           <h2 class="post-title dynamic-href"><%= link_to article.title, article %></h2>

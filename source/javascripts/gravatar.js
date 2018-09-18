@@ -24,7 +24,7 @@ $(document).ready(function()
         var md5 = new MD5();
         md5.end(emailAddress);
 
-        return $('<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"><img class="img-rounded mt-3" width = 100% src="' + baseUrl +
+        return $('<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"><img class="img-rounded mt-3" draggable="false" width = 100% src="' + baseUrl +
         md5.read().toString('hex') +
             '.jpg?' +
             (options.size ? 's=' + options.size + '&' : '') +
