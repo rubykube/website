@@ -9,6 +9,16 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+img {
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .home-page {
   border-bottom: 1px solid #ccc;
 }
@@ -658,8 +668,12 @@ ul, li {
     min-width: 18rem;
   }
 
-  .iconmargin{
+  .iconmargin {
     margin-left: auto;
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
