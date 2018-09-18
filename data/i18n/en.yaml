@@ -123,7 +123,7 @@ sections:
     title: Gallery
 
   blog:
-    title: Latest blog posts
+    title: RubyKube Blog
 
   technology:
     title: Technology
@@ -156,10 +156,10 @@ sections:
           Agile Development and Scrum
     
   team:
-    title: Team
+    title: RubyKube Team and Contributors
 
   contact:
-    title: Follow us
+    title: Follow RubyKube
     text1: We want to make it super-easy for RubyKube users and contributors to talk to us and connect with each other to share ideas, solve problems and help make RubyKube even more awesome.
     text2: Here are the communication channels we're running currently - we'd love to hear from you on any one of them!
     github: Ready to dive into the code and get your feet wet? Welcome to our GitHub!
