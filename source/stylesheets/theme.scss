@@ -58,6 +58,20 @@ body {
   color: #ff0000
 }
 
+.discuss {
+  color: #ff0000;
+  svg {
+    margin-bottom: -8px;
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #7daef8;
+      }
+    }
+  }
+}
+
 .i-head {
   margin-top: 10px;
   padding-right: 10px;
@@ -859,4 +873,3 @@ ul, li {
   }
 
 }
-
