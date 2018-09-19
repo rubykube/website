@@ -39,9 +39,9 @@ sections:
       Our plans include dedicated RubyKube installation and configuration for your specific needs, as well as continuous software maintenance, security upgrades, server monitoring and support.
     body7: |-
       We also provide software development services for frontend and new blockchain integration.
-    body8: |-  
+    body8: |-
       If you are interested, drop a message to our DevOps and we will find a solution that suits your business needs.
-    
+
   components:
     title: Projects
 
@@ -50,7 +50,7 @@ sections:
       subtitle: |-
         Open source cryptocurrency exchange platform
       summary: |-
-        Peatio is a free Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components. 
+        Peatio is a free Open-Source Crypto Currency exchange implementation with the Rails framework. Peatio is a fork of Peatio.tech designed for micro-services architecture. We have simplified the code in order to use only Peatio API with external Front-End and server components.
 
     barong:
       title: Barong
@@ -61,7 +61,7 @@ sections:
 
     workbench:
       title: Workbench
-      subtitle: |- 
+      subtitle: |-
         Recommended development, test and integration environment
       summary: |-
         Workbench is the recommended development, test and integration environment for new developers. It is the easiest way to setup development environment and run Peatio locally.
@@ -79,7 +79,7 @@ sections:
       Coins supported
 
     list:
-      left: 
+      left:
         - |-
           Designed as high performance crypto-currency exchange
         - |-
@@ -151,7 +151,7 @@ sections:
           Cross Functional Teams
         - |-
           Agile Development and Scrum
-    
+
   team:
     title: RubyKube Team and Contributors
 
@@ -161,6 +161,6 @@ sections:
     text2: Here are the communication channels we're running currently - we'd love to hear from you on any one of them!
     github: Ready to dive into the code and get your feet wet? Welcome to our GitHub!
     telegram: Chat with us and other community members on Telegram.
-    Rubykube: You can find guides, recipes, questions, and answers from Snowplow users including the Rubykube team.
+    Rubykube: You can find project news, release highlights and webinars, as well as community support guidelines regarding deployment and maintenance of community branch of the RubyKube platform at our Discourse forum.
     reddit: We also got a subreddit to update you on all the project news and discuss hot topics.
     youtube: Our YouTube channel is updated with project webinars, demos and other visual narrative content, make sure to check it out!
