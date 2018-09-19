@@ -40,22 +40,23 @@
     
     <article class="col-sm-12 col-md-12 full-post-base">
       <header>
-        <img class="full-post-image" src="<%= current_article.data.thumbnail_image %>">
+        <!-- <img class="full-post-image" src="<%= current_article.data.thumbnail_image %>"> -->
         <div class="full-post-media">
-          <div class="full-post-date">
-            <%= current_article.date.strftime('%b %e, %Y') %>
-          </div>
           <h2 class="full-post-title dynamic-href"><%= link_to current_article.title, current_article %></h2>
-          <span class="full-post-tags">
-            <% current_article.tags.each_with_index do |tag, index| %>
-              <% if index < current_article.tags.size - 1 %>
-              <span class="post-tags__each dynamic-href"><%= link_to tag, tag_path(tag) %> </span><span class="post-tags__each-pipe">|</span>
-              <% else %>
-              <span class="post-tags__each dynamic-href"><%= link_to tag, tag_path(tag) %> </span>
+            <span class="full-post-tags">
+              <% current_article.tags.each_with_index do |tag, index| %>
+                <% if index < current_article.tags.size - 1 %>
+                <span class="post-tags__each dynamic-href"><%= link_to tag, tag_path(tag) %> </span><span class="post-tags__each-pipe">|</span>
+                <% else %>
+                <span class="post-tags__each dynamic-href"><%= link_to tag, tag_path(tag) %> </span>
+                <% end %>
               <% end %>
-            <% end %>
-          </span>
+            </span>
+            <span class="full-post-date">
+              <%= current_article.date.strftime('%b %e, %Y') %>
+            </span>
         </div>
+        <div style="clear: both;"></div>
       </header>
 
       <div class="full-post-body"><%= current_article.body %></div>
