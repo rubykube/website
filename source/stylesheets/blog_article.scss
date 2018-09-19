@@ -18,14 +18,13 @@ $sm-text-size: 14px;
 .full-post-tags {
   color: $tags-text;
   font-size: $sm-text-size;
-  text-align: left;
+  float: left;
 }
 
 .full-post-date {
   color: $date-text;
   font-size: $sm-text-size;
-  margin: 10px 0px 5px 0px;
-  text-align: right;
+  float: right;
 }
 
 .full-post-title {
