@@ -477,62 +477,28 @@ per_page: 10
           </h1>
         </div>
         <div class="row">
-          <article class="col-sm-12 col-md-6">
             <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
-              <% if i == 0 %>
-                  <header>
-                    <img class="post-image" src="<%= article.data.thumbnail_image %>">
-                    <h2 class="main-post-title">
-                      <span id="title-post"><%= link_to article.title, article %></span>
-                    </h2>
-                    <span class="main-post-category">
-                      <%= article.data.category %> |
-                    </span>
-                    <span class="main-post-date">
-                      <%= article.date.strftime('%b %e, %Y') %>
-                    </span>
-                  </header>
-                <div class="post-body"><%= article.summary(300, '...') %></div>
-              <% end %>
-            <% end %>
-          </article>
-          <article class="col-sm-12 col-md-5">
-            <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
-              <% if (i > 0) && (i < 3) %>
-                <div class="main-blog-post">
-                  <header>
-                    <h2 class="post-title">
-                      <span id="title-post"><%= link_to article.title, article %></span>
-                    </h2>
-                    <span class="main-post-category">
-                      <%= article.data.category %> |
-                    </span>
-                    <span class="post-date">
-                      <%= article.date.strftime('%b %e, %Y') %>
-                    </span>
-                  </header>
-                  <div class="post-body"><%= article.summary(140, '...') %></div>
-                </div>
-              <% end %>
-              <% if (i == 3) %>
-                  <div class="main-blog-post__last">
-                    <header>
-                      <h2 class="post-title"><%= link_to article.title, article %></h2>
-                      <span class="main-post-category">
-                        <%= article.data.category %> |
-                      </span>
-                      <span class="post-date">
-                        <%= article.date.strftime('%b %e, %Y') %>
-                      </span>
-                    </header>
-                    <div class="post-body"><%= article.summary(140, '...') %></div>
-                  </div>
+              <% if (i < 4) %>
+                <article class="col-sm-12 col-md-6">
+                    <div class="main-blog-post">
+                      <header>
+                        <h2 class="post-title">
+                          <span id="title-post"><%= link_to article.title, article %></span>
+                        </h2>
+                        <span class="main-post-category">
+                          <%= article.data.category %> |
+                        </span>
+                        <span class="post-date">
+                          <%= article.date.strftime('%b %e, %Y') %>
+                        </span>
+                      </header>
+                      <div class="post-body"><%= article.summary(140, '...') %></div>
+                    </div>
+                </article>
               <% end %>
             <% end %>
           </article>
         </div>
-
-
         <div class="row">
           <div class="col-sm-12 btn-blog-block">
             <a href="/blog" class="btn btn-primary btn-main-blog btn-blue">MORE POSTS</a>

@@ -414,13 +414,8 @@ ul, li {
   color: #212529;
 }
 
-.post-title #title-post a {
-  margin-left: 15px;
-}
-
-.main-post-title {
-  font-size: 28px;
-  font-weight: 400;
+.post-title {
+  margin-left: 0px;
 }
 
 .main-post-category {
@@ -431,10 +426,6 @@ ul, li {
 .main-post-date {
   color: #4C90F6;
   font-size: 14px;
-}
-
-.post-image {
-  margin-bottom: 10px;
 }
 
 .btn-blog-block {
@@ -449,10 +440,6 @@ ul, li {
 
 .main-blog-post {
   margin-bottom: 3em;
-}
-
-.main-blog-post__last {
-  display: none;
 }
 
 .icons {
