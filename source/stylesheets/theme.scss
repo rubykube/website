@@ -20,10 +20,6 @@ body {
   justify-content: center;
 }
 
-.content-home-page{
-  text-align: center;
-}
-
 .title-home{
   justify-content: center;
   margin-right: 40px;
@@ -87,9 +83,10 @@ a .tooltip{
 }
 
 .logoandtext {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 470px;
 }
 
 .cubelogo {
@@ -132,15 +129,6 @@ a .tooltip{
   padding: 10px;
 }
 
-.p-text {
-  margin-top: 15px;
-}
-
-.follow-btn-about {
-  display: flex;
-  justify-content: center;
-}
-
 .imgLogos {
   display: flex;
   align-content: flex-end;
@@ -165,20 +153,17 @@ h6 {
 }
 
 #feature {
-  margin-left: 15px !important;
+  margin-left: 10px !important;
 }
 
 #blog {
   margin-left: 10px !important;
 }
 
-#follow {
-  margin-left: 10px !important;
-}
-
 #projects {
   margin-left: 10px !important;
 }
+
 .fixed {
   background: #2eaade;
   position: fixed;
@@ -503,14 +488,6 @@ ul, li {
 }
 
 @media (min-width: 1280px){
-  .col-components{
-    height: 250px;
-  }
-
-  .col-components1{
-    height: 200px;
-  }
-
   .icons-home{
     justify-content: right;
   }
@@ -525,47 +502,6 @@ ul, li {
     margin-right: 0px;
   }
 
-}
-
-@media (min-width: 1365px) and (max-width: 1499px) {
-  .col-components{
-    height: 300px;
-  }
-
-  .col-components1{
-    height: 220px;
-  }
-
-}
-
-@media (min-width: 1191px) and (max-width: 1364px){
-  .col-components{
-    height: 350px;
-  }
-
-  .col-components1{
-    height: 250px;
-  }
-}
-
-@media (min-width : 992px) and (max-width: 1099px) {
-  .col-components{
-    height: 420px;
-  }
-
-  .col-components1{
-    height: 310px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1090px){
-  .col-components{
-    height: 550px;
-  }
-
-  .col-components1{
-    height: 360px;
-  }
 }
 
 @media (min-width: 992px){
@@ -704,25 +640,6 @@ ul, li {
   }
 }
 
-@media (min-width : 851px) and (max-width: 991px) {
-  .col-components{
-    height: 380px;
-  }
-  .col-components1 {
-    height: 260px;
-  }
-}
-
-
-@media (min-width : 768px) and (max-width: 850px) {
-  .col-components{
-    height: 470px;
-  }
-  .col-components1 {
-    height: 270px;
-  }
-}
-
 @media (max-width: 767px) {
   h1 {
     font-size: 3.6rem;
@@ -743,15 +660,6 @@ ul, li {
     padding-top: 0px;
   }
 
-  .col-components{
-    height: 230px;
-  }
-
-  .col-components1{
-    height: 200px;
-  }
-
-
   .i-head {
     margin-top: 10px;
     font-size: 50px;
@@ -769,30 +677,6 @@ ul, li {
     font-size: 1.5rem;
   }
 }
-
-@media (min-width: 481px) and (max-width: 550px) {
-
-  .col-components{
-    height: 220px;
-  }
-
-  .col-components1{
-    height: 170px;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 480px) {
-
-  .col-components{
-    height: 240px;
-  }
-
-  .col-components1{
-    height: 190px;
-  }
-
-}
-
 
 @media (min-width: 375px) and (max-width: 399px) {
   h1 {
@@ -817,15 +701,6 @@ ul, li {
     margin-top:5px;
   }
 
-
-  .col-components{
-    height: 260px;
-  }
-
-  .col-components1{
-    height: 220px;
-  }
-
   .i-head {
     margin-top: 10px;
     font-size: 28px;
@@ -834,14 +709,6 @@ ul, li {
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-  .col-components{
-    height: 315px;
-  }
-
-  .col-components1{
-    height: 240px;
-  }
-
   h1 {
     font-size: 2.6rem;
   }
