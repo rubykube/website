@@ -127,21 +127,36 @@ sections:
 
   technology:
     title: Technology
-    subheading: |-
-      Programming Languages and Tools
-    list:
-      - |-
-        Docker / Kubernetes
-      - |-
-        Ruby 2.5.0
-      - |-
-        Rails 4.2+
-      - |-
-        Redis 2.0+
-      - |-
-        MySQL 5.7
-      - |-
-        RabbitMQ
+
+    requirements:
+      title: Requirements
+      list:
+        - |-
+          Amazon AWS, Google Cloud GCP, Azure account
+        - |-
+          Kubernetes cluster deployed using Kite
+        - |-
+          MySQL 5.7 Highly available (RDS / Cloud SQL)
+        - |-
+          Blockchain services or nodes running in VM
+        - |-
+          RabbitMQ service running in the cluster or in VM
+
+    coding:
+      title: Coding
+      list:
+        - |-
+          Docker / Kubernetes
+        - |-
+          Ruby 2.5.0
+        - |-
+          Rails 4.2+
+        - |-
+          Redis 2.0+
+        - |-
+          MySQL 5.7
+        - |-
+          RabbitMQ
 
     workflow:
       title: Workflow
