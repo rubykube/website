@@ -482,6 +482,15 @@ ul, li {
   margin-bottom: 10px;
 }
 
+// Newsletter
+.mce-responses {
+  margin-top: 10px;
+}
+
+#mce-success-response {
+  color: $success;
+}
+
 // Media queries
 @media (min-width: 1366px){
   .main-blog-post__last {
