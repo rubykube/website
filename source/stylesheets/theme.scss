@@ -54,6 +54,20 @@ body {
   color: #ff0000
 }
 
+.discuss {
+  color: #ff0000;
+  svg {
+    margin-bottom: -8px;
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #7daef8;
+      }
+    }
+  }
+}
+
 .i-head {
   margin-top: 10px;
   padding-right: 10px;
@@ -306,16 +320,29 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+.btn-primary {
+  &:hover {
+    background-color: darken($primary, 15%);
+    border-color: darken($primary, 15%);
+  }
+}
+.btn-secondary {
+  &:hover {
+    background-color: darken($secondary, 12%);
+    border-color: darken($secondary, 12%);
+  }
+}
+
 .btn-yellow {
-  background: #FBC200;
+  background: #F3C44B;
   color: #fff;
-  border-color: #FBC200;
+  border-color: #F3C44B;
 }
 
 .btn-yellow:hover{
-  background: rgb(228, 205, 4);
+  background: rgb(214, 152, 0);
   color: #fff;
-  border-color: rgb(228, 205, 4);
+  border-color: rgb(214, 152, 0);
 }
 
 .btn-blue {
@@ -325,9 +352,9 @@ section.resume-section .resume-item .resume-date {
 }
 
 .btn-blue:hover{
-  background: rgb(27, 111, 236);
+  background: rgb(54, 115, 209);
   color: #fff;
-  border-color: rgb(27, 111, 236);
+  border-color: rgb(54, 115, 209);
 }
 
 .btn-git {
@@ -444,7 +471,7 @@ ul, li {
   margin-right: 15px;
 }
 
-.imgFeature{
+.imgFeature {
   -webkit-filter: grayscale(100%);
   filter: #212529 saturate(0%) brightness(70%) contrast(1000%);
 }
@@ -726,4 +753,3 @@ ul, li {
   }
 
 }
-
