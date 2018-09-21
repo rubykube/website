@@ -119,7 +119,7 @@ $sidebar-width: 230px !default;
 $sidebar-bg: mix(#111, $primary, 90%) !default;
 $sidebar-color-active: darken($sidebar-bg, 5) !default;
 $sidebar-color-primary: darken($sidebar-bg, 3) !default;
-$sidebar-color-secondary: darken($sidebar-color-primary, 6%) !default;
+$sidebar-color-secondary: darken($sidebar-color-primary, 60%) !default;
 
 $sidebar-color-text: fade-out($color-text-inverse, 0.5) !default;
 $sidebar-color-text-active: white;
