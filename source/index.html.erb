@@ -38,14 +38,14 @@ per_page: 10
             </div>
           </div>
 
-          <div class="row justify-content-center home-page-title">
-            <h1 class="mt-5 conten-size-home-main content-home-page">Welcome to RubyKube</h1>
-            <h2 class="mt-2 conten-size-home-subtitle content-home-page" id="about">
+          <div class="row home-page-title">
+            <h1 class="mt-5 conten-size-home-main">Welcome to RubyKube</h1>
+            <h2 class="mt-2 conten-size-home-subtitle" id="about">
             <%= data.i18n.en.sections.about.subtitle1 %>
             </h2>
           </div>
 
-          <div class="clearfix">
+          <div class="clearfix row">
             <div class="box">
               <p>
                 <%= data.i18n.en.sections.about.body.part1 %>
@@ -60,102 +60,98 @@ per_page: 10
                 <%= data.i18n.en.sections.about.body.part4 %>
               </p>
             </div>
-
-            <div class="box">
+            <div class="box ml-3 ml-md-auto">
               <img class="logoandtext" src="images/placeholder-cube-logo.png" height="360px">
             </div>
           </div>
 
-          <div class="follow-btn-about">
+          <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#developer" class="col-4 col-sm-2 col-md-2 col-lg-2 col-xl-1 btn btn-primary mr-3 js-scrollTo">Join us!</a>
-            <a href="#enterprise" class="col-sm-4 col-md-3 col-lg-3 col-xl-2 btn btn-primary mr-3 js-scrollTo">Enterprise solutions</a>
+            <a href="#enterprise" class="col-sm-4 col-md-3 col-lg-4 col-xl-2 btn btn-primary mr-3 js-scrollTo">Enterprise solutions</a>
           </div>
 
           <div class="row">
-            <div class="col-md-12 col-lg-12" id="developer">
-              <hr style="width:40%; background-color:#ccc !important; height:0.1px;"/>
+            <div class="col-md-12 col-lg-12 mt-4" id="developer">
+              <hr style="width:20%; background-color:#ccc !important; height:0.1px;"/>
             </div>
           </div>
 
-          <div class="row justify-content-center home-page-title">
-            <h1 class="mt-5 conten-size-home-main content-home-page">Are you a developer?</h1>
-            <h2 class="mt-2 conten-size-home-subtitle content-home-page">
+          <div class="row home-page-title">
+            <h1 class="mt-5 conten-size-home-main">Are you a developer?</h1>
+            <h2 class="mt-2 conten-size-home-subtitle">
             <%= data.i18n.en.sections.about.subtitle %>
             </h2>
           </div>
 
           <div class="row imgLogos mt-5">
-            <div class="col-2">
+            <div class="col-4 col-sm-2">
               <a href="https://www.ruby-lang.org/en/" target="blank">
               <img src="/images/TechIcon/Ruby_logo.svg" alt="Developed using Ruby" width="50%">
               </a>
             </div>
-            <div class="col-2">
+            <div class="col-4 col-sm-2">
               <a href="https://rubyonrails.org/" target="blank">
               <img src="/images/TechIcon/Rail.svg" alt="Developed using Ruby on Rails" width="50%">
               </a>
             </div>
-            <div class="col-2">
+            <div class="col-4 col-sm-2">
               <a href="https://www.docker.com/" target="blank">
               <img src="/images/TechIcon/docker-official.svg" alt="Developed using Docker" width="70%">
               </a>
             </div>
-            <div class="col-2">
+            <div class="col-4 col-sm-2 mt-4 mt-sm-0">
               <a href ="https://kubernetes.io/" target="blank">
               <img src="/images/TechIcon/Kubernetes.svg" alt="Developed using Kubernetes" width="100%">
               </a>
             </div>
-            <div class="col-2">
+            <div class="col-4 col-sm-2 mt-4 mt-sm-0">
               <a href ="https://www.mysql.com/" target="blank">
               <img src="/images/TechIcon/mysql-official.svg" alt="Developed using MySQL" width="100%">
               </a>
             </div>
-            <div class="col-2">
+            <div class="col-4 col-sm-2 mt-4 mt-sm-0">
               <a href ="https://redis.io/" target="blank">
               <img src="/images/TechIcon/redis-official.svg" alt="Developed using Redis" width="100%">
               </a>
             </div>
-
           </div>
-          <p class="p-text" >
-            <%= data.i18n.en.sections.about.body1 %>
-          </p>
-          <p class="p-text" >
-            <%= data.i18n.en.sections.about.body2 %>
-          </p>
-          <p class="p-text" >
-            <%= data.i18n.en.sections.about.body3 %>
-          </p>
-          <p class="p-text" >
-            <%= data.i18n.en.sections.about.body4 %>
-          </p>
+          <div class="row mt-5">
+            <p>
+              <%= data.i18n.en.sections.about.body1 %>
+            </p>
+            <p>
+              <%= data.i18n.en.sections.about.body2 %>
+            </p>
+            <p>
+              <%= data.i18n.en.sections.about.body3 %>
+            </p>
+            <p>
+              <%= data.i18n.en.sections.about.body4 %>
+            </p>
+          </div>
 
-          <div class="follow-btn-about mt-4 row">
-            <a href="https://github.com/rubykube" target="_blank" class="col-sm-4 col-md-3 col-lg-3 col-xl-3 mb-2 btn btn-primary mr-3">
+          <div class="d-flex mt-4 row justify-content-center justify-content-lg-start">
+            <a href="https://github.com/rubykube" target="_blank" class="col-sm-4 col-md-3 col-lg-4 col-xl-2 mb-2 btn btn-primary mr-3">
               <i class="icon icon-github-circled"></i>RubyKube Github
             </a>
-
             <a href="https://github.com/rubykube/peatio/tree/master/docs" class="col-sm-4 col-md-3 col-lg-3 col-xl-2 mb-2  btn btn-primary mr-3" target="_blank">Documentation</a>
-            <a href="https://discuss.rubykube.io/" class="col-sm-4 col-md-3 col-lg-3 col-xl-2 btn btn-primary mr-3 mb-2 " target="_blank">Discussion</a>
+            <a href="https://discuss.rubykube.io/" class="col-sm-4 col-md-2 col-lg-2 col-xl-2 btn btn-primary mr-3 mb-2 " target="_blank">Discussion</a>
           </div>
 
           <div class="row">
-            <div class="col-md-12 col-lg-12" id="enterprise">
-              <hr style="width:80%; background-color:#ccc !important; height:0.1px;"/>
+            <div class="col-md-12 col-lg-12 mt-4" id="enterprise">
+              <hr style="width:20%; background-color:#ccc !important; height:0.1px;"/>
             </div>
           </div>
 
-          <div class="row justify-content-center home-page-title">
-              <h1 class="mt-5 conten-size-home-main content-home-page">Looking for an enterprise solution?</h1>
-              <h2 class="mt-2 conten-size-home-subtitle content-home-page">
+          <div class="row home-page-title">
+              <h1 class="mt-5 conten-size-home-main">Looking for an enterprise solution?</h1>
+              <h2 class="mt-2 conten-size-home-subtitle">
               <%= data.i18n.en.sections.about.subtitle3 %>
               </h2>
           </div>
 
           <div class="clearfix">
-            <div class="box">
-              <img class="logoandtext" src="/images/chart.png" width="100%">
-            </div>
             <div class="box">
                   <p>
                     <%= data.i18n.en.sections.about.body5 %>
@@ -170,9 +166,12 @@ per_page: 10
                     <%= data.i18n.en.sections.about.body8 %>
                   </p>
             </div>
+            <div class="box">
+              <img class="logoandtext" src="/images/chart.png" width="100%">
+            </div>
           </div>
 
-          <div class="follow-btn-about">
+          <div class="d-flex mt-4 justify-content-center justify-content-lg-start">
             <a href="https://peatio.tech/#pricing"  target="blank" class="btn btn-primary mr-3">Get a quotation</a>
             <a href="#team" class="btn btn-primary mr-3 js-scrollTo">Meet the team</a>
           </div>
@@ -181,15 +180,15 @@ per_page: 10
 
       </div>
     </section>
-
+    
     <section class="resume-section p-3 p-lg-5 d-flex d-column section-scroll" id="components" data-nav-color="yellow">
       <div class="my-auto">
-          <div class="row justify-content-center">
+          <div class="row pl-xl-5">
             <h1 class="mb-5" id="projects">
               <%= data.i18n.en.sections.components.title %>
             </h1>
           </div>
-          <ul class="list">
+          <ul class="list pl-xl-5">
             <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
               <div class="list-content resume-content mr-auto">
                   <div class="d-flex title-logo">
@@ -312,14 +311,12 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="features" data-nav-color="green">
       <div class="my-auto">
-        <div class="row justify-content-center">
+        <div class="row pl-sm-3 pl-xl-5">
           <h1 class="mb-5" id="feature"><%= data.i18n.en.sections.features.title %></h1>
         </div>
 
-        <div class="row ml-1">
-
+        <div class="row pl-3 pl-xl-5">
           <div class="col-md-6">
-
             <ul class="fa-ul mb-0">
               <% data.i18n.en.sections.features.list.left.each do |item| %>
                 <li>
@@ -331,7 +328,6 @@ per_page: 10
           </div>
 
           <div class="col-md-6">
-
             <ul class="fa-ul mb-0">
               <% data.i18n.en.sections.features.list.right.each do |item| %>
                 <li>
@@ -471,12 +467,12 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="blog" data-nav-color="red">
       <div class="my-auto">
-        <div class="row justify-content-center">
+        <div class="row pl-xl-5">
           <h1 class="mb-5" id="blog">
             <%= data.i18n.en.sections.blog.title %>
           </h1>
         </div>
-        <div class="row">
+        <div class="row pl-xl-5">
           <article class="col-sm-12 col-md-6">
             <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
               <% if i == 0 %>
@@ -496,7 +492,7 @@ per_page: 10
               <% end %>
             <% end %>
           </article>
-          <article class="col-sm-12 col-md-5">
+          <article class="col-sm-12 col-md-5 pl-xl-4">
             <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
               <% if (i > 0) && (i < 3) %>
                 <div class="main-blog-post">
@@ -533,8 +529,8 @@ per_page: 10
         </div>
 
 
-        <div class="row">
-          <div class="col-sm-12 btn-blog-block">
+        <div class="d-flex pl-xl-5 justify-content-center justify-content-lg-start">
+          <div class="btn-blog-block">
             <a href="/blog" class="btn btn-primary btn-main-blog btn-blue">MORE POSTS</a>
           </div>
         </div>
@@ -544,12 +540,12 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="technology" data-nav-color="blue">
       <div class="my-auto">
-        <div class="row justify-content-center">
+        <div class="row pl-xl-5">
           <h1 class="mb-5" id="team-item">
             <%= data.i18n.en.sections.technology.title %>
           </h1>
         </div>
-        <div class="row">
+        <div class="row pl-xl-5">
           <div class="col-md-6">
             <div class="subheading mb-3">
               <h2><%= data.i18n.en.sections.technology.subheading %></h2>
@@ -587,29 +583,54 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="team" data-nav-color="red">
       <div class="my-auto">
-        <div class="row justify-content-center">
-          <h1 class="mb-5" id="team-item">
+        <div class="row pl-xl-5">
+          <h1 class="mb-5">
             <%= data.i18n.en.sections.team.title %>
           </h1>
         </div>
-
-          <h2 class="my-4 text-center text-lg-left">OpenWare Team</h2>
-
-          <div class="row teammates text-center text-lg-left" id="gravatar"></div>
+        <div class="row mb-4 pl-xl-5">
+          <h2>OpenWare Team</h2>
+        </div>
+          <div class="row pl-xl-5 teammates text-center text-lg-left" id="gravatar"></div>
 
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="followus" data-nav-color="yellow">
       <div class="my-auto">
-        <div>
-          <h1 class="mb-5 text-center" id="follow">
+        <div class="row pl-xl-5">
+          <h1 class="mb-5" id="follow">
             <%= data.i18n.en.sections.contact.title %>
           </h1>
           <p class="mb-5">
             <%= data.i18n.en.sections.contact.text1 %>
           </p>
-          <h4 class="mb-5 text-center">
+              
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup" class="mb-5">
+            <form action="https://rubykube.us19.list-manage.com/subscribe/post?u=0e5a930a2bb246b57f21cba2e&amp;id=55fb9c5f1d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <p>Subscribe to our newsletter to get informed on any update</p>
+                <div class="input-group mb-3">                 
+                  <input type="email" name="EMAIL" id="mce-EMAIL" value="" placeholder="E-mail" class="required email form-control">                  
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_0e5a930a2bb246b57f21cba2e_55fb9c5f1d" tabindex="-1" value="">
+                  </div>
+                  <div class="input-group-append">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary button button-addon2">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--End mc_embed_signup-->
+        </div>
+        <div class="row pl-xl-5">
+          <h4 class="mb-5">
             Communications
           </h4>
           <p class="mb-5">
@@ -655,7 +676,7 @@ per_page: 10
               </p>
           </div>
           <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="http://discuss.rubykube.io" target="_blank" class="btn btn-secondary btn-block align-self-center">Snowplow board</a>
+              <a href="http://discuss.rubykube.io" target="_blank" class="btn btn-secondary btn-block align-self-center">Community Support forum</a>
           </div>
         </div>
 

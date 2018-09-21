@@ -1,0 +1,333 @@
+---
+
+title: Building crypto exchange or brokerage
+date: 2018-09-14 06:47 UTC
+category: Cryptocurrency
+thumbnail_image: /images/blog/crypto.png
+tags: [ Rubykube, Cryptocurrency ]
+
+---
+
+<p>
+  <form id="notes">
+    <fieldset>  
+      <legend>Index</legend>
+      <ol class="notes-bl notes notes-type2">
+        <li>
+          <a href="#initial-conderations">Initial Considerations</a>
+          <ol class="notes">
+            <li>
+              <a href="#what-type-of-exchange-floats-your-boat">What Type of Exchange Floats Your Boat?</a>
+              <ol class="notes">
+                <li><a href="#trading-platforms">Trading Platforms</a></li>
+                <li><a href="#peer-to-peer">Peer to Peer (P2P)</a></li>
+                <li><a href="#crypto-brokers">Crypto Brokers</a></li>
+                <li><a href="#a-plethora-of-others">A Plethora of Others</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#centralized-or-decentralized">Centralized or Decentralized</a>
+              <ol class="notes">
+                <li><a href="#centralized">Centralized</a></li>
+                <li><a href="#decentralized">Decentralized</a></li>
+              </ol>
+            </li>
+            <li><a href="#areas-of-operation-and-regulation">Areas of Operation and Regulation</a></li>
+            <li><a href="#liquidity">Liquidity</a></li>
+            <li><a href="#which-cryptocurrencies">Which Cryptocurrencies?</a></li>
+            <li><a href="#bank-partnerships">Bank Partnerships</a></li>
+            <li>
+              <a href="#white-labels-opensource-or-bake-your-own">White Labels, Opensource, or Bake Your Own?</a>
+              <ol class="notes">
+                <li><a href="#white-label">White Label</a></li>
+                <li><a href="#opensource">Opensource</a></li>
+                <li><a href="#your-own">Your Own</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#what-will-need-to-be-built">What Will Need to be Built?</a>
+          <ol class="notes">
+            <li><a href="#trading-engine">Trading Engine</a></li>
+            <li><a href="#frontend-user-interface">Frontend User Interface</a></li>
+            <li>
+              <a href="#cryptocurrency-wallets">Cryptocurrency Wallets</a>
+              <ol class="notes">
+                <li><a href="#hot-wallets">Hot Wallets</a></li>
+                <li><a href="#cold-wallets">Cold Wallets</a></li>
+              </ol>
+            </li>
+            <li><a href="#administration-and-backend">Administration and Backend</a></li>
+          </ol>
+        </li>
+        <li><a href="#further-thoughts">Semi-Final Thoughts</a></li>
+      </ol>
+    </fieldset>
+  </form>
+</p>
+<br>
+<h2 id="initial-conderations">I. Initial Considerations</h2>
+<p>Cryptocurrency Exchanges, in short, allow users to purchase and sell many cryptocurrencies in addition to the exchange thereof for fiat currencies (dollars, yen, etc.), goods, services, and a variety of</p>
+<p>
+  <a href="https://en.wikipedia.org/wiki/Cryptocurrency_exchange">
+    https://en.wikipedia.org/wiki/Cryptocurrency_exchange
+  </a>
+</p>
+<p>
+  <a href="https://www.forbes.com/sites/sarahhansen/2018/06/20/forbes-guide-to-cryptocurrency-exchanges/#1556e3a92572">
+    https://www.forbes.com/sites/sarahhansen/2018/06/20/forbes-guide-to-cryptocurrency-exchanges/#1556e3a92572
+  </a>
+</p>
+<p>
+  <a href="https://www.blockchainappfactory.com/blog/how-to-build-cryptocurrency-exchange-and-how-much-it-would-cost/">
+    https://www.blockchainappfactory.com/blog/how-to-build-cryptocurrency-exchange-and-how-much-it-would-cost/
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="what-type-of-exchange-floats-your-boat">A. What Type of Exchange Floats Your Boat?</h4>
+	<h5 style="margin-left:10%;" id="trading-platforms">1. Trading Platforms</h5>
+</p>
+<p>Crypto trading platforms serve as marketplaces where sellers and buyers can place a variety of orders much like a traditional trading platform. Unlike conventional platforms and exchanges, selling and buying parties rarely if ever interact directly. Each party communicates primarily with the trading platform. Typically during these interactions, the values exchanged are contingent on a relatively static market price(s) of the securities being, and fees on platform use are charged per transaction.</p>
+<p>
+  <a href="https://hackernoon.com/7-best-cryptocurrency-exchanges-2018-9a160127a14d">
+    https://hackernoon.com/7-best-cryptocurrency-exchanges-2018-9a160127a14d
+  </a>
+</p>
+<p>
+  <a href="https://www.bitdegree.org/tutorials/best-cryptocurrency-trading-platform/">
+    https://www.bitdegree.org/tutorials/best-cryptocurrency-trading-platform/
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="peer-to-peer">2. Peer to Peer Exchange Platforms</h5>
+</p>
+<p>Unlike trading platforms, Peer-to-Peer (P2P) platforms allow buyers and sellers to interact directly. The parties involved eventually agree on the price(s) of currencies (and often other assets) involved. Mainly, in a P2P crypto exchange, the platform serves to mediate between parties and provide escrow.</p>
+<p>
+  <a href="https://www.finder.com/decentralized-cryptocurrency-exchanges">
+    https://www.finder.com/decentralized-crypwhich-cryptocurrenciestocurrency-exchanges
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="crypto-brokers">3. Crypto Brokers</h5>
+</p>
+<p>Cryptocurrency Brokers essentially function to allow buyers to purchase cryptocurrencies at a set price. These platforms are, in effect, simplified versions of the P2P exchanges without mediation or dual party discussion.</p>
+<p>
+  <a href="https://www.benzinga.com/investing/best-brokers-cryptocurrencies/">
+    https://www.benzinga.com/investing/best-brokers-cryptocurrencies/
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="a-plethora-of-others">4. A Plethora of Others</h5>
+</p>
+<p>Though the bulk of platforms as of the writing of this article are very similar to traditional currency exchange platforms, the technology behind cryptocurrencies, Blockchain, has adequately provided for a variety of other potential exchange types and mechanisms for a variety of assets. In addition to the vast array of smart contract types, banking mechanisms, and currency exchanges, the nature of this technology allows for commodifying services (music, massage, programming, etc.), validating and exchanging physical items (gold, couches, artwork, etc.), and a good deal else.</p>
+<p>
+  <a href="https://www.forbes.com/sites/quora/2017/11/17/what-is-blockchain-used-for-besides-bitcoin/#543e60e0446e">
+    https://www.forbes.com/sites/quora/2017/11/17/what-is-blockchain-used-for-besides-bitcoin/#543e60e0446e
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="centralized-or-decentralized">B. Centralized or Decentralized?</h4>
+	<h5 style="margin-left:10%;" id="centralized">1. Centralized Crypto Exchanges</h5>
+</p>
+<p>Centralized exchanges are, more often than not, run primarily by one business entity and collect revenue from fees for services provided on their platform. Typically, customers maintain an account on this platform. The customer will wire funds to this account often from a traditional bank account. Once these funds clear, they can be used to trade cryptocurrencies on the platform and, once trading is done, these funds can be converted back into a traditional fiat currency. It should be noted that the exchange itself holds the funds of the customer and is responsible for the security thereof.</p>
+<p>
+  <a href="https://www.investopedia.com/tech/what-are-centralized-cryptocurrency-exchanges/">
+    https://www.investopedia.com/tech/what-are-centralized-cryptocurrency-exchanges/
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="decentralized">2. Decentralized Crypto Exchanges (DEx)</h5>
+</p>
+<p>In a decentralized exchange, customers/traders do not have to store funds in an account controlled by another entity like in a centralized exchange trades are placed directly, and funds are "stored" in a digital wallet. The decentralized exchange allows the trader to find other parties to buy/sell coins. This allows avoidance of but doesn't exclude the possibility of, many custody risks and issues while the trader's funds would otherwise be in the hands of an exchange operator.</p>
+<p>
+  <a href="https://www.coindesk.com/future-crypto-exchanges-decentralization-coming/">
+    https://www.coindesk.com/future-crypto-exchanges-decentralization-coming/
+  </a>
+</p>
+<p>
+  <a href="https://hackernoon.com/the-state-of-decentralized-exchanges-235064446ab0">
+    https://hackernoon.com/the-state-of-decentralized-exchanges-235064446ab0
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="areas-of-operation-and-regulation">C. Areas of Operation and Regulation</h4>
+</p>
+<p>The bulk of governments are becoming more and more stringent concerning the use and exchange of cryptocurrencies. Consequently, anyone wishing to operate their exchange must follow KYC (Know Your Customer) norms which are still developing. Moreover, though the Financial Crimes Enforcement Network (FinCEN) has yet to set forth exacting requirements for compliance with KYC, in general one should look to gather precise information about specific customers.</p>
+<p>
+  <a href="https://www.cnbc.com/2018/03/27/a-complete-guide-to-cryptocurrency-regulations-around-the-world.html">
+    https://www.cnbc.com/2018/03/27/a-complete-guide-to-cryptocurrency-regulations-around-the-world.html
+  </a>
+</p>
+<p>
+  <a href="https://www.forbes.com/sites/rosemaryfanelli/2018/05/29/four-things-to-watch-for-in-cryptocurrency-regulation/#1ed1f6657012">
+    https://www.forbes.com/sites/rosemaryfanelli/2018/05/29/four-things-to-watch-for-in-cryptocurrency-regulation/#1ed1f6657012
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="liquidity">D. Liquidity</h4>
+</p>
+<p>Liquidity within a market or exchange sub-market liquidity is a significant issue for any crypto market. As many have started to develop their cryptocurrency exchanges, there is a multitude of liquidity issues due to the variety of trading pairs and an assortment of methods that trades look to attract traders and potential investors.</p>
+<p>
+  <a href="https://medium.com/@enbofficial/liquidity-problems-one-of-the-biggest-in-current-cryptocurrency-exchanges-b5aeaa4446a6">
+    https://medium.com/@enbofficial/liquidity-problems-one-of-the-biggest-in-current-cryptocurrency-exchanges-b5aeaa4446a6
+  </a>
+</p>
+<p>
+  <a href="https://www.forbes.com/sites/yoavvilner/2018/07/14/cryptocurrency-exchanges-are-getting-better-in-user-experience-and-liquidity/">
+    https://www.forbes.com/sites/yoavvilner/2018/07/14/cryptocurrency-exchanges-are-getting-better-in-user-experience-and-liquidity/
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="which-cryptocurrencies">E. Which Cryptocurrencies?</h4>
+</p>
+<p>Before setting-up a crypto exchange a good deal of market research and contemplation should be devoted to which cryptocurrencies you wish to exchange on your platform. Will there be one token? Many? What sort of market are you expecting and associated adjustments to liquidity? Will it be to support ERC-20 standard symbols or something else?</p>
+<p>
+  <a href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">
+    https://en.wikipedia.org/wiki/List_of_cryptocurrencies
+  </a>
+</p>
+<p>
+  <a href="https://www.cointimemachine.com/top-100-best-cryptocurrency-list-2018/">
+    https://www.cointimemachine.com/top-100-best-cryptocurrency-list-2018/
+  </a>
+</p>
+<p>
+  <a href="https://www.investinblockchain.com/10-promising-cryptocurrencies-q2-2018/">
+    https://www.investinblockchain.com/10-promising-cryptocurrencies-q2-2018/
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="bank-partnerships">F. Bank Partnerships</h4>
+</p>
+<p>Is it the case that you will need to convert traditional fiat currencies to crypto effectively? If this is the case, consider which countries you wish to exchange in and what sort of a payment processor you require. It may also be the case that partnership with an existing crypto exchange that already deals with fiat currency conversion may be a viable option as well.</p>
+<p>
+  <a href="https://www.banks.com/articles/cryptocurrency/banks-that-accept-bitcoin/">
+    https://www.banks.com/articles/cryptocurrency/banks-that-accept-bitcoin/
+  </a>
+</p>
+<p>
+  <a href="https://cryptodigestnews.com/top-5-fiat-to-cryptocurrency-exchanges-f41937cff9c1">
+    https://cryptodigestnews.com/top-5-fiat-to-cryptocurrency-exchanges-f41937cff9c1
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="white-labels-opensource-or-bake-your-own">G. White Labels, Opensource, or Bake Your Own?</h4>
+	<h5 style="margin-left:10%;" id="white-label">1. White Labels</h5>
+</p>
+<p>There are already many companies that have approached the crypto exchange space, the software/hardware involved, agreements with banks, and have dealt with a number of the legal issues according to legal issues in a variety of countries. It may be prudent to consider pairing with one of these existing companies/exchanges. Typically, this can help many groups that have initial worries about early-stage capital, what sort of markets to approach, variable liquidity, or concerns about how to approach producing a trading engine.</p>
+<p>
+  <a href="https://freestartupkits.com/articles/technology/cryptocurrency-news-and-tips/best-whitelabel-cryptocurrency-exchange-software-2018/
+">
+    https://freestartupkits.com/articles/technology/cryptocurrency-news-and-tips/best-whitelabel-cryptocurrency-exchange-software-2018/
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="opensource">2. OpenSource</h5>
+</p>
+<p>As Blockchain development, a variety of cryptocurrencies, and markets are quickly maturing in recent years, many groups have written libraries, developed frameworks, and built platforms to expedite the process of creating your cryptocurrency exchange.</p>
+<p>
+  <a href="https://www.rubykube.io/">
+    https://www.rubykube.io/
+  </a>
+</p>
+<p>
+  <a href="https://github.com/3s3s/opentrade">
+    https://github.com/3s3s/opentrade
+  </a>
+</p>
+<p>
+  <a href="https://www.blockchain-council.org/blockchain/best-open-source-option-bitcoin-exchange/">
+    https://www.blockchain-council.org/blockchain/best-open-source-option-bitcoin-exchange/
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="your-own">3. Your Own</h5>
+</p>
+<p>As the intricacies of software development and consequent "from scratch" build of cryptocurrency markets and marketplaces are a bit beyond the scope of this article, there are many resources on how to get started from general market dynamics to the fundamentals of how to build some associated software platforms.</p>
+<p>
+  <a href="https://github.com/bitcoinbook/bitcoinbook">
+    https://github.com/bitcoinbook/bitcoinbook
+  </a>
+</p>
+<p>
+  <a href="https://github.com/ethereumbook/ethereumbook">
+    https://github.com/ethereumbook/ethereumbook
+  </a>
+</p>
+<br>
+<h2 id="what-will-need-to-be-built">II. What Will Need To Be Built</h2>
+<p>A Crypto Exchange is typically broken down, but not limited to, the following system components: a trading engine, an interface for customers, a variety of wallet types, and an administration/backend portion.</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="trading-engine">A. Trading Engine</h4>
+</p>
+<p>The trading engine serves to calculate balances, execute a variety of transactions, make a variety of calls to order books, and match resulting buyer and seller transaction.</p>
+<p>
+  <a href="https://freestartupkits.com/articles/technology/cryptocurrency-news-and-tips/cryptocurrency-trading-engines-open-source-2018/">
+    https://freestartupkits.com/articles/technology/cryptocurrency-news-and-tips/cryptocurrency-trading-engines-open-source-2018/
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="frontend-user-interface">B. Frontend User Interface</h4>
+</p>
+<p>This is fairly straightforward. Much like traditional trading platforms, the UI/Fronted serves to allow users to maintain profiles, make deposits or withdrawals, view past/present/planned transactions, balances, support from the exchange provider, and analyze their trading with many stats/graphs/predictions/etc.</p>
+<p>
+  <a href="https://www.behance.net/gallery/22946165/UIUX-for-cryptocurrency-exchange-(bitcoin-ETH-etc)">
+    https://www.behance.net/gallery/22946165/UIUX-for-cryptocurrency-exchange-(bitcoin-ETH-etc)
+  </a>
+</p>
+<p>
+  <a href="https://blockonomi.com/exchanges-trading-screens/">
+    https://blockonomi.com/exchanges-trading-screens/
+  </a>
+</p>
+<br>
+<p>
+	<h4 style="margin-left:5%;" id="cryptocurrency-wallets">C. Cryptocurrency Wallets</h4>
+</p>
+<p>A cryptocurrency wallet allows users to obtain or receive cryptocurrencies and serves to store both the private and public keys to enable said exchange. There are a variety of wallet types: multicurrency, software, hardware, watch-only, multi-signature, brain, Hot vs. Cold (which we will briefly cover here), deep cold, and varieties of deterministic/non-deterministic wallets.</p>
+<p>
+  <a href="https://en.wikipedia.org/wiki/Cryptocurrency_wallet">
+    https://en.wikipedia.org/wiki/Cryptocurrency_wallet
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="hot-wallets">1. Hot Wallet</h5>
+</p>
+<p>The Hot Wallet allows users to withdraw coins/tokens without the approval of an exchange operator. In essence, these wallets are directly connected to the internet. They operate much like checking accounts for cryptocurrencies. Due to being persistently connected to the internet, hot portfolios are generally more susceptible to a variety of attacks and theft.</p>
+<p>
+  <a href="https://en.bitcoin.it/wiki/Hot_wallet">
+    https://en.bitcoin.it/wiki/Hot_wallet
+  </a>
+</p>
+<p>
+  <h5 style="margin-left:10%;" id="cold-wallets">2. Cold Wallet</h5>
+</p>
+<p>This is where you store your tokens. Cold wallets operate much like a savings account. The bulk of a user's assets are generally stored in a cold wallet since these assets are far more difficult to steal than those operating in a hot wallet.</p>
+<p>
+  <a href="https://en.bitcoin.it/wiki/Cold_storage">
+    https://en.bitcoin.it/wiki/Cold_storage
+  </a>
+</p>
+<br>
+<p>
+  <h4 style="margin-left:5%;" id="administration-and-backend">D. Admin and Backend</h4>
+</p>
+<p>Administrators, operators utilize this portion of the exchange and business intelligence to control, analyze, and further manage the internal intricacies of the exchange. The Admin/Backend portion serves to: Address and validate issues raised by users, control and credit fiat withdrawal and deposit, manage a variety of cryptocurrencies traded on the platform, verify user accounts according to relevant KYC guidelines, edit fees, alter liquidity, and address a number of other issues executed via the trading engine or communicated to users via the frontend.</p>
+<p>
+  <a href="https://wizardry.liberty.me/how-to-build-a-bitcoin-exchange-part-1-design-goals-risk-management/">
+    https://wizardry.liberty.me/how-to-build-a-bitcoin-exchange-part-1-design-goals-risk-management/
+  </a>
+</p>
+<br>
+<h2 id="further-thoughts">III. Further Thoughts</h2>
+<p>So, that covers, in a very general manner, the fundamental steps and areas of consideration for the development of a cryptocurrency exchange. As cryptocurrency markets are consistently in flux, markets are being created and destroyed, vast arrays of use cases are coming into play, and software/hardware components are being created to deal with this space, the groundwork and requirements will change on an almost daily basis. However, that is the fun of it!</p>
