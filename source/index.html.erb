@@ -9,29 +9,48 @@ per_page: 10
       <div class="my-auto">
         <div class="container">
           <div class="row align-items-center home-page">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="row title-home">
                 <img class="imglogo" src="images/android-chrome-192x192.png" alt="logo">
                 <h1 class="titleR">Ruby<span class="text-primary">Kube</span></h1>
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="row icons-home">
+            <div class="col-md-9 pr-4">
+              <div class="row icons-home ">
               <p class="iconmargin">
                  <a class="github" href="https://github.com/rubykube" target="blank">
-                  <i class="fab fa-github fa-lg i-head"></i><span class="tooltip">GitHub</span>
+                  <i class="fab fa-github fa-lg i-head"></i>
                  </a>
 
                  <a class="telegram" href="https://t.me/peatio" target="blank">
-                  <i class="fab fa-telegram fa-lg i-head"></i><span class="tooltip">Telegram</span>
+                  <i class="fab fa-telegram fa-lg i-head"></i>
                 </a>
 
                 <a class="reddit" href="https://reddit.com/r/rubykube/" target="blank">
-                  <i class="fab fa-reddit fa-lg i-head"></i><span class="tooltip">Reddit</span>
+                  <i class="fab fa-reddit fa-lg i-head"></i>
                 </a>
 
                 <a class="youtube" href="https://www.youtube.com/c/rubykube" target="blank">
-                  <i class="fab fa-youtube fa-lg i-head"></i><span class="tooltip">YouTube</span>
+                  <i class="fab fa-youtube fa-lg i-head"></i>
+                </a>
+
+                <a class="discuss" href="https://discuss.rubykube.io/" target="blank">
+                  <i class="fab fa-lg">
+                    <svg width="30" height="34" viewBox="0 0 674 786" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M505.384 300.38V494.443L674 397.412V202.885L505.384 300.38Z" fill="#218939"/>
+                      <path d="M336.768 397.411L168.616 494.442L336.768 591.938L505.384 494.442L336.768 397.411Z" fill="#7AAEF9"/>
+                      <path d="M336.768 202.885V397.412L505.384 494.443V300.38L336.768 202.885Z" fill="#35A753"/>
+                      <path d="M505.384 105.851L336.768 202.882L505.384 300.378L674 202.882L505.384 105.851Z" fill="#69BC7D"/>
+                      <path d="M336.768 8.8208L168.616 105.852L336.768 202.883L505.384 105.852L336.768 8.8208Z" fill="#F4645D"/>
+                      <path d="M168.616 105.851L0 202.882L168.616 300.378L336.768 202.882L168.616 105.851Z" fill="#FCCF5E"/>
+                      <path d="M168.616 300.38V494.443L336.768 397.412V202.885L168.616 300.38Z" fill="#E0A205"/>
+                      <path d="M0 202.885V397.412L168.616 494.443V300.38L0 202.885Z" fill="#FCBB05"/>
+                      <path d="M168.616 494.441V688.968L336.768 786V591.937L168.616 494.441Z" fill="#4285F4"/>
+                      <path d="M336.768 591.937V786L505.384 688.968V494.441L336.768 591.937Z" fill="#296ED3"/>
+                      <path d="M0 397.411V591.938L168.616 688.969V494.442L0 397.411Z" fill="#EB4336"/>
+                      <path d="M674 397.411L505.384 494.442V688.969L674 591.938V397.411Z" fill="#E0A205"/>
+                    </svg>
+                  </i>
                 </a>
               </p>
               </div>
@@ -180,7 +199,7 @@ per_page: 10
 
       </div>
     </section>
-    
+
     <section class="resume-section p-3 p-lg-5 d-flex d-column section-scroll" id="components" data-nav-color="yellow">
       <div class="my-auto">
           <div class="row pl-xl-5">
@@ -513,14 +532,15 @@ per_page: 10
             <%= data.i18n.en.sections.technology.title %>
           </h1>
         </div>
-        <div class="row pl-xl-5">
-          <div class="col-md-6">
-            <div class="subheading mb-3">
-              <h2><%= data.i18n.en.sections.technology.subheading %></h2>
-            </div>
 
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="subheading mb-3 " id="team-item">
+              <h2><%= data.i18n.en.sections.technology.requirements.title %></h2>
+            </div>
             <ul class="fa-ul mb-3" id="team-item">
-              <% data.i18n.en.sections.technology.list.each do |item| %>
+              <% data.i18n.en.sections.technology.requirements.list.each do |item| %>
                 <li>
                   <i class="fa-li fa fa-check"></i>
                   <%= item %>
@@ -529,11 +549,24 @@ per_page: 10
             </ul>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-4 pl-5">
+            <div class="subheading mb-3 ml-3" id="team-item">
+              <h2><%= data.i18n.en.sections.technology.coding.title %></h2>
+            </div>
+            <ul class="fa-ul mb-3 ml-5" id="team-item">
+              <% data.i18n.en.sections.technology.coding.list.each do |item| %>
+                <li>
+                  <i class="fa-li fa fa-check"></i>
+                  <%= item %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
             <div class="subheading mb-3" id="team-item">
               <h2><%= data.i18n.en.sections.technology.workflow.title %></h2>
             </div>
-
             <ul class="fa-ul mb-3" id="team-item">
               <% data.i18n.en.sections.technology.workflow.list.each do |item| %>
                 <li>
@@ -545,7 +578,6 @@ per_page: 10
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -660,7 +692,7 @@ per_page: 10
               </p>
           </div>
           <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="http://reddit.com/r/rubykube/" target="_blank" class="btn btn-primary btn-block align-self-center">Reddit forum</a>
+              <a href="http://reddit.com/r/rubykube/" target="_blank" class="btn btn-primary btn-block align-self-center ">Reddit forum</a>
           </div>
         </div>
 
