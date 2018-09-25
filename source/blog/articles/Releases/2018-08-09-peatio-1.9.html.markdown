@@ -1,0 +1,153 @@
+---
+
+title: Peatio Open Source 1.9 
+date: 2018-08-09 10:00 UTC
+category: Releases
+thumbnail_image: https://raw.githubusercontent.com/rubykube/peatio/master/public/peatio.png
+tags: [ Rubykube, Releases ]
+
+---
+
+### Overview ###
+
+We are pleased to present Peatio Open Source 1.9.0.
+
+This release includes significant new features, numerous functional fixes and enhancements. Peatio 1.9.0 came out with a rewrite of Blockchain synchronisation daemon solving major design flaw of old original Peatio. Multi-tier wallet system is another great implemented feature helping achieve digital funds protection by using wallets segregation with specific access policies and flexible multi-signature settings. Among the other nice features such as Admin Interface for advanced Blockchain/Wallet management, this release is also focused on:
+
+    1. Multi Wallet support.
+    2. New Blockchain synchronization mechanism.
+    3. Full ERC20 tokens support.
+    4. Splitting of Blockchain read and write Services and Clients.
+
+This release notes is must-read for migrating from older versions.
+
+### Breaking changes ###
+
+- <a target="_blank" href="https://github.com/rubykube/peatio/pull/1404">#1404</a>: Adding blockchain model, database seeds, service and client.
+
+  The next seed and migration files are must-learn before doing any upgrades:
+
+  - <a href="https://github.com/rubykube/peatio/pull/1404/files#diff-6be627e8bb77b25dcdf2c972d3c873ec" target="_blank">https://github.com/rubykube/peatio/pull/1404/files#diff-6be627e8bb77b25dcdf2c972d3c873ec</a>
+  - <a href="https://github.com/rubykube/peatio/pull/1404/files#diff-91027e648f4292cd6ec8f7e11a43a669" target="_blank">https://github.com/rubykube/peatio/pull/1404/files#diff-91027e648f4292cd6ec8f7e11a43a669</a>
+
+  Some of Blockchain configuration were extracted from Currencies. Blockchain model, service and client performs read operation and process blockchain blocks one by one. It responsible for coin deposit or withdraw state updates and deposit detection.
+
+- <a target="_blank" href="https://github.com/rubykube/peatio/pull/1404">#1404</a>: Adding wallet model, database seeds, service and client.
+
+  The next seed and migration files are must-learn before doing any upgrades:
+
+  - <a href="https://github.com/rubykube/peatio/pull/1404/files#diff-3ac13d4e0c5c496b426d40b62db793b5" target="_blank">https://github.com/rubykube/peatio/pull/1404/files#diff-3ac13d4e0c5c496b426d40b62db793b5</a>
+  - <a href="https://github.com/rubykube/peatio/pull/1404/files#diff-1fc2b7b6df8dbd6da6bce9966b74a3e8" target="_blank">https://github.com/rubykube/peatio/pull/1404/files#diff-1fc2b7b6df8dbd6da6bce9966b74a3e8</a>
+
+  Wallet configurations were extracted from Currencies API client configuration. Wallet model, service and client performs write operation and responsible for deposit address creation, deposit collection, deposit collection fees transfering, and withdraw creation..
+
+- <a target="_blank" href="https://github.com/rubykube/peatio/pull/1518">#1518</a>: Currencies dead code clean up.
+
+  The next seed and migration files are must-learn before doing any upgrades:
+
+  - <a href="https://github.com/rubykube/peatio/pull/1518/files#diff-eb833ff83c1af2e978d647f035f7d1ac" target="_blank">https://github.com/rubykube/peatio/pull/1518/files#diff-eb833ff83c1af2e978d647f035f7d1ac</a>
+  - <a href="https://github.com/rubykube/peatio/pull/1404/files#diff-91027e648f4292cd6ec8f7e11a43a669R17" target="_blank">https://github.com/rubykube/peatio/pull/1404/files#diff-91027e648f4292cd6ec8f7e11a43a669R17</a>
+
+  Currencies model simplify. Now currency model doesn't store any API specific configuration and wallet secrets all this configuration where extracted to Blockchain and Wallet models.
+
+- <a target="_blank" href="https://github.com/rubykube/peatio/pull/1458">#1458</a>: Include PublishToRabbitMQ GenerateJWT Event API middlewares by default.
+
+  The next configuration file is must-learn before upgrading:
+  -	https://github.com/rubykube/peatio/commit/fa041a6ba8ba586ffc9f4095b1f4f46e2df6b017#diff-81b753b02c902d26e3b837d7814c5244R172
+  Now all events are pulished to RabbitMQ as in form of JWT messages by default instead of abstract RabbitMQ message.
+
+### New features ###
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1404">#1404</a>: This pull request provides bunch of functional features and fixes:
+<pre>
+  * Blockchain model and Database seeding
+  * Adding wallet seeding
+  * Adding wallet model
+  * Fix STI problem
+  * Add missing associations
+  * Fix indexes order
+  * Adding factories and a test stub
+  * BlockchainService #process_blockchain deposits with proof of work <a target="_blank" href="https://github.com/rubykube/peatio/pull/1417">#1417</a>
+  * Ability to register a blockchain/wallet from Admin Panel <a target="_blank" href="https://github.com/rubykube/peatio/pull/1422">#1422</a>
+  * Revert some changes (related to #1422)
+  * Single BlockchainService per Blockchain <a target="_blank" href="https://github.com/rubykube/peatio/pull/1424">#1424</a>
+  * Added Wallet/Blockchain validations <a target="_blank" href="https://github.com/rubykube/peatio/pull/1429">#1429</a>
+  * Confirm withdrawals in BlockchainService #process_blockchain 
+</pre>
+<a target="_blank" href="https://github.com/rubykube/peatio/pull/1427">#1427</a>
+<pre>
+  * Rebase on master
+  * Bitcoin Blockchain Service <a target="_blank" href="https://github.com/rubykube/peatio/pull/1444">#1444</a>
+  * Improve BlockchainService logger. Wallet & Blockchain bugfixes <a target="_blank" href="https://github.com/rubykube/peatio/pull/1474">#1474</a>
+  * Add Blockchain Key In Currency <a target="_blank" href="https://github.com/rubykube/peatio/pull/1473">#1473</a>
+  * Remove CoinAPI & daemons. Rename Client to BlockchainClient <a target="_blank" href="https://github.com/rubykube/peatio/pull/1476">#1476</a>
+  * BlockchainService improve performance
+  * Fix specs
+  * Replace Confirmation With Block Number <a target="_blank" href="https://github.com/rubykube/peatio/pull/1463">#1463</a>
+  * Add gateway & max_balance to wallets <a target="_blank" href="https://github.com/rubykube/peatio/pull/1478">#1478</a>
+  * Wallet per currency
+  * WalletService module and WalletService::Base class <a target="_blank" href="https://github.com/rubykube/peatio/pull/1479">#1479</a>
+  * DepositCollectionFees worker for ERC20 <a target="_blank" href="https://github.com/rubykube/peatio/pull/1489">#1489</a>
+  * Litecoin/Dash/BitcoinCash Blockchain Services <a target="_blank" href="https://github.com/rubykube/peatio/pull/1475">#1475</a>
+  * Updates for admin panel <a target="_blank" href="https://github.com/rubykube/peatio/pull/1501">#1501</a>
+  * Fix erc20 deposit for tx with empty receipt <a target="_blank" href="https://github.com/rubykube/peatio/pull/1502">#1502</a>
+  * Fix wrong client for existing blockchain on admin panel <a target="_blank" href="https://github.com/rubykube/peatio/pull/1504">#1504</a>
+  * Bitgo wallet Client/Service <a target="_blank" href="https://github.com/rubykube/peatio/pull/1491">#1491</a>
+  * Fixed withdraw stuck in confirming <a target="_blank" href="https://github.com/rubykube/peatio/pull/1507">#1507</a>
+  * Improved dynamic txn fees for bitcoind/bitgo <a target="_blank" href="https://github.com/rubykube/peatio/pull/1509">#1509</a>
+  * Feature/blockchains wallets <a target="_blank" href="https://github.com/rubykube/peatio/pull/1510">#1510</a>
+</pre>
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1368">#1368</a>: Add 24 hours currency trades API endpoint.
+<pre>
+  This patch adds public call for getting currency trades performed within the last 24h: GET /v2/currency/trades.
+  Check more info at docs/api/member_api_v2.md.
+</pre>
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1433">#1433</a>: Add API endpoint for currencies.
+<pre>
+  This patch adds public call for getting the list of currencies: GET /v2/currencies.
+  Check more info at docs/api/member_api_v2.md
+</pre>
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1501">#1501</a>: Updates for admin panel.
+<pre>
+  This patch gives the ability to to register a blockchain/wallet from Admin Panel.
+</pre>
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1463">#1463</a>: Replace Confirmation With Block Number.
+<pre>
+  This patch replaces confirmations field in withdraw and currency model with block_number. So confirmations amount is updated dynamically.
+</pre>
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1460">#1460</a>: Support minimum price for Order.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1318">#1318</a>: Send label when generating BitGo address.
+
+
+### Enhancements ###
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1377">#1377</a>: Document every daemon.
+<pre>
+  The list and purpose of each Peatio daemon is described in <a target="_blank" href="docs/daemons.md">docs/daemons.md</a>.
+</pre>
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1342): Ability to get data between some time interval (time_from, time_to">#1342</a> in GET /api/v2/k.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1493">#1493</a>: Add more details for the API docs.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1517">#1517</a>:  Improved updation of blockchain height.
+
+### Fixes ###
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1450">#1450</a>: Change Default Domain To peatio.tech.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1526">#1526</a>: Change Currency Id And Market Id Limit.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1402">#1402</a>: Fix migration multiple_deposit_addresses.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1492">#1492</a>: Fix typo in setup-osx.md documentation.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1529">#1529</a>: Code polish and minor bugfix.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1518">#1518</a>: Currencies dead code clean up.
+
+* <a target="_blank" href="https://github.com/rubykube/peatio/pull/1533">#1533</a>: Edit comments in templates for wallets.yml.
