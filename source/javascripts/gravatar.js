@@ -20,13 +20,9 @@ $(document).ready(function()
         }, overrides);
 
         let baseUrl = options.secure ? 'https://secure.gravatar.com/avatar/' : 'http://www.gravatar.com/avatar/';
-        
-        var md5 = new MD5();
-        md5.end(emailAddress);
 
         return $('<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"><img class="img-rounded mt-3" draggable="false" width = 100% src="' + baseUrl +
-        md5.read().toString('hex') +
-            '.jpg?' +
+            emailAddress + '.jpg?' +
             (options.size ? 's=' + options.size + '&' : '') +
             (options.rating ? 'r=' + options.rating + '&' : '') +
             (options.image ? 'd=' + encodeURIComponent(options.image) : '') +
