@@ -279,6 +279,11 @@ h6 {
   text-transform: uppercase;
 }
 
+#mce-error-response {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-itemGit{
   margin-top:0px;
   color: #4d4e4f;
