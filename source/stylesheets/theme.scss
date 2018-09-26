@@ -176,18 +176,6 @@ h6 {
   margin-left: -6px;
 }
 
-#feature {
-  margin-left: 10px !important;
-}
-
-#blog {
-  margin-left: 10px !important;
-}
-
-#projects {
-  margin-left: 10px !important;
-}
-
 .fixed {
   background: #2eaade;
   position: fixed;
@@ -210,6 +198,10 @@ h6 {
 
 .list-icons {
   font-size: 3rem;
+}
+
+.teammates {
+  margin-left: -10px;
 }
 
 #logo {
@@ -395,7 +387,6 @@ ul, li {
 
 .list-item {
   display: flex;
-  padding: 1em;
   width: 100%;
 }
 
@@ -407,9 +398,6 @@ ul, li {
   padding-left: 1em !important;
 }
 
-#team-item {
-  padding-left: 10px !important;
-}
 
 @media all and (min-width: 40em) {
   .list-item {
@@ -447,13 +435,14 @@ ul, li {
   color: #212529;
 }
 
-.post-title {
-  margin-left: 0px;
-}
-
 .main-post-category {
   color: #4C90F6;
   text-align: left;
+  margin-left: -15px;
+}
+
+.preview {
+  margin-left: -15px;
 }
 
 .main-post-date {
@@ -461,13 +450,9 @@ ul, li {
   font-size: 14px;
 }
 
-.btn-blog-block {
-  text-align: center;
-}
-
 .btn-main-blog {
   font-size: 16px;
-  margin: 25px;
+  margin: 25px 25px 25px 0;
   padding: 10px 25px;
 }
 
