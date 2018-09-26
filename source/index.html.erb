@@ -202,13 +202,14 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column flex-column section-scroll" id="components" data-nav-color="yellow">
       <div class="my-auto">
-          <div class="row pl-xl-5">
+        <div class="container">
+          <div class="row">
             <h1 class="mb-5" id="projects">
               <%= data.i18n.en.sections.components.title %>
             </h1>
           </div>
-          <ul class="list pl-xl-5">
-            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+          <ul class="list">
+            <li class="list-item pr-xl-5 pb-xl-5 resume-item d-flex flex-column flex-md-row mb-5">
               <div class="list-content resume-content mr-auto">
                   <div class="d-flex title-logo">
                     <div class="imgProject">
@@ -237,7 +238,7 @@ per_page: 10
                   </div>
               </div>
             </li>
-            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+            <li class="list-item pr-xl-5 pb-xl-5 resume-item d-flex flex-column flex-md-row mb-5">
               <div class="list-content resume-content mr-auto">
                   <div class="d-flex title-logo">
                     <div class="imgProject">
@@ -266,7 +267,7 @@ per_page: 10
                   </div>
               </div>
             </li>
-            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+            <li class="list-item pr-xl-5 pb-xl-5 resume-item d-flex flex-column flex-md-row mb-5">
               <div class="list-content resume-content mr-auto">
                 <div class="d-flex title-logo">
                   <div class="imgProject">
@@ -295,7 +296,7 @@ per_page: 10
                 </div>
               </div>
             </li>
-            <li class="list-item resume-item d-flex flex-column flex-md-row mb-5">
+            <li class="list-item pr-xl-5 pb-xl-5 resume-item d-flex flex-column flex-md-row mb-5">
               <div class="list-content resume-content mr-auto">
                 <div class="d-flex title-logo">
                   <div class="imgProject">
@@ -325,200 +326,202 @@ per_page: 10
               </div>
             </li>
         </ul>
+        </div>
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="features" data-nav-color="green">
       <div class="my-auto">
-        <div class="row pl-sm-3 pl-xl-5">
-          <h1 class="mb-5" id="feature"><%= data.i18n.en.sections.features.title %></h1>
-        </div>
-
-        <div class="row pl-3 pl-xl-5">
-          <div class="col-md-6">
-            <ul class="fa-ul mb-0">
-              <% data.i18n.en.sections.features.list.left.each do |item| %>
-                <li>
-                  <i class="fa-li fa fa-circle"></i>
-                  <%= item %>
-                </li>
-              <% end %>
-            </ul>
+        <div class="container">
+          <div class="row">
+            <h1 class="mb-5" id="feature"><%= data.i18n.en.sections.features.title %></h1>
           </div>
 
-          <div class="col-md-6">
-            <ul class="fa-ul mb-0">
-              <% data.i18n.en.sections.features.list.right.each do |item| %>
-                <li>
-                  <i class="fa-li fa fa-circle"></i>
-                  <%= item %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="container-fluid text-center mt-5">
-            <h1 class="row pl-sm-3 pl-xl-5 mb-4 mt-3">
-              <%= data.i18n.en.sections.features.subtitle %>
-            </h1>
-
-            <div id="carouselSlide" class="carousel slide" data-ride="carousel" data-interval="9000">
-                <div class="carousel-inner row w-100 mx-auto" role="listbox">
-
-                    <div class="carousel-item col-md-3  active imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                            <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BCH.svg" width=50>
-                            <h4 mt-1>BCH</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BNB.svg" width=50>
-                              <h4 mt-1>BNB</h4>
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BTC.svg" width=50>
-                              <h4 mt-1>BTC</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                        <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/DASH.svg" width=50>
-                              <h4 mt-1>DASH</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/ETH.svg" width=50>
-                              <h4 mt-1>ETH</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/LTC.svg" width=50>
-                              <h4 mt-1>LTC</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/MKR.svg" width=50>
-                              <h4 mt-1>MKR</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/OMG.svg" width=50>
-                              <h4 mt-1>OMG</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/TRX.svg" width=50>
-                              <h4 mt-1>TRX</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/VEN.svg" width=50>
-                              <h4 mt-1>VEN</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/XRP.svg" width=50>
-                              <h4 mt-1>XRP</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item col-md-3 imgFeature">
-                      <div class="panel panel-default">
-                          <div class="panel-thumbnail">
-                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/ZRX.svg" width=50>
-                              <h4 mt-1>ZRX</h4>
-                          </div>
-                        </div>
-                    </div>
-
-                </div>
+          <div class="row pl-3">
+            <div class="col-md-6">
+              <ul class="fa-ul mb-0">
+                <% data.i18n.en.sections.features.list.left.each do |item| %>
+                  <li>
+                    <i class="fa-li fa fa-circle"></i>
+                    <%= item %>
+                  </li>
+                <% end %>
+              </ul>
             </div>
-        </div>
 
+            <div class="col-md-6">
+              <ul class="fa-ul mb-0">
+                <% data.i18n.en.sections.features.list.right.each do |item| %>
+                  <li>
+                    <i class="fa-li fa fa-circle"></i>
+                    <%= item %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="text-center mt-5">
+              <h1 class="row text-left mb-5 mt-3">
+                <%= data.i18n.en.sections.features.subtitle %>
+              </h1>
+
+              <div id="carouselSlide" class="carousel slide" data-ride="carousel" data-interval="9000">
+                  <div class="carousel-inner row w-100 mx-auto" role="listbox">
+
+                      <div class="carousel-item col-md-3  active imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                              <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BCH.svg" width=50>
+                              <h4 mt-1>BCH</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BNB.svg" width=50>
+                                <h4 mt-1>BNB</h4>
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BTC.svg" width=50>
+                                <h4 mt-1>BTC</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                          <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/DASH.svg" width=50>
+                                <h4 mt-1>DASH</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/ETH.svg" width=50>
+                                <h4 mt-1>ETH</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/LTC.svg" width=50>
+                                <h4 mt-1>LTC</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/MKR.svg" width=50>
+                                <h4 mt-1>MKR</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/OMG.svg" width=50>
+                                <h4 mt-1>OMG</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/TRX.svg" width=50>
+                                <h4 mt-1>TRX</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/VEN.svg" width=50>
+                                <h4 mt-1>VEN</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/XRP.svg" width=50>
+                                <h4 mt-1>XRP</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="carousel-item col-md-3 imgFeature">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/ZRX.svg" width=50>
+                                <h4 mt-1>ZRX</h4>
+                            </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </di<v>
+        </div>
 
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="blog" data-nav-color="red">
       <div class="my-auto">
-        <div class="row pl-xl-5">
-          <h1 class="mb-5" id="blog">
-            <%= data.i18n.en.sections.blog.title %>
-          </h1>
-        </div>
-        <div class="row row pl-xl-5">
-            <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
-              <% if (i < 4) %>
-                <article class="col-sm-12 col-md-6">
-                    <div class="main-blog-post">
-                      <header>
-                        <h2 class="post-title">
-                          <span id="title-post"><%= link_to article.title, article %></span>
-                        </h2>
-                        <span class="main-post-category">
-                          <%= article.data.category %> |
-                        </span>
-                        <span class="post-date">
-                          <%= article.date.strftime('%b %e, %Y') %>
-                        </span>
-                      </header>
-                      <div class="post-body"><%= article.summary(140, '...') %></div>
-                    </div>
-                </article>
+        <div class="container">
+          <div class="row">
+            <h1 class="mb-5" id="blog">
+              <%= data.i18n.en.sections.blog.title %>
+            </h1>
+          </div>
+          <div class="row">
+              <% page_articles.sort_by{|a| a.date}.reverse.each_with_index do |article, i| %>
+                <% if (i < 4) %>
+                  <article class="col-sm-12 col-md-6">
+                      <div class="main-blog-post">
+                        <header>
+                          <h2 class="post-title">
+                            <span id="title-post"><%= link_to article.title, article %></span>
+                          </h2>
+                          <span class="main-post-category">
+                            <%= article.data.category %> |
+                          </span>
+                          <span class="post-date">
+                            <%= article.date.strftime('%b %e, %Y') %>
+                          </span>
+                        </header>
+                        <div class="post-body preview"><%= article.summary(140, '...') %></div>
+                      </div>
+                  </article>
+                <% end %>
               <% end %>
-            <% end %>
-          </article>
-        </div>
-
-
-        <div class="d-flex pl-xl-5 justify-content-center justify-content-lg-start">
-          <div class="btn-blog-block">
-            <a href="/blog" class="btn btn-primary btn-main-blog btn-blue">MORE POSTS</a>
+            </article>
+          </div>
+          <div class="d-flex">
+            <div class="text-center">
+              <a href="/blog" class="btn btn-primary btn-main-blog btn-blue">More posts</a>
+            </div>
           </div>
         </div>
       </div>
@@ -527,203 +530,200 @@ per_page: 10
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="technology" data-nav-color="blue">
       <div class="my-auto">
-        <div class="row pl-xl-5">
-          <h1 class="mb-5" id="team-item">
-            <%= data.i18n.en.sections.technology.title %>
-          </h1>
-        </div>
-
-        <div class="row">
-
-          <div class="col-md-4">
-            <div class="subheading mb-3 " id="team-item">
-              <h2><%= data.i18n.en.sections.technology.requirements.title %></h2>
-            </div>
-            <ul class="fa-ul mb-3" id="team-item">
-              <% data.i18n.en.sections.technology.requirements.list.each do |item| %>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  <%= item %>
-                </li>
-              <% end %>
-            </ul>
+        <div class="container">
+          <div class="row">
+            <h1 class="mb-5">
+              <%= data.i18n.en.sections.technology.title %>
+            </h1>
           </div>
-
-          <div class="col-md-4 pl-5">
-            <div class="subheading mb-3 ml-3" id="team-item">
-              <h2><%= data.i18n.en.sections.technology.coding.title %></h2>
+          <div class="row">
+            <div class="col-md-4 pl-0">
+              <div class="subheading mb-3">
+                <h2><%= data.i18n.en.sections.technology.requirements.title %></h2>
+              </div>
+              <ul class="fa-ul mb-3 ml-4">
+                <% data.i18n.en.sections.technology.requirements.list.each do |item| %>
+                  <li>
+                    <i class="fa-li fa fa-check"></i>
+                    <%= item %>
+                  </li>
+                <% end %>
+              </ul>
             </div>
-            <ul class="fa-ul mb-3 ml-5" id="team-item">
-              <% data.i18n.en.sections.technology.coding.list.each do |item| %>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  <%= item %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
 
-          <div class="col-md-4">
-            <div class="subheading mb-3" id="team-item">
-              <h2><%= data.i18n.en.sections.technology.workflow.title %></h2>
+            <div class="col-md-4 pl-0 pl-md-5">
+              <div class="subheading mb-3 ml-md-4">
+                <h2><%= data.i18n.en.sections.technology.coding.title %></h2>
+              </div>
+              <ul class="fa-ul mb-3 ml-4 ml-md-5">
+                <% data.i18n.en.sections.technology.coding.list.each do |item| %>
+                  <li>
+                    <i class="fa-li fa fa-check"></i>
+                    <%= item %>
+                  </li>
+                <% end %>
+              </ul>
             </div>
-            <ul class="fa-ul mb-3" id="team-item">
-              <% data.i18n.en.sections.technology.workflow.list.each do |item| %>
-                <li>
-                  <i class="fa-li fa fa-check"></i>
-                  <%= item %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
 
+            <div class="col-md-4 pl-0 pl-md-5">
+              <div class="subheading mb-3">
+                <h2><%= data.i18n.en.sections.technology.workflow.title %></h2>
+              </div>
+              <ul class="fa-ul mb-3 ml-4">
+                <% data.i18n.en.sections.technology.workflow.list.each do |item| %>
+                  <li>
+                    <i class="fa-li fa fa-check"></i>
+                    <%= item %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="team" data-nav-color="red">
       <div class="my-auto">
-        <div class="row pl-xl-5">
-          <h1 class="mb-5">
-            <%= data.i18n.en.sections.team.title %>
-          </h1>
+        <div class="container">
+          <div class="row">
+            <h1 class="mb-5">
+              <%= data.i18n.en.sections.team.title %>
+            </h1>
+          </div>
+          <div class="row mb-4">
+            <h2>OpenWare Team</h2>
+          </div>
+          <div class="row teammates" id="gravatar">
+          </div>
         </div>
-        <div class="row mb-4 pl-xl-5">
-          <h2>OpenWare Team</h2>
-        </div>
-          <div class="row pl-xl-5 teammates text-center text-lg-left" id="gravatar"></div>
-
       </div>
     </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex flex-column section-scroll" id="followus" data-nav-color="yellow">
       <div class="my-auto">
-        <div class="row pl-xl-5">
+        <div class="container">
+          <div class="row">
+            <h1 class="mb-5">
+              <%= data.i18n.en.sections.contact.title %>
+            </h1>
+            <p class="mb-5">
+              <%= data.i18n.en.sections.contact.text1 %>
+            </p>
 
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup" class="mb-5">
+              <form action="https://rubykube.us19.list-manage.com/subscribe/post?u=0e5a930a2bb246b57f21cba2e&amp;id=55fb9c5f1d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <p>Subscribe to our newsletter to get informed on any update</p>
+                  <div class="input-group mb-3">
+                    <input type="email" name="EMAIL" id="mce-EMAIL" value="" placeholder="E-mail" class="required email form-control">
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                      <input type="text" name="b_0e5a930a2bb246b57f21cba2e_55fb9c5f1d" tabindex="-1" value="">
+                    </div>
+                    <div class="input-group-append">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary button button-addon2">
+                    </div>
 
-
-          <h1 class="mb-5" id="follow">
-            <%= data.i18n.en.sections.contact.title %>
-          </h1>
-
-
-
-          <p class="mb-5">
-            <%= data.i18n.en.sections.contact.text1 %>
-          </p>
-          <h2 class="mb-4">
-            <%= data.i18n.en.sections.contact.subtitle %>
-          </h2>    
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup" class="mb-5">
-            <form action="https://rubykube.us19.list-manage.com/subscribe/post?u=0e5a930a2bb246b57f21cba2e&amp;id=55fb9c5f1d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <p>Subscribe to our newsletter to get informed on any update</p>
-                <div class="input-group mb-3">
-                  <input type="email" name="EMAIL" id="mce-EMAIL" value="" placeholder="E-mail" class="required email form-control">
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response d-flex flex-column" style="display:none"></div>
-                    <div class="response" id="mce-success-response d-flex flex-column" style="display:none"></div>
-                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_0e5a930a2bb246b57f21cba2e_55fb9c5f1d" tabindex="-1" value="">
                   </div>
-                  <div class="input-group-append">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary button button-addon2">
-                  </div>
-
                 </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            </form>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+          </div>
+          <!--End mc_embed_signup-->
+
+          <div class="row mb-5">
+            <h2>
+              Communications
+            </h2>
+          </div>
+          <div class="row mb-4">
+            <p>
+              <%= data.i18n.en.sections.contact.text2 %>
+            </p>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+              <i class="fab fa-github fa-6x align-self-center"></i>
             </div>
-          </form>
-          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-          <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        </div>
-        <!--End mc_embed_signup-->
-
-        <div class="pl-xl-5">
-          <h2 class="mb-5 ">
-            Communications
-          </h2>
-          <p class="mb-5">
-            <%= data.i18n.en.sections.contact.text2 %>
-          </p>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
-            <i class="fab fa-github fa-6x align-self-center"></i>
-          </div>
-          <div class="col-sm-12 col-md-7 d-flex">
-             <p class="align-self-center mt-3">
-              <%= data.i18n.en.sections.contact.github %>
-             </p>
-          </div>
-          <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="https://github.com/rubykube" target="_blank" class="btn btn-dark btn-block align-self-center">GitHub organisation</a>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
-            <i class="fab fa-telegram fa-6x telegram align-self-center"></i>
-          </div>
-          <div class="col-sm-12 col-md-7 d-flex">
-             <p class="align-self-center mt-3">
-              <%= data.i18n.en.sections.contact.telegram %>
-             </p>
-          </div>
-          <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="https://telegram.im/@Peatio" target="_blank" class="btn btn-primary btn-blue btn-block align-self-center">Telegram channel</a>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
-            <img src="images/logo.svg" draggable="false" class="align-self-center" alt="Rubykube" width=95>
-          </div>
-          <div class="col-sm-12 col-md-7 d-flex">
+            <div class="col-sm-12 col-md-7 d-flex">
               <p class="align-self-center mt-3">
-              <%= data.i18n.en.sections.contact.Rubykube %>
+                <%= data.i18n.en.sections.contact.github %>
               </p>
+            </div>
+            <div class="col-sm-12 col-md-3 d-flex px-0">
+                <a href="https://github.com/rubykube" target="_blank" class="btn btn-dark btn-block align-self-center">GitHub organisation</a>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="http://discuss.rubykube.io" target="_blank" class="btn btn-secondary btn-block align-self-center">Community Support forum</a>
-          </div>
-        </div>
 
-        <div class="row mb-2">
-          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
-            <i class="fab fa-reddit reddit fa-6x align-self-center"></i>
-          </div>
-          <div class="col-sm-12 col-md-7 d-flex">
+          <div class="row mb-2">
+            <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+              <i class="fab fa-telegram fa-6x telegram align-self-center"></i>
+            </div>
+            <div class="col-sm-12 col-md-7 d-flex">
               <p class="align-self-center mt-3">
-              <%= data.i18n.en.sections.contact.reddit %>
+                <%= data.i18n.en.sections.contact.telegram %>
               </p>
+            </div>
+            <div class="col-sm-12 col-md-3 d-flex px-0">
+                <a href="https://telegram.im/@Peatio" target="_blank" class="btn btn-primary btn-blue btn-block align-self-center">Telegram channel</a>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="http://reddit.com/r/rubykube/" target="_blank" class="btn btn-primary btn-block align-self-center ">Reddit forum</a>
+
+          <div class="row mb-2">
+            <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+              <img src="images/logo.svg" draggable="false" class="align-self-center" alt="Rubykube" width=95>
+            </div>
+            <div class="col-sm-12 col-md-7 d-flex">
+                <p class="align-self-center mt-3">
+                <%= data.i18n.en.sections.contact.Rubykube %>
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-3 d-flex px-0">
+                <a href="http://discuss.rubykube.io" target="_blank" class="btn btn-secondary btn-block align-self-center">Community Support forum</a>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+              <i class="fab fa-reddit reddit fa-6x align-self-center"></i>
+            </div>
+            <div class="col-sm-12 col-md-7 d-flex">
+                <p class="align-self-center mt-3">
+                <%= data.i18n.en.sections.contact.reddit %>
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-3 d-flex px-0">
+                <a href="http://reddit.com/r/rubykube/" target="_blank" class="btn btn-primary btn-block align-self-center ">Reddit forum</a>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
+              <i class="fab fa-youtube youtube fa-6x align-self-center"></i>
+            </div>
+            <div class="col-sm-12 col-md-7 d-flex">
+                <p class="align-self-center mt-3">
+                <%= data.i18n.en.sections.contact.youtube %>
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-3 d-flex px-0">
+                <a href="https://www.youtube.com/c/rubykube" target="_blank" class="btn btn-primary btn-block align-self-center">YouTube channel</a>
+            </div>
           </div>
         </div>
-
-        <div class="row mb-2">
-          <div class="col-sm-12 col-md-2 pl-0 d-flex justify-content-center">
-            <i class="fab fa-youtube youtube fa-6x align-self-center"></i>
-          </div>
-          <div class="col-sm-12 col-md-7 d-flex">
-              <p class="align-self-center mt-3">
-              <%= data.i18n.en.sections.contact.youtube %>
-              </p>
-          </div>
-          <div class="col-sm-12 col-md-3 d-flex px-0">
-              <a href="https://www.youtube.com/c/rubykube" target="_blank" class="btn btn-primary btn-block align-self-center">YouTube channel</a>
-          </div>
-        </div>
-
       </div>
     </section>
 
