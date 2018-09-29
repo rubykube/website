@@ -22,5 +22,9 @@ $(document).ready(function(){
         }
       }
   });
+
+  $(".carouselSwipe").carousel({
+    swipe: 30
+  });
   
 });
