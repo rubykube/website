@@ -8,9 +8,6 @@ tags: [ Rubykube, Releases ]
 
 ---
 
-### Overview ###
-
-We are pleased to present Peatio Open Source 1.9.0.
 
 This release includes significant new features, numerous functional fixes and enhancements. Peatio 1.9.0 came out with a rewrite of Blockchain synchronisation daemon solving major design flaw of old original Peatio. Multi-tier wallet system is another great implemented feature helping achieve digital funds protection by using wallets segregation with specific access policies and flexible multi-signature settings. Among the other nice features such as Admin Interface for advanced Blockchain/Wallet management, this release is also focused on:
 
