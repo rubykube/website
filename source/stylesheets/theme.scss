@@ -432,7 +432,12 @@ ul, li {
 }
 
 #title-post a {
+  &:hover{
+    color:#4C90F6;
+  }
+  
   color: #212529;
+  text-decoration: underline;
 }
 
 .main-post-category {
