@@ -759,3 +759,38 @@ ul, li {
   }
 
 }
+
+/*
+Technology page slide
+*/
+.block-tech{
+  height: 400px;
+  width: 300px;
+}
+
+.slide-tech{
+  display: none;
+}
+@media only screen and (max-width: 767px){
+  .slide-tech{
+    display: block;
+  }
+
+  .non-slide-tech{
+    display: none;
+  }
+}
+
+/*
+The indicators
+*/
+.carousel-indicators {
+  top: 430px;
+}
+
+.carousel-indicators li {
+  background: #cecece;
+}
+.carousel-indicators .active {
+  background: #428bca;
+}
