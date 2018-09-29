@@ -6,6 +6,8 @@ import '../stylesheets/site.scss';
 
 import '../../node_modules/md5.js'
 
+import  '../../node_modules/bootstrap-carousel-swipe'
+
 import './scrollup.js';
 
 import './slideimg.js';

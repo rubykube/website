@@ -162,13 +162,13 @@ sections:
       title: Workflow
       list:
         - |-
-          Mobile-First, Responsive Design
-        - |-
-          Cross Browser Testing and Debugging
+          Agile Development and Scrum
         - |-
           Cross Functional Teams
         - |-
-          Agile Development and Scrum
+          Cross Browser Testing and Debugging
+        - |-
+          Mobile-First, Responsive Design
 
   team:
     title: RubyKube Team and Contributors
