@@ -14,7 +14,7 @@ $(document).ready(function()
             // url to define a default image (can also be one of: identicon, monsterid, wavatar)
             image: '',
             // secure
-            secure: false,
+            secure: true,
             // support css on img element
             classes: ''
         }, overrides);
