@@ -173,6 +173,11 @@ h6 {
   font-weight: 700;
 }
 
+h2 {
+  color: dimgray;
+  font-weight: lighter;
+}
+
 .mb-6{
   width:500px;
 }
@@ -440,7 +445,7 @@ ul, li {
   &:hover{
     color:#4C90F6;
   }
-  
+
   color: #212529;
   text-decoration: underline;
 }
