@@ -81,7 +81,12 @@ img {
 .i-head {
   margin-top: 10px;
   padding-right: 10px;
-  font-size: 32px;
+  font-size: 36px;
+}
+
+.kube-icon {
+  width: 32px;
+  height: 37px;
 }
 
 a .tooltip{
@@ -288,11 +293,11 @@ section.resume-section:after {
     display: block;
     margin: 0 auto;
     width: 20%;
-    padding-top: 5rem !important;
+    padding-top: 3rem !important;
     border-bottom: 1px solid #dee2e6;
 }
 section.resume-section {
-  padding-top: 5rem !important;
+  padding-top: 3rem !important;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -703,6 +708,11 @@ ul, li {
     font-size: 50px;
   }
 
+  .kube-icon {
+    width: 44px;
+    height: 50px;
+  }
+
   .title-home{
     margin-right: 40px;
   }
@@ -741,7 +751,12 @@ ul, li {
 
   .i-head {
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 42px;
+  }
+
+  .kube-icon {
+    width: 37px;
+    height: 43px;
   }
 
 }
@@ -756,7 +771,12 @@ ul, li {
 
   .i-head {
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 36px;
+  }
+
+  .kube-icon {
+    width: 32px;
+    height: 37px;
   }
 
   .titleR{
