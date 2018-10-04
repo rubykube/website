@@ -1,0 +1,155 @@
+---
+
+title: Setting up Ranger service
+date: 2018-09-24 12:55 UTC
+category: Tutorials
+thumbnail_image: /images/blog/ranger-400x400.jpg
+tags: [ Rubykube, Tutorials ]
+
+---
+
+<p>
+We are pleased to announce that Ranger has arrived to Peatio 1.9, Ranger is a  
+WebSocket service that handles Peatio's notification system for Trading UI and
+more, it's a complete replacement of Slanger that we used until version 1.9.
+</p>
+
+<p>
+This post's goal is to show how easy it is to setup Ranger and test new Trading
+UI using workbench without any modifications.
+</p>
+
+<p>
+The tutorial is aimed for workbench users, but it can be used for users with
+customized manual installations using almost the same instructions.
+</p>
+
+## Grab the upgrade
+
+<p>
+Change working directory to your workbench repository, update your workbench's
+master branch:
+</p>
+
+<blockquote class="quotes">
+<pre>
+$ git checkout master
+$ git pull --rebase origin master
+</pre>
+</blockquote>
+
+<p>
+Now we need to update Git submodules which include backend microservices and
+Trading UI:
+</p>
+
+<blockquote class="quotes">
+<pre>$ make update</pre>
+</blockquote>
+
+<p>
+Great, after that you will see that Git submodules were checked out to latest
+changes and now you can start the workbench containers:
+</p>
+
+<blockquote class="quotes">
+<pre>$ make start</pre>
+</blockquote>
+
+<p>
+<i>NOTE: it will take some time for building new Docker images.</i>
+</p>
+
+<p>
+After successful start you can visit your Trading UI using your favorite browser:
+</p>
+
+<a target="_blank" href="http://api.wb.local/">http://api.wb.local/</a>
+
+<p>
+Authorize in Barong and proceed to take a look at Trading UI with working
+notification system:
+</p>
+
+<a target="_blank" href="http://api.wb.local/trading/eurusd">http://api.wb.local/trading/eurusd</a>
+
+<p>
+Your browser will connect to ws.ranger.wb.local and will read all the
+notification that you get from Peatio such as new bids/asks, trades, orders
+and global updates of markets.
+</p>
+
+## Enable WebSocket Secure Layer
+
+<p>
+By default Trading UI connects to Ranger without using SSL, but you can change
+this behavior if your exchange supports https connections, open
+config/peatio.env file using your favorite editor in workbench's repository and
+edit following line:
+</p>
+
+<blockquote class="quotes">
+<pre>RANGER_HOST=ws://ws.ranger.wb.local</pre>
+</blockquote>
+
+to 
+
+<blockquote class="quotes">
+<pre>RANGER_HOST=wss://ws.ranger.wb.local</pre>
+</blockquote>
+
+<i>replace ws:// with wss://</i>
+
+## Nginx as frontend webserver for Ranger
+
+<p>
+You ask, we answer.
+</p>
+
+<p>
+Yes, you can set any webserver in front of Ranger, you just need to configure it
+properly, here is an example of configuration using most famous web server —
+Nginx.
+</p>
+
+<p>
+Add following `server` snippet into your `http` directive in your nginx.conf:
+</p>
+
+<blockquote class="quotes">
+<pre>
+server {
+    listen 0.0.0.0:10000;
+    location / {
+        proxy_pass http://ws.ranger.wb.local;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+    }
+}</pre></blockquote>
+
+<p>
+In given snippet we declare listening server on 10000 port that forwards network
+traffic to local backend service — ws.ranger.wb.local.
+</p>
+
+<i>NOTE: do not forget to change RANGER_HOST configuration variable to yourdomain.com:10000 to apply changes for Trading UI.
+</i>
+
+# Developers docs
+
+<p>
+If you want to know what information we send, how we encode it or just take a
+look at architecture overview, then you need to visit docs on GitHub:
+[WebSocket API docs](https://github.com/rubykube/peatio/blob/master/docs/api/websocket_api.md)
+</p>
+
+<p>
+<strong>Still have questions or got some troubles with setting up? Get help in our
+Telegram channel:</strong>
+<a class="telegram" href="https://t.me/peatio" target="blank">
+@peatio <i class="fab fa-telegram fa-lg i-head"></i>
+</a>
+</p>
+
+<i>Images via Shutterstock, Pixabay, and Bitstamp.</i>

@@ -12,19 +12,19 @@ $sm-text-size: 14px;
   margin-top: 20px;
   width: 100%;
   max-width: 100%;
+  margin: 16px 0px;
 }
 
 .full-post-tags {
   color: $tags-text;
   font-size: $sm-text-size;
-  text-align: left;
+  float: left;
 }
 
 .full-post-date {
   color: $date-text;
   font-size: $sm-text-size;
-  margin: 10px 0px 5px 0px;
-  text-align: right;
+  float: right;
 }
 
 .full-post-title {
@@ -39,6 +39,44 @@ $sm-text-size: 14px;
   margin: 16px 0px;
 }
 
+.notes-bl {
+  border-left: 0.5px solid #b0c9ee;
+}
+
+.notes li {
+  display: list-item;
+  color: #555;
+}
+
+.notes a {
+  color: #555;
+  text-decoration-line: underline;
+  text-decoration-style: solid #555;
+}
+
+ol.notes-type2 li {
+  list-style-type: upper-roman;
+  ol li {
+    list-style-type: upper-alpha;
+    ol li {
+      list-style-type: decimal;
+    }
+  }
+}
+
+.quotes {
+  background: #e2ebfa;
+  border-left: 10px solid #b0c9ee;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quotes p {
+  display: inline;
+}
+
+
 @media (min-width: 768px){
   .full-post-title {
     font-size: $title-size;
@@ -47,11 +85,8 @@ $sm-text-size: 14px;
     font-size: $text-size;
   }
 
-  .full-post-media {
-    margin: 0px 5%;
-  }
 
-  .full-post-body {
+  .full-post-body .full-post-image {
     margin: 16px 5%;
   }
 }
@@ -61,11 +96,7 @@ $sm-text-size: 14px;
     padding: 30px 8% 0px 8%;
   }
 
-  .full-post-media {
-    margin: 0px 10%;
-  }
-
-  .full-post-body {
+  .full-post-body .full-post-image {
     margin: 16px 10%;
   }
   

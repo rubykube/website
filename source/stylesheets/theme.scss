@@ -9,6 +9,16 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+img {
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .home-page {
   border-bottom: 1px solid #ccc;
 }
@@ -18,10 +28,6 @@ body {
 
 .icons-home{
   justify-content: center;
-}
-
-.content-home-page{
-  text-align: center;
 }
 
 .title-home{
@@ -42,26 +48,45 @@ body {
   margin-right: 20px;
 }
 
-a.github{
+.github{
   color: #323232;
 }
 
-a.telegram {
+.telegram {
   color: #2eaade;
 }
 
-a.reddit {
+.reddit {
   color: #ff4500;
 }
 
-a.youtube {
+.youtube {
   color: #ff0000
+}
+
+.discuss {
+  color: #ff0000;
+  svg {
+    margin-bottom: -8px;
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #7daef8;
+      }
+    }
+  }
 }
 
 .i-head {
   margin-top: 10px;
   padding-right: 10px;
-  font-size: 32px;
+  font-size: 36px;
+}
+
+.kube-icon {
+  width: 32px;
+  height: 37px;
 }
 
 a .tooltip{
@@ -87,9 +112,17 @@ a .tooltip{
 }
 
 .logoandtext {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.cubelogo {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 350px;
 }
 
 .box {
@@ -125,15 +158,6 @@ a .tooltip{
   padding: 10px;
 }
 
-.p-text {
-  margin-top: 15px;
-}
-
-.follow-btn-about {
-  display: flex; 
-  justify-content: center;
-}
-
 .imgLogos {
   display: flex;
   align-content: flex-end;
@@ -149,6 +173,11 @@ h6 {
   font-weight: 700;
 }
 
+h2 {
+  color: dimgray;
+  font-weight: lighter;
+}
+
 .mb-6{
   width:500px;
 }
@@ -157,21 +186,6 @@ h6 {
   margin-left: -6px;
 }
 
-#feature {
-  margin-left: 15px !important;
-}
-
-#blog {
-  margin-left: 10px !important;
-}
-
-#follow {
-  margin-left: 10px !important;
-}
-
-#projects {
-  margin-left: 10px !important;
-}
 .fixed {
   background: #2eaade;
   position: fixed;
@@ -194,6 +208,10 @@ h6 {
 
 .list-icons {
   font-size: 3rem;
+}
+
+.teammates {
+  margin-left: -10px;
 }
 
 #logo {
@@ -260,7 +278,12 @@ h6 {
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase;  
+  text-transform: uppercase;
+}
+
+#mce-error-response {
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-itemGit{
@@ -270,10 +293,16 @@ h6 {
   font-size: 14px;
 }
 
+section.resume-section:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 3rem !important;
+    border-bottom: 1px solid #dee2e6;
+}
 section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  padding-top: 3rem !important;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -309,18 +338,34 @@ section.resume-section .resume-item .resume-date {
   right:20px;
   text-indent:-9999px;
   border: 500px;
+  img {
+    display: block;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    background-color: darken($primary, 15%);
+    border-color: darken($primary, 15%);
+  }
+}
+.btn-secondary {
+  &:hover {
+    background-color: darken($secondary, 12%);
+    border-color: darken($secondary, 12%);
+  }
 }
 
 .btn-yellow {
-  background: #FBC200;
+  background: #F3C44B;
   color: #fff;
-  border-color: #FBC200;
+  border-color: #F3C44B;
 }
 
 .btn-yellow:hover{
-  background: rgb(228, 205, 4);
+  background: rgb(214, 152, 0);
   color: #fff;
-  border-color: rgb(228, 205, 4);
+  border-color: rgb(214, 152, 0);
 }
 
 .btn-blue {
@@ -330,9 +375,9 @@ section.resume-section .resume-item .resume-date {
 }
 
 .btn-blue:hover{
-  background: rgb(27, 111, 236);
+  background: rgb(54, 115, 209);
   color: #fff;
-  border-color: rgb(27, 111, 236);
+  border-color: rgb(54, 115, 209);
 }
 
 .btn-git {
@@ -352,7 +397,6 @@ ul, li {
 
 .list-item {
   display: flex;
-  padding: 1em;
   width: 100%;
 }
 
@@ -364,9 +408,6 @@ ul, li {
   padding-left: 1em !important;
 }
 
-#team-item {
-  padding-left: 10px !important;
-}
 
 @media all and (min-width: 40em) {
   .list-item {
@@ -401,21 +442,22 @@ ul, li {
 }
 
 #title-post a {
+  &:hover{
+    color:#4C90F6;
+  }
+
   color: #212529;
-}
-
-.post-title #title-post a {
-  margin-left: 15px;
-}
-
-.main-post-title {
-  font-size: 28px;
-  font-weight: 400;
+  text-decoration: underline;
 }
 
 .main-post-category {
   color: #4C90F6;
   text-align: left;
+  margin-left: -15px;
+}
+
+.preview {
+  margin-left: -15px;
 }
 
 .main-post-date {
@@ -423,17 +465,9 @@ ul, li {
   font-size: 14px;
 }
 
-.post-image {
-  margin-bottom: 10px;
-}
-
-.btn-blog-block {
-  text-align: center;
-}
-
 .btn-main-blog {
   font-size: 16px;
-  margin: 25px;
+  margin: 25px 25px 25px 0;
   padding: 10px 25px;
 }
 
@@ -441,16 +475,12 @@ ul, li {
   margin-bottom: 3em;
 }
 
-.main-blog-post__last {
-  display: none;
-}
-
 .icons {
   margin-right: 15px;
 }
 
-.imgFeature{
-  -webkit-filter: grayscale(100%); 
+.imgFeature {
+  -webkit-filter: grayscale(100%);
   filter: #212529 saturate(0%) brightness(70%) contrast(1000%);
 }
 
@@ -475,18 +505,26 @@ ul, li {
   text-align: center;
 }
 
-.follow-info {  
+.follow-info {
   margin-top: 20px;
 }
 
 #follow-btn {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-// Media queries
+// Newsletter
+.mce-responses {
+  margin-top: 10px;
+}
 
+#mce-success-response {
+  color: $success;
+}
+
+// Media queries
 @media (min-width: 1366px){
   .main-blog-post__last {
     display: none;
@@ -494,18 +532,10 @@ ul, li {
 }
 
 @media (min-width: 1280px){
-  .col-components{
-    height: 250px;
-  }
-
-  .col-components1{
-    height: 200px;
-  }
-
   .icons-home{
     justify-content: right;
   }
-  
+
   a .tooltip{
     display: inline;
     margin-right: 35px;
@@ -516,47 +546,6 @@ ul, li {
     margin-right: 0px;
   }
 
-}
-
-@media (min-width: 1365px) and (max-width: 1499px) {
-  .col-components{
-    height: 300px;
-  }
-
-  .col-components1{
-    height: 220px;
-  }
-
-}
-
-@media (min-width: 1191px) and (max-width: 1364px){
-  .col-components{
-    height: 350px;
-  }
-
-  .col-components1{
-    height: 250px;
-  }
-}
-  
-@media (min-width : 992px) and (max-width: 1099px) {
-  .col-components{
-    height: 420px;
-  }
-
-  .col-components1{
-    height: 310px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1090px){
-  .col-components{
-    height: 550px;
-  }
-
-  .col-components1{
-    height: 360px;
-  }
 }
 
 @media (min-width: 992px){
@@ -623,20 +612,20 @@ ul, li {
   .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
       display: block;
   }
-  
+
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
   .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
       transition: none;
   }
-  
+
   .carousel-inner .carousel-item-next,
   .carousel-inner .carousel-item-prev {
     position: relative;
     transform: translate3d(0, 0, 0);
   }
-  
+
   .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
       position: absolute;
       top: 0;
@@ -645,7 +634,7 @@ ul, li {
       display: block;
       visibility: visible;
   }
-  
+
   /* left or forward direction */
   .active.carousel-item-left + .carousel-item-next.carousel-item-left,
   .carousel-item-next.carousel-item-left + .carousel-item,
@@ -656,7 +645,7 @@ ul, li {
       transform: translate3d(-100%, 0, 0);
       visibility: visible;
   }
-  
+
   /* farthest right hidden item must be abso position for animations */
   .carousel-inner .carousel-item-prev.carousel-item-right {
       position: absolute;
@@ -666,7 +655,7 @@ ul, li {
       display: block;
       visibility: visible;
   }
-  
+
   /* right or prev direction */
   .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
   .carousel-item-prev.carousel-item-right + .carousel-item,
@@ -690,27 +679,12 @@ ul, li {
     min-width: 18rem;
   }
 
-  .iconmargin{
+  .iconmargin {
     margin-left: auto;
-  }
-}
 
-@media (min-width : 851px) and (max-width: 991px) {
-  .col-components{
-    height: 380px;
-  }
-  .col-components1 {
-    height: 260px;
-  }
-}
-
-
-@media (min-width : 768px) and (max-width: 850px) {
-  .col-components{
-    height: 470px;
-  }
-  .col-components1 {
-    height: 270px;
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -734,18 +708,14 @@ ul, li {
     padding-top: 0px;
   }
 
-  .col-components{
-    height: 230px;
-  }
-
-  .col-components1{
-    height: 200px;
-  }
-
-  
   .i-head {
     margin-top: 10px;
     font-size: 50px;
+  }
+
+  .kube-icon {
+    width: 44px;
+    height: 50px;
   }
 
   .title-home{
@@ -760,30 +730,6 @@ ul, li {
     font-size: 1.5rem;
   }
 }
-
-@media (min-width: 481px) and (max-width: 550px) {
-
-  .col-components{
-    height: 220px;
-  }
-
-  .col-components1{
-    height: 170px;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 480px) {
-
-  .col-components{
-    height: 240px;
-  }
-
-  .col-components1{
-    height: 190px;
-  }
-
-}
-
 
 @media (min-width: 375px) and (max-width: 399px) {
   h1 {
@@ -808,31 +754,19 @@ ul, li {
     margin-top:5px;
   }
 
-  
-  .col-components{
-    height: 260px;
-  }
-
-  .col-components1{
-    height: 220px;
-  }
-
   .i-head {
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 42px;
   }
-  
+
+  .kube-icon {
+    width: 37px;
+    height: 43px;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
-  .col-components{
-    height: 315px;
-  }
-
-  .col-components1{
-    height: 240px;
-  }
-
   h1 {
     font-size: 2.6rem;
   }
@@ -842,11 +776,51 @@ ul, li {
 
   .i-head {
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 36px;
+  }
+
+  .kube-icon {
+    width: 32px;
+    height: 37px;
   }
 
   .titleR{
     font-size: 28px;
   }
 
+}
+
+/*
+Technology page slide
+*/
+.block-tech{
+  height: 400px;
+  width: 300px;
+}
+
+.slide-tech{
+  display: none;
+}
+@media only screen and (max-width: 767px){
+  .slide-tech{
+    display: block;
+  }
+
+  .non-slide-tech{
+    display: none;
+  }
+}
+
+/*
+The indicators
+*/
+.carousel-indicators {
+  top: 430px;
+}
+
+.carousel-indicators li {
+  background: #cecece;
+}
+.carousel-indicators .active {
+  background: #428bca;
 }
