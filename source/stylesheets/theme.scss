@@ -298,11 +298,13 @@ section.resume-section:after {
     display: block;
     margin: 0 auto;
     width: 20%;
-    padding-top: 3rem !important;
+    padding-top: 2rem !important;
     border-bottom: 1px solid #dee2e6;
+    min-height: 0px !important;
 }
 section.resume-section {
-  padding-top: 3rem !important;
+  padding-top: 2rem !important;
+  min-height: 0px !important;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -409,14 +411,18 @@ ul, li {
 }
 
 
-@media all and (min-width: 40em) {
+@media all and (max-width: 59.9em) {
   .list-item {
     width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
   }
 }
 @media all and (min-width: 60em) {
   .list-item {
     width: 50%;
+    margin-bottom: 2em;
+    padding-bottom: 3em;
   }
 }
 
@@ -555,8 +561,8 @@ ul, li {
   }
 
   section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 0.5rem !important;
   }
 
   #sideNav {
