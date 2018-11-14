@@ -198,7 +198,7 @@ gtag('config', 'UA-76648418-8');
           </div>
 
           <div class="d-flex mt-4 mt-lg-0 justify-content-center justify-content-lg-start">
-            <a href="https://peatio.tech/#pricing"  target="blank" class="btn btn-primary mr-3">Get a quotation</a>
+            <a href="https://peatio.tech"  target="blank" class="btn btn-primary mr-3">Get a quotation</a>
             <a href="#team" class="btn btn-primary mr-3 js-scrollTo">Meet the team</a>
           </div>
 
@@ -341,7 +341,19 @@ gtag('config', 'UA-76648418-8');
       <div class="my-auto">
         <div class="container p-2">
           <div class="row">
-            <h1 class="mb-5" id="feature"><%= data.i18n.en.sections.features.title %></h1>
+            <h1 class="mb-4" id="feature"><%= data.i18n.en.sections.features.title %></h1>
+          </div>
+
+          <div class="row">
+             <ul class="list-group mb-2" id="feature">
+                  <% data.i18n.en.sections.features.description.each do |paragraph| %>
+               <li>
+                  <p class="subheading">
+                     <%= paragraph %>
+                  </p>
+               </li>
+               <% end %>
+             </ul>
           </div>
 
           <div class="row pl-3">
@@ -356,7 +368,7 @@ gtag('config', 'UA-76648418-8');
               </ul>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 pl-4">
               <ul class="fa-ul mb-0">
                 <% data.i18n.en.sections.features.list.right.each do |item| %>
                   <li>
@@ -369,7 +381,7 @@ gtag('config', 'UA-76648418-8');
 
           </div>
 
-          <div class="text-center mt-5">
+         <!-- <div class="text-center mt-5">
               <h1 class="row text-left mb-5 mt-3">
                 <%= data.i18n.en.sections.features.subtitle %>
               </h1>
@@ -391,7 +403,6 @@ gtag('config', 'UA-76648418-8');
                             <div class="panel-thumbnail">
                                 <img class="img-fluid mx-auto d-block" draggable="false" src="images/Icons/BNB.svg" width=50>
                                 <h4 mt-1>BNB</h4>
-                              </a>
                             </div>
                           </div>
                       </div>
@@ -488,7 +499,7 @@ gtag('config', 'UA-76648418-8');
 
                   </div>
               </div>
-          </div>
+          </div> -->
         </div>
 
       </div>

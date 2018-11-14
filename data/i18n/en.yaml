@@ -77,48 +77,41 @@ sections:
         Kite is a CLI for scaffolding and managing devops modules. The main purpose is templating of various tools for DevOps around Terraform, Bosh, Ansible. Currently Kite supports modular stacks (Kite modules) on both AWS and GCP.
 
   features:
-    title: Features
+    title: Features and highlights
+    description:
+      - |-
+         The OpenWare Crypto Exchange (OCEX) is a modular, secure, reliable and scalable solution.
+      - |-
+         Our support subscription includes installation, configuration of your exchange project infrastructure, software upgrades and developer support
+      - |- 
+         Core highlights and features of OCEX platform are:
+
     subtitle: |-
       Coins supported
 
     list:
       left:
         - |-
-          Designed as high performance crypto-currency exchange
+          Built with extensibility in mind using Service Oriented Architecture (SOA)Cloud-deployed back-end infrastructure using cloud containers via Docker and Kubernetes, Ruby-on-Rails, MySQL and Redis
         - |-
-          Built-in high performance matching-engine
+          A proprietary front-end developer ReactJS toolkit for crafting beautiful custom user interfaces, called Cryptobase™ (Enterprise edition)
         - |-
-          Built-in multiple wallet support (e.g. deposit, hot, warm and cold)
+          Easy administration of multiple Cryptocurrencies, ERC20 tokens, Fiat and trading pairs with ability to add more on demand
         - |-
-          Build-in Management API - server-to-server API with high privileges
-        - |-
-          Build-in RabbitMQ Event API
-        - |-
-          Websocket API and high frequency trading support
-        - |-
-          Supports multiple digital currencies (BTC, LTC, BCH, DASH, ETH, XRP,  TRX, BNB, OMG, VEN, ZRX, MKR)
-        - |-
-          Supports ERC20 Tokens
-        - |-
-          API endpoint for FIAT deposits or payment gateways.
+          A crypto-currency custodian system using the principle of multi-tier wallet management with Hot, Warm and Cold wallets
       right:
         - |-
-          Powerful admin dashboard and backend management tools
+          A wallet system to manage deposits and withdrawals called Peatio
         - |-
-          Highly configurable, extendable and scalable
+          A KYC user management system called Barong
         - |-
-          Industry standard security out-of-box
+          High-performance push notification and event system for trader tools like candle sticks and market tickers
         - |-
-          Maintained by peatio.tech
+          Compliant to international Information Security Management System (ISMS) guidelines for IT security in banking and other financial institutions, in accordance to ISO 27001
         - |-
-          KYC Verification provided by Barong
+          A proprietary High-Performance and Scalable trading engine, tapping in the millions of transactions per second, called Finex™ (Enterprise edition)
         - |-
-          2FA + multi-sig + DHWC wallets + balance control security features
-        - |-
-          AppLogic + opportunity to add stories to Peatio and Barong sprints
-        - |-
-          Front-end React library, including great trading UI with TradingView
-
+          Secured with 2FA and AES256 encryption
   gallery:
     title: Gallery
 
