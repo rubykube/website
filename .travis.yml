@@ -3,6 +3,9 @@ language: ruby
 dist: trusty
 sudo: required
 
+services:
+  - docker
+
 before_install:
   - gem install bundler
   - . $HOME/.nvm/nvm.sh
@@ -18,34 +21,7 @@ script:
   - bundle exec middleman build --verbose
 
 deploy:
-
-  - provider: gcs
-    access_key_id: $GCS_KEY_ID
-    secret_access_key: $GCS_ACCESS_KEY
-    bucket: $GCS_BUCKET_MASTER
-    acl: public-read
-    skip_cleanup: true
-    local-dir: build
-    on:
-      branch: master
-
-  - provider: gcs
-    access_key_id: $GCS_KEY_ID
-    secret_access_key: $GCS_ACCESS_KEY
-    bucket: $GCS_BUCKET_STAGE
-    acl: public-read
-    skip_cleanup: true
-    local-dir: build
-    on:
-      branch: stage
-
-  - provider: gcs
-    access_key_id: $GCS_KEY_ID
-    secret_access_key: $GCS_ACCESS_KEY
-    bucket: $GCS_BUCKET_DEV
-    acl: public-read
-    skip_cleanup: true
-    local-dir: build
-    on:
-      branch: dev
-
+  provider: script
+  script: bash .deploy.sh
+  on:
+    branch: develop
