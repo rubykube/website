@@ -1,0 +1,9 @@
+.dockerignore
+Dockerfile*
+node_modules
+.git
+.gitignore
+README.md
+.travis.yml
+Makefile
+chart
