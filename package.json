@@ -12,7 +12,7 @@
     "build": "$(npm root)/.bin/webpack --bail -p"
   },
   "dependencies": {
-    "bootstrap": "4.1.0",
+    "bootstrap": "4.3.1",
     "bootstrap-carousel-swipe": "0.0.6",
     "bundler": "^0.8.0",
     "jquery": "^3.3.1",
