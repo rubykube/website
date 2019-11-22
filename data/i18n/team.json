@@ -22,11 +22,6 @@
           "social": "https://github.com/dmk"
           },
           {
-          "email": "e8ac9b7ec6aed87f700449ffbffde45a",
-          "name": "Bogdan",
-          "social": "https://github.com/bpotemskyi"
-          },
-          {
           "email": "87f6873cabc22c6127d0c65877724350",
           "name": "Daniel",
           "social": "#"
@@ -60,16 +55,6 @@
           "email": "ded58a4c948bae806f793a854ae4dbc5",
           "name": "Oleksandr",
           "social": "#"
-          },
-          {
-          "email": "530cc2a49a7fa017510505b0f671acee",
-          "name": "Stanislav",
-          "social": "https://github.com/seletskiy"
-          },
-          {
-          "email": "ab1c11703d799c200c3e3e6965ea7ed1",
-          "name": "Egor",
-          "social": "https://github.com/kovetskiy"
           },
           {
           "email": "b40e72b87b308a94e36b510b7763028e",
@@ -180,6 +165,11 @@
           "email": "06e50995c3e97c839e3db7f3c773f996",
           "name": "Alex",
           "social": "https://github.com/oyershov"
+          },
+          {
+            "email": "902408abe0eb5485f3c026dab12462c5",
+            "name": "Nicolas",
+            "social": "#"
           },
           {
           "email": "8b6e1d8cd7dafa0d31b63e0ace26ab3b",
