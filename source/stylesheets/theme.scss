@@ -284,6 +284,7 @@ h2 {
 #mce-error-response {
   display: flex;
   flex-direction: column;
+  color: #D94E47;
 }
 
 .nav-itemGit{
@@ -528,6 +529,8 @@ ul, li {
 
 #mce-success-response {
   color: $success;
+  display: flex;
+  flex-direction: column;
 }
 
 // Media queries
