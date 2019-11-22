@@ -63,11 +63,11 @@ sections:
         Barong is an Open-Source OAuth2 server with KYC and 2FA for RubyKube stack. Barong manages roles and KYC level across all applications from the RKCP. It's easy to extend by using the Event API or Rest API.
 
     workbench:
-      title: Workbench
+      title: OpenDAX
       subtitle: |-
         Recommended development, test and integration environment
       summary: |-
-        Workbench is the recommended development, test and integration environment for new developers. It is the easiest way to setup development environment and run Peatio locally.
+        OpenDAX is the recommended development, test and integration environment for new developers. It is the easiest way to setup development environment and run Peatio locally.
 
     kite:
       title: Kite
@@ -148,11 +148,11 @@ sections:
         - |-
           Docker / Kubernetes
         - |-
-          Ruby 2.5.0
+          Ruby 2.6.3
         - |-
-          Rails 4.2+
+          Rails 5.2+
         - |-
-          Redis 2.0+
+          Redis 4.0+
         - |-
           MySQL 5.7
         - |-
