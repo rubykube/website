@@ -65,3 +65,4 @@ activate :external_pipeline,
     source: 'dist',
     latency: 1
 
+files.watch :source, path: 'assets/images', destination_dir: 'images'
