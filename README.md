@@ -1,4 +1,4 @@
-# Rubykube website
+# Rubykube website -- An Amazing Project for Developers 
 
 Rubykube website uses Middleman  
   
