@@ -1,4 +1,4 @@
-# Rubykube website
+# Rubykube website an amazinng website
 
 Rubykube website uses Middleman  
   
