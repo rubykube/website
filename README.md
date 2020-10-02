@@ -1,6 +1,6 @@
 # Rubykube website
 
-Rubykube website uses Middleman  
+Rubykube website use Middleman  
   
 To run the project locally:  
 ```bundle install```  
