@@ -1,4 +1,5 @@
 # Rubykube website
+Please install
 
 Rubykube website uses Middleman  
   
