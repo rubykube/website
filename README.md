@@ -1,3 +1,4 @@
+Logr-An amazing project
 # Rubykube website
 
 Rubykube website uses Middleman  
